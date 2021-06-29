@@ -16,20 +16,22 @@
 .mainBGArea .mainScrollNavArea ul li.active{ color: white; position: relative;}
 .mainBGArea .mainScrollNavArea ul li.active::after{content: ''; position: absolute; left: 0; bottom: -10px; width: 100%; height: 3px; background-color: #8fcc00;}
 
-.mainMenuArea{padding: 70px;}
-.mainMenuArea ul::after{content: ''; display: block; clear: both;}
-.mainMenuArea ul{height: 900px;}
-.mainMenuArea ul li:not(:last-child){width: calc((100% - 30px) / 4);}
-.mainMenuArea ul li:nth-child(-n + 2){float: left; height: 100%;}
-.mainMenuArea ul li:nth-child(n + 3){float: right; height: calc((100% - 10px) / 2);}
-.mainMenuArea ul li:last-child{width: calc(50% - 5px); margin-top: 10px;}
-.mainMenuArea ul li:not(:first-child){margin-left: 10px;}
-.mainMenuArea ul li a{display: block; height: 100%; padding: 85px 50px; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
-.mainMenuArea ul li:nth-child(1) a{background-image: url('../images/mainMenu_01.png');}
-.mainMenuArea ul li:nth-child(2) a{background-image: url('../images/mainMenu_02.png');}
-.mainMenuArea ul li:nth-child(3) a{background-image: url('../images/mainMenu_03.png');}
-.mainMenuArea ul li:nth-child(4) a{background-image: url('../images/mainMenu_04.png');}
-.mainMenuArea ul li:nth-child(5) a{background-image: url('../images/mainMenu_05.png');}
-.mainMenuArea ul li a *{display: block;}
-.mainMenuArea ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
-.mainMenuArea ul li a strong small{font-size: 23px; font-weight: 300;}
+.mainMenuArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
+.mainMenuArea > div{width: 100%; overflow: hidden;}
+.mainMenuArea > div > div{padding: 130px 0 70px;}
+.mainMenuArea > div > div ul::after{content: ''; display: block; clear: both;}
+.mainMenuArea > div > div ul{height: 900px;}
+.mainMenuArea > div > div ul li:not(:last-child){width: calc((100% - 30px) / 4);}
+.mainMenuArea > div > div ul li:nth-child(-n + 2){float: left; height: 100%;}
+.mainMenuArea > div > div ul li:nth-child(n + 3){float: right; height: calc((100% - 10px) / 2);}
+.mainMenuArea > div > div ul li:last-child{width: calc(50% - 5px); margin-top: 10px;}
+.mainMenuArea > div > div ul li:not(:first-child){margin-left: 10px;}
+.mainMenuArea > div > div ul li a{display: block; height: 100%; padding: 85px 50px; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
+.mainMenuArea > div > div ul li:nth-child(1) a{background-image: url('../images/mainMenu_01.png');}
+.mainMenuArea > div > div ul li:nth-child(2) a{background-image: url('../images/mainMenu_02.png');}
+.mainMenuArea > div > div ul li:nth-child(3) a{background-image: url('../images/mainMenu_03.png');}
+.mainMenuArea > div > div ul li:nth-child(4) a{background-image: url('../images/mainMenu_04.png');}
+.mainMenuArea > div > div ul li:nth-child(5) a{background-image: url('../images/mainMenu_05.png');}
+.mainMenuArea > div > div ul li a *{display: block;}
+.mainMenuArea > div > div ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
+.mainMenuArea > div > div ul li a strong small{font-size: 23px; font-weight: 300;}
