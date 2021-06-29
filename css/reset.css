@@ -20,7 +20,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font-family:'NanumSquare', sans-serif ; */
+	font-family:'Noto Sans KR', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -46,3 +47,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a{text-decoration: none;}
+mark{background-color: transparent; color: #8fcc00;}
