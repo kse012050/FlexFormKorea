@@ -1,3 +1,6 @@
+.contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00;}
+.contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
+
 /* 메인 */
 .mainBGArea{color: white;}
 .mainBGArea section{height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center;}

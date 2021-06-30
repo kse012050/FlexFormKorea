@@ -1,9 +1,6 @@
 $(document).ready(function(){
     history.scrollRestoration = "manual";
     mainScrollEvnet();
-    console.log(
-        $('body').scrollTop()
-    );
 });
 
 function mainScrollEvnet(){
@@ -11,7 +8,6 @@ function mainScrollEvnet(){
     var $delta;
     var $scrollTop;
     var $scrollIdx;
-    var $scrollBoolean;
     var $prevBoolean;
     var $nextBoolean;
     $.each($scrollArray,function(){
@@ -24,7 +20,6 @@ function mainScrollEvnet(){
                 // 마우스 휠을 위로
                 $scrollBoolean = true;
                 $prevBoolean = $(this).prev().hasClass('mainBGArea');
-                // if($('.mainBGArea + *').offset().top >= $(window).scrollTop() && $prevBoolean){
                 if($('.mainBGArea + *').scrollTop() == 0 && $prevBoolean){
                     $scrollTop = $('.mainBGArea section').last().offset().top;
                     $('header').addClass('active');
@@ -45,13 +40,11 @@ function mainScrollEvnet(){
                     $('.mainBGArea > div').fadeOut();
                     $('header').removeClass('active');
                 }else{
-                    // $scrollBoolean = false;
                 }
             }
-            // if($scrollBoolean){
-                $('html, body').stop().animate({scrollTop: $scrollTop},800); 
-                mainScrollList($scrollIdx);
-            // }
+
+            $('html, body').stop().animate({scrollTop: $scrollTop},800); 
+            mainScrollList($scrollIdx);
         })
     })
 
