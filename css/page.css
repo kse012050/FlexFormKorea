@@ -1,3 +1,7 @@
+/* 스크롤 페이지 */
+.scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
+
+
 .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
 .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
 
@@ -37,24 +41,23 @@
 }
 
 .mainMenuArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
-.mainMenuArea > div{width: 100%; overflow: hidden;}
-.mainMenuArea > div > div{padding: 130px 0 70px;}
-.mainMenuArea > div > div ul::after{content: ''; display: block; clear: both;}
-.mainMenuArea > div > div ul{height: 900px;}
-.mainMenuArea > div > div ul li:not(:last-child){width: calc((100% - 30px) / 4);}
-.mainMenuArea > div > div ul li:nth-child(-n + 2){float: left; height: 100%;}
-.mainMenuArea > div > div ul li:nth-child(n + 3){float: right; height: calc((100% - 10px) / 2);}
-.mainMenuArea > div > div ul li:last-child{width: calc(50% - 5px); margin-top: 10px;}
-.mainMenuArea > div > div ul li:not(:first-child){margin-left: 10px;}
-.mainMenuArea > div > div ul li a{display: block; height: 100%; padding: 85px 50px; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
-.mainMenuArea > div > div ul li:nth-child(1) a{background-image: url('../images/mainMenu_01.png');}
-.mainMenuArea > div > div ul li:nth-child(2) a{background-image: url('../images/mainMenu_02.png');}
-.mainMenuArea > div > div ul li:nth-child(3) a{background-image: url('../images/mainMenu_03.png');}
-.mainMenuArea > div > div ul li:nth-child(4) a{background-image: url('../images/mainMenu_04.png');}
-.mainMenuArea > div > div ul li:nth-child(5) a{background-image: url('../images/mainMenu_05.png');}
-.mainMenuArea > div > div ul li a *{display: block;}
-.mainMenuArea > div > div ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
-.mainMenuArea > div > div ul li a strong small{font-size: 23px; font-weight: 300;}
+.mainMenuArea > div{padding: 130px 0 70px;}
+.mainMenuArea > div ul::after{content: ''; display: block; clear: both;}
+.mainMenuArea > div ul{height: 900px;}
+.mainMenuArea > div ul li:not(:last-child){width: calc((100% - 30px) / 4);}
+.mainMenuArea > div ul li:nth-child(-n + 2){float: left; height: 100%;}
+.mainMenuArea > div ul li:nth-child(n + 3){float: right; height: calc((100% - 10px) / 2);}
+.mainMenuArea > div ul li:last-child{width: calc(50% - 5px); margin-top: 10px;}
+.mainMenuArea > div ul li:not(:first-child){margin-left: 10px;}
+.mainMenuArea > div ul li a{display: block; height: 100%; padding: 85px 50px; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
+.mainMenuArea > div ul li:nth-child(1) a{background-image: url('../images/mainMenu_01.png');}
+.mainMenuArea > div ul li:nth-child(2) a{background-image: url('../images/mainMenu_02.png');}
+.mainMenuArea > div ul li:nth-child(3) a{background-image: url('../images/mainMenu_03.png');}
+.mainMenuArea > div ul li:nth-child(4) a{background-image: url('../images/mainMenu_04.png');}
+.mainMenuArea > div ul li:nth-child(5) a{background-image: url('../images/mainMenu_05.png');}
+.mainMenuArea > div ul li a *{display: block;}
+.mainMenuArea > div ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
+.mainMenuArea > div ul li a strong small{font-size: 23px; font-weight: 300;}
 
 
 /* 서브 페이지 */

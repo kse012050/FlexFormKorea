@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 function mainScrollEvnet(){
-    var $scrollArray = [$('[data-event="scroll"]'),$('.mainBGArea + *')];
+    var $scrollArray = [$('[data-event="scroll"]'),$('.scrollArea')];
     var $delta;
     var $scrollTop;
     var $scrollIdx;
@@ -20,7 +20,7 @@ function mainScrollEvnet(){
                 // 마우스 휠을 위로
                 $scrollBoolean = true;
                 $prevBoolean = $(this).prev().hasClass('mainBGArea');
-                if($('.mainBGArea + *').scrollTop() == 0 && $prevBoolean){
+                if($('.scrollArea').scrollTop() == 0 && $prevBoolean){
                     $scrollTop = $('.mainBGArea section').last().offset().top;
                     $('header').addClass('active');
                     $('.mainBGArea > div').fadeIn();
@@ -36,7 +36,7 @@ function mainScrollEvnet(){
                     $scrollTop = $(this).next().offset().top;
                     $scrollIdx = $(this).index() + 1;
                 }else if($nextBoolean){
-                    $scrollTop = $('.mainBGArea + *').offset().top;
+                    $scrollTop = $('.scrollArea').offset().top;
                     $('.mainBGArea > div').fadeOut();
                     $('header').removeClass('active');
                 }else{
