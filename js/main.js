@@ -19,11 +19,14 @@ function mainScrollEvnet(){
             if($delta > 0){
                 // 마우스 휠을 위로
                 $scrollBoolean = true;
-                $prevBoolean = $(this).prev().hasClass('mainBGArea');
+                // $prevBoolean = $(this).prev().hasClass('mainBGArea');
+                $prevBoolean = $(this).prev().children().attr('data-event') == 'scroll';
                 if($('.scrollArea').scrollTop() == 0 && $prevBoolean){
-                    $scrollTop = $('.mainBGArea section').last().offset().top;
+                    $scrollTop = $('[data-event="scroll"]').last().offset().top;
                     $('header').addClass('active');
-                    $('.mainBGArea > div').fadeIn();
+                    // $('.mainBGArea > div').fadeIn();
+                    // $('.scrollIcon').fadeIn();
+                    $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeIn();
                 }else if(!($(this).prev().offset() == undefined) && !$prevBoolean){
                     $scrollTop = $(this).prev().offset().top;
                     $scrollIdx = $(this).index() - 1;
@@ -37,7 +40,9 @@ function mainScrollEvnet(){
                     $scrollIdx = $(this).index() + 1;
                 }else if($nextBoolean){
                     $scrollTop = $('.scrollArea').offset().top;
-                    $('.mainBGArea > div').fadeOut();
+                    $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeOut();
+                    // $('.mainBGArea > div').fadeOut();
+                    // $('.scrollIcon').fadeOut();
                     $('header').removeClass('active');
                 }else{
                 }
