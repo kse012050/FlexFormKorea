@@ -23,6 +23,7 @@ time, mark, audio, video {
 	/* font-family:'NanumSquare', sans-serif ; */
 	font-family:'Noto Sans KR', sans-serif;
 	vertical-align: baseline;
+	word-break: keep-all;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,5 +49,5 @@ table {
 	border-spacing: 0;
 }
 
-a{text-decoration: none;}
+a{color: black; text-decoration: none;}
 mark{background-color: transparent; color: #8fcc00;}

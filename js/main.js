@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 function mainScrollEvnet(){
-    var $scrollArray = [$('.mainBGArea section'),$('.mainBGArea + *')];
+    var $scrollArray = [$('[data-event="scroll"]'),$('.mainBGArea + *')];
     var $delta;
     var $scrollTop;
     var $scrollIdx;

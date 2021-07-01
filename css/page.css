@@ -55,3 +55,38 @@
 .mainMenuArea > div > div ul li a *{display: block;}
 .mainMenuArea > div > div ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
 .mainMenuArea > div > div ul li a strong small{font-size: 23px; font-weight: 300;}
+
+
+/* 서브 페이지 */
+/* 서브 페이지 공통 */
+.aboutUsArea{}
+
+/* 서브 페이지 타이틀 공통 */
+.subPage{padding-top: 120px;}
+.subPage .subPageTitle{padding: 200px 0; color: white; display: flex; justify-content: center; align-items: center; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
+.subPage .subPageTitle h2{font-size: 50px; font-weight: 700;}
+.subPage .subMenuArea{display: flex; justify-content: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+.subPage .subMenuArea li{}
+.subPage .subMenuArea li:not(:last-child){margin-right: 100px;}
+.subPage .subMenuArea li a{display: block; font-size: 30px; font-weight: 700;  opacity: 0.5; padding: 35px 0; position: relative;}
+.subPage .subMenuArea li.active a{opacity: 1;}
+.subPage .subMenuArea li.active a::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 4px; background-color: #8fcc00;}
+.subPage > section{padding: 110px 0 140px;}
+/* 서브 페이지 서브 타이틀 공통 */
+.subPage > section .subTitle{text-align: center; margin-bottom: 30px;}
+.subPage > section .subTitle h3{font-size: 60px; font-weight: 700; margin-bottom: 80px;}
+.subPage > section .subTitle p{font-size: 23px; font-weight: 500; line-height: 36px; margin-bottom: 30px;}
+.subPage > section .subTitle::after{content: '';display: block; width: 4px; height: 25px; background-color: black; transform: rotate(30deg); margin: 0 auto;}
+.subPage > section > strong{display: block; font-size: 36px; font-weight: 700; text-align: center; margin:80px 0 50px;}
+.subPage > section > p{font-size: 22px; font-weight: 300; line-height: 36px; text-align: center;}
+.subPage > section > p:not(:last-of-type){margin-bottom: 50px;}
+
+/* 서브 페이지 컨텐츠 공통 */
+.subContents{margin-top: 100px;}
+
+/* 서브페이지 - 회사 소개 공통 */
+.aboutUsArea .subPageTitle{background-image: url('../images/aboutUsBG.png');}
+
+/* 서브 페이지 - 제품 소개 공통 */
+.productArea{padding-top: 0;}
+.productArea .subPageTitle{height: 100vh; background-color: lightgreen;}
