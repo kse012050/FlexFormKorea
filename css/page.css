@@ -1,6 +1,8 @@
+
 .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
 .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
-
+.subPage .contactLink{ font-size: 0; top: 670px; right: 0; width: 77px;}
+.subPage .contactLink::before{margin: 0;}
 
 /* 스크롤 페이지 */
 .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
