@@ -1,6 +1,7 @@
 $(document).ready(function(){
     history.scrollRestoration = "manual";
     mainScrollEvnet();
+    mainScrollListClick();
 });
 
 function mainScrollEvnet(){
@@ -48,13 +49,22 @@ function mainScrollEvnet(){
                 }
             }
 
-            $('html, body').stop().animate({scrollTop: $scrollTop},800); 
+            mainScrollAnimate($scrollTop);
             mainScrollList($scrollIdx);
         })
     })
 
-    function mainScrollList(idx){
-        $('.mainScrollNavArea ul li').removeClass('active');
-        $('.mainScrollNavArea ul li').eq(idx).addClass('active');
-    }
 };
+function mainScrollListClick(){
+    $('.mainScrollNavArea ul li').click(function(){
+        mainScrollAnimate($('[data-event="scroll"]').eq($(this).index()).offset().top);
+        mainScrollList($(this).index());
+    });
+}
+function mainScrollAnimate(offsetTop){
+    $('html, body').stop().animate({scrollTop: offsetTop},800); 
+}
+function mainScrollList(idx){
+    $('.mainScrollNavArea ul li').removeClass('active');
+    $('.mainScrollNavArea ul li').eq(idx).addClass('active');
+}
