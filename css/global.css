@@ -12,7 +12,7 @@ header div h1{text-indent: -9999px; width: 236px; height: 43px; background-image
 header div nav{width: 765px;}
 header div nav ul{display: flex; width: 100%; justify-content: space-between;}
 header div nav ul li a{font-size: 22px; font-weight: 500; color: black; }
-header div nav ul li a:hover{color: #8fcc00;}
+header div nav ul li a:hover ,header div nav ul li.active a{color: #8fcc00;}
 header.active{background-color: transparent;}
 header.active div h1{background-image: url('../images/logo_W.png');}
 header.active nav ul li a{color: white;}
