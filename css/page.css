@@ -106,3 +106,19 @@
 /* 서브 페이지 - R&D 공통 */
 .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
 
+
+
+/* 회사 소개 - our */
+.aurArea{padding-top: 100px; border-top: 1px solid rgba(0, 0, 0, 0.2);}
+.aurArea ul li{background-repeat: no-repeat; background-size: 48%; height: 630px;}
+.aurArea ul li:nth-child(2n + 1){padding-left: 52%; background-position: left top;}
+.aurArea ul li:nth-child(2n){padding-right: 52%; background-position: right top;}
+.aurArea ul li:nth-child(1){background-image: url('../images/aboutUs_our01.png');}
+.aurArea ul li:nth-child(2){background-image: url('../images/aboutUs_our02.png');}
+.aurArea ul li:nth-child(3){background-image: url('../images/aboutUs_our03.png');}
+.aurArea ul li > * {max-width: 465px;  display: flex; flex-direction: column;}
+.aurArea ul li:nth-child(2n) > *{margin-left: auto;}
+.aurArea ul li > strong{font-size: 38px; font-weight: 700; margin-bottom: 25px;}
+.aurArea ul li > b{font-size: 22px; font-weight: 700; line-height: 34px; margin-bottom: 55px;}
+.aurArea ul li > p{font-size: 22px; font-weight: 300; line-height: 36px;}
+.aurArea ul li:not(:last-child){margin-bottom: 80px;}
