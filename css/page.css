@@ -109,16 +109,29 @@
 
 
 /* 회사 소개 - our */
-.aurArea{padding-top: 100px; border-top: 1px solid rgba(0, 0, 0, 0.2);}
-.aurArea ul li{background-repeat: no-repeat; background-size: 48%; height: 630px;}
-.aurArea ul li:nth-child(2n + 1){padding-left: 52%; background-position: left top;}
-.aurArea ul li:nth-child(2n){padding-right: 52%; background-position: right top;}
-.aurArea ul li:nth-child(1){background-image: url('../images/aboutUs_our01.png');}
-.aurArea ul li:nth-child(2){background-image: url('../images/aboutUs_our02.png');}
-.aurArea ul li:nth-child(3){background-image: url('../images/aboutUs_our03.png');}
-.aurArea ul li > * {max-width: 465px;  display: flex; flex-direction: column;}
-.aurArea ul li:nth-child(2n) > *{margin-left: auto;}
-.aurArea ul li > strong{font-size: 38px; font-weight: 700; margin-bottom: 25px;}
-.aurArea ul li > b{font-size: 22px; font-weight: 700; line-height: 34px; margin-bottom: 55px;}
-.aurArea ul li > p{font-size: 22px; font-weight: 300; line-height: 36px;}
-.aurArea ul li:not(:last-child){margin-bottom: 80px;}
+.aboutUsArea .aurArea{padding-top: 100px; border-top: 1px solid rgba(0, 0, 0, 0.2);}
+.aboutUsArea .aurArea ul li{background-repeat: no-repeat; background-size: 48%; height: 630px;}
+.aboutUsArea .aurArea ul li:nth-child(2n + 1){padding-left: 52%; background-position: left top;}
+.aboutUsArea .aurArea ul li:nth-child(2n){padding-right: 52%; background-position: right top;}
+.aboutUsArea .aurArea ul li:nth-child(1){background-image: url('../images/aboutUs_our01.png');}
+.aboutUsArea .aurArea ul li:nth-child(2){background-image: url('../images/aboutUs_our02.png');}
+.aboutUsArea .aurArea ul li:nth-child(3){background-image: url('../images/aboutUs_our03.png');}
+.aboutUsArea .aurArea ul li > * {max-width: 465px;  display: flex; flex-direction: column;}
+.aboutUsArea .aurArea ul li:nth-child(2n) > *{margin-left: auto;}
+.aboutUsArea .aurArea ul li > strong{font-size: 38px; font-weight: 700; margin-bottom: 25px;}
+.aboutUsArea .aurArea ul li > b{font-size: 22px; font-weight: 700; line-height: 34px; margin-bottom: 55px;}
+.aboutUsArea .aurArea ul li > p{font-size: 22px; font-weight: 300; line-height: 36px;}
+.aboutUsArea .aurArea ul li:not(:last-child){margin-bottom: 80px;}
+
+/* 회사 소개 - 기업현황 */
+.aboutUsArea .statusArea{padding: 180px 0; background: url('../images/aboutUs_statusBG.png') no-repeat center / cover;}
+.aboutUsArea .statusArea ul{display: flex; justify-content: space-between; text-align: center;}
+.aboutUsArea .statusArea ul li{width: 19%; height: 150px; padding-top: 150px; background-repeat: no-repeat; background-position: center 40px; background-color: rgba(255, 255, 255, 0.8);}
+.aboutUsArea .statusArea ul li:nth-child(1){background-image: url('../images/aboutUs_statusIcon01.png');}
+.aboutUsArea .statusArea ul li:nth-child(2){background-image: url('../images/aboutUs_statusIcon02.png');}
+.aboutUsArea .statusArea ul li:nth-child(3){background-image: url('../images/aboutUs_statusIcon03.png');}
+.aboutUsArea .statusArea ul li:nth-child(4){background-image: url('../images/aboutUs_statusIcon04.png');}
+.aboutUsArea .statusArea ul li:nth-child(5){background-image: url('../images/aboutUs_statusIcon05.png');}
+.aboutUsArea .statusArea ul li::before{content: ''; display: block; width: 20px; height: 3px; background-color: #8fcc00; margin: 0 auto 30px;} 
+.aboutUsArea .statusArea ul li strong{font-size: 22px; font-weight: 700; display: block; margin-bottom: 12px;}
+.aboutUsArea .statusArea ul li p{font-size: 22px; font-weight: 300; line-height: 36px;}
