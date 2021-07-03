@@ -126,7 +126,7 @@
 /* 회사 소개 - 기업현황 */
 .aboutUsArea .statusArea{padding: 180px 0; background: url('../images/aboutUs_statusBG.png') no-repeat center / cover;}
 .aboutUsArea .statusArea ul{display: flex; justify-content: space-between; text-align: center;}
-.aboutUsArea .statusArea ul li{width: 19%; height: 150px; padding-top: 150px; background-repeat: no-repeat; background-position: center 40px; background-color: rgba(255, 255, 255, 0.8);}
+.aboutUsArea .statusArea ul li{width: 19%; height: 300px; padding: 150px 1% 0; box-sizing: border-box; background-repeat: no-repeat; background-position: center 40px; background-color: rgba(255, 255, 255, 0.8);}
 .aboutUsArea .statusArea ul li:nth-child(1){background-image: url('../images/aboutUs_statusIcon01.png');}
 .aboutUsArea .statusArea ul li:nth-child(2){background-image: url('../images/aboutUs_statusIcon02.png');}
 .aboutUsArea .statusArea ul li:nth-child(3){background-image: url('../images/aboutUs_statusIcon03.png');}
@@ -135,3 +135,22 @@
 .aboutUsArea .statusArea ul li::before{content: ''; display: block; width: 20px; height: 3px; background-color: #8fcc00; margin: 0 auto 30px;} 
 .aboutUsArea .statusArea ul li strong{font-size: 22px; font-weight: 700; display: block; margin-bottom: 12px;}
 .aboutUsArea .statusArea ul li p{font-size: 22px; font-weight: 300; line-height: 36px;}
+
+/* 회사 소개 - 사업장 */
+.locationArea figure::after{content: ''; display: block; visibility: hidden; clear: both;}
+.locationArea figure > *{float: left;}
+.locationArea figure img{width: calc(100% - 778px);}
+.locationArea figure figcaption{padding-left: 3%; width: 778px; box-sizing: border-box;}
+.locationArea figure figcaption ul{}
+.locationArea figure figcaption ul li{padding-left: 75px; font-size: 22px; background-repeat: no-repeat; background-position: left top;}
+.locationArea figure figcaption ul li:nth-child(1){background-image: url('../images/aboutUs_locationIcon01.png');}
+.locationArea figure figcaption ul li:nth-child(2){background-image: url('../images/aboutUs_locationIcon02.png');}
+.locationArea figure figcaption ul li:nth-child(3){background-image: url('../images/aboutUs_locationIcon03.png');}
+.locationArea figure figcaption ul li:nth-child(4){background-image: url('../images/aboutUs_locationIcon04.png');}
+.locationArea figure figcaption ul li:nth-child(5){background-image: url('../images/aboutUs_locationIcon05.png');}
+.locationArea figure figcaption ul li:not(:last-child){margin-bottom: 35px;}
+.locationArea figure figcaption ul li strong{display: block;  font-weight: 700; line-height: 55px; margin-bottom: 15px;}
+.locationArea figure figcaption ul li dl{display: flex;}
+.locationArea figure figcaption ul li dl dt{font-weight: 400; width: 100px; border-right: 1px solid #b7b7b7; margin-right: 20px;}
+.locationArea figure figcaption ul li dl dd{width: calc(100% - 100px);}
+.locationArea figure figcaption ul li dl:not(:last-child) dt{padding-bottom: 10px;}
