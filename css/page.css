@@ -95,6 +95,7 @@
 
 /* 서브 페이지 컨텐츠 공통 */
 .subContents{margin-top: 100px;}
+.subContents > *:not(:last-child){margin-bottom: 100px;}
 
 /* 서브페이지 - 회사 소개 공통 */
 .aboutUsArea .subPageTitle{background-image: url('../images/aboutUsBG.png');}
@@ -106,6 +107,11 @@
 
 /* 서브 페이지 - R&D 공통 */
 .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
+.RnDArea .BGColor{background-color: #ededed; padding: 100px 0 120px;}
+.RnDArea h4{font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 100px;}
+.RnDArea strong{display: block; font-size: 24px; font-weight: 700;}
+.RnDArea p{font-size: 22px; font-weight: 300;}
+.RnDArea b{display: block;  font-weight: 500;}
 
 
 
@@ -184,8 +190,9 @@
 .productArea .applicationsArea .layoutCase01 li > div > div div p{font-weight: 300;}
 
 
+/* 제품 소개 - raw 공통*/
+.rawArea > div h4{font-size: 38px; font-weight: 700; margin-bottom: 50px;}
 /* 제품 소개 - raw */
-.productArea .rawArea > *:not(:last-child){margin-bottom: 110px;}
 .productArea .rawArea .layoutCase01 li{height: 525px;}
 .productArea .rawArea .layoutCase01 li:nth-child(1):before{background-image: url('../images/product_rawImg01.png');}
 .productArea .rawArea .layoutCase01 li:nth-child(2):before{background-image: url('../images/product_rawImg02.png');}
@@ -195,9 +202,6 @@
 .productArea .rawArea .layoutCase01 li > div > div div > span{float: left; width: 50%; font-size: 22px; font-weight: 300;}
 .productArea .rawArea .layoutCase01 li > div > div div > span span{display: inline-block; padding-bottom: 10px; border-bottom: 1px solid black;}
 .productArea .rawArea .layoutCase01 li > div > div div > span:not(:nth-of-type(-n + 2)){margin-top: 30px;}
-
-/* 제품 소개 - raw 공통*/
-.rawArea > div h4{font-size: 38px; font-weight: 700; margin-bottom: 50px;}
 
 .rawArea > .FAQArea ul li{border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
 .rawArea > .FAQArea ul li:first-child{border-top: 1px solid rgba(0, 0, 0, 0.2);}
@@ -209,3 +213,39 @@
 .rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); position: relative;}
 .rawArea > .IntroduceArea ul li a{font-size: 24px; color: white; font-weight: 500;  position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .rawArea > .IntroduceArea ul li a span{font-family: 'Material Icons'; width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
+
+
+
+/* R&D - 센터 */
+.centerArea ul{display: flex; justify-content: space-between; padding-top: 490px; background: url('../images/R&D_centerImg.png') no-repeat top center / 100%;}
+.centerArea ul li{width: 225px; text-align: center; line-height: 29px;}
+.centerArea ul li::before{content: ''; display: block; width: 100%; height: 225px; border-radius: 100%; background-color: #efefef; background-repeat: no-repeat; background-position: center; margin-bottom: 45px;}
+.centerArea ul li:nth-child(1):before{background-image: url('../images/R&D_centerIcon01.png');}
+.centerArea ul li:nth-child(2):before{background-image: url('../images/R&D_centerIcon02.png');}
+.centerArea ul li:nth-child(3):before{background-image: url('../images/R&D_centerIcon03.png');}
+.centerArea ul li:nth-child(4):before{background-image: url('../images/R&D_centerIcon04.png');}
+.centerArea ul li strong{/* display: block; font-size: 24px; font-weight: 700; */ padding: 0 5%; margin-bottom: 30px;}
+/* .centerArea ul li p{font-size: 22px; font-weight: 300;} */
+
+.centerArea div div figure{display: flex; align-items: flex-start;}
+.centerArea div div figure:not(:last-of-type){margin-bottom: 135px;}
+.centerArea div div figure img{width: 328px; margin-right: 8.3%;}
+.centerArea div div figure figcaption{font-size: 22px;}
+.centerArea div div figure figcaption b{display: block;  /* font-weight: 500; */ margin-bottom: 40px;}
+.centerArea div div figure figcaption p{/* font-weight: 300;  */line-height: 36px;}
+
+/* R&D - 시험분석장비 */
+.equipmentArea{}
+.equipmentArea > ul li:not(:last-child){margin-bottom: 60px;}
+.equipmentArea > ul li figure{display: flex;}
+.equipmentArea > ul li figure > *{flex: 1;}
+.equipmentArea > ul li:nth-child(2n + 1) figure figcaption{padding: 30px 5%;}
+.equipmentArea > ul li:nth-child(2n) figure img{order: 1;}
+.equipmentArea > ul li:nth-child(2n) figure figcaption{padding: 60px 0;}
+.equipmentArea > ul li figure figcaption strong{line-height: 28px; margin-bottom: 25px;}
+
+.equipmentArea div div ul{display: flex; flex-wrap: wrap;}
+.equipmentArea div div ul li{width: 50%; display: flex; align-items: center; font-size: 22px; font-weight: 300;}
+.equipmentArea div div ul li::before{content: ''; width: 5px; height: 5px; background-color: black; border-radius: 100%; margin-right: 3.5%;}
+.equipmentArea div div ul li:not(:nth-child(-n + 2)){margin-top: 40px;}
+ 
