@@ -69,7 +69,6 @@
 
 /* 서브 페이지 */
 /* 서브 페이지 공통 */
-.aboutUsArea{}
 
 /* 서브 페이지 타이틀 공통 */
 .subPage{padding-top: 120px;}
@@ -79,7 +78,6 @@
 .subPage .subPageTitle p{font-size: 24px; font-weight: 300; line-height: 48px; margin-top: 90px;}
 .subPage .subMenuArea{display: flex; justify-content: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
 .subPage .subMenuArea li{margin: 0 50px;}
-/* .subPage .subMenuArea li:not(:last-child){margin-right: 100px;} */
 .subPage .subMenuArea li a{display: block; font-size: 30px; font-weight: 700;  opacity: 0.5; padding: 35px 0; position: relative;}
 .subPage .subMenuArea li.active a{opacity: 1;}
 .subPage .subMenuArea li.active a::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 4px; background-color: #8fcc00;}
@@ -96,7 +94,7 @@
 .subPage .subContents h4{font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 100px; }
 .subPage .subContents strong{display: block; font-size: 24px; font-weight: 700;}
 .subPage .subContents p{font-size: 22px; font-weight: 300;}
-.subPage .subContents b{display: block;  font-weight: 500;}
+.subPage .subContents b{font-size: 22px; display: block;  font-weight: 500;}
 
 /* 서브 페이지 컨텐츠 공통 */
 .subContents{margin-top: 100px;}
@@ -153,7 +151,6 @@
 .locationArea figure > *{float: left;}
 .locationArea figure img{width: calc(100% - 778px);}
 .locationArea figure figcaption{padding-left: 3%; width: 778px; box-sizing: border-box;}
-.locationArea figure figcaption ul{}
 .locationArea figure figcaption ul li{padding-left: 75px; font-size: 22px; background-repeat: no-repeat; background-position: left top;}
 .locationArea figure figcaption ul li:nth-child(1){background-image: url('../images/aboutUs_locationIcon01.png');}
 .locationArea figure figcaption ul li:nth-child(2){background-image: url('../images/aboutUs_locationIcon02.png');}
@@ -211,7 +208,6 @@
 .rawArea > .FAQArea ul li button{font-size: 22px; font-weight: 500; text-align: left; width: 100%; padding:24px 60px; box-sizing: border-box; position: relative;}
 .rawArea > .FAQArea ul li button::before{content: 'Q'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 10px; top: 24px;}
 
-.rawArea > .IntroduceArea{}
 .rawArea > .IntroduceArea ul{display: flex; justify-content: space-between;}
 .rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); position: relative;}
 .rawArea > .IntroduceArea ul li a{font-size: 24px; color: white; font-weight: 500;  position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
@@ -220,36 +216,57 @@
 
 
 /* R&D - 센터 */
-.centerArea ul{display: flex; justify-content: space-between; padding-top: 490px; background: url('../images/R&D_centerImg.png') no-repeat top center / 100%;}
-.centerArea ul li{width: 225px; text-align: center; line-height: 29px;}
-.centerArea ul li::before{content: ''; display: block; width: 100%; height: 225px; border-radius: 100%; background-color: #efefef; background-repeat: no-repeat; background-position: center; margin-bottom: 45px;}
-.centerArea ul li:nth-child(1):before{background-image: url('../images/R&D_centerIcon01.png');}
-.centerArea ul li:nth-child(2):before{background-image: url('../images/R&D_centerIcon02.png');}
-.centerArea ul li:nth-child(3):before{background-image: url('../images/R&D_centerIcon03.png');}
-.centerArea ul li:nth-child(4):before{background-image: url('../images/R&D_centerIcon04.png');}
-.centerArea ul li strong{ padding: 0 5%; margin-bottom: 30px;}
+.RnDArea .centerArea ul{display: flex; justify-content: space-between; padding-top: 490px; background: url('../images/R&D_centerImg.png') no-repeat top center / 100%;}
+.RnDArea .centerArea ul li{width: 225px; text-align: center; line-height: 29px;}
+.RnDArea .centerArea ul li::before{content: ''; display: block; width: 100%; height: 225px; border-radius: 100%; background-color: #efefef; background-repeat: no-repeat; background-position: center; margin-bottom: 45px;}
+.RnDArea .centerArea ul li:nth-child(1):before{background-image: url('../images/R&D_centerIcon01.png');}
+.RnDArea .centerArea ul li:nth-child(2):before{background-image: url('../images/R&D_centerIcon02.png');}
+.RnDArea .centerArea ul li:nth-child(3):before{background-image: url('../images/R&D_centerIcon03.png');}
+.RnDArea .centerArea ul li:nth-child(4):before{background-image: url('../images/R&D_centerIcon04.png');}
+.RnDArea .centerArea ul li strong{ padding: 0 5%; margin-bottom: 30px;}
 
-.centerArea div div figure{display: flex; align-items: flex-start;}
-.centerArea div div figure:not(:last-of-type){margin-bottom: 135px;}
-.centerArea div div figure img{width: 328px; margin-right: 8.3%;}
-.centerArea div div figure figcaption{font-size: 22px;}
-.centerArea div div figure figcaption b{display: block;  /* font-weight: 500; */ margin-bottom: 40px;}
-.centerArea div div figure figcaption p{/* font-weight: 300;  */line-height: 36px;}
+.RnDArea .centerArea div div figure{display: flex; align-items: flex-start;}
+.RnDArea .centerArea div div figure:not(:last-of-type){margin-bottom: 135px;}
+.RnDArea .centerArea div div figure img{width: 328px; margin-right: 8.3%;}
+.RnDArea .centerArea div div figure figcaption{font-size: 22px;}
+.RnDArea .centerArea div div figure figcaption b{margin-bottom: 40px;}
+.RnDArea .centerArea div div figure figcaption p{line-height: 36px;}
+
+
+/* R&D - 연구성과 */
+.RnDArea .resultArea .patentArea > div{position: relative;}
+.RnDArea .resultArea .patentArea > div img{width: 100%; margin-bottom: 20px;}
+.RnDArea .resultArea .patentArea > div .swiper-wrapper{padding-bottom: 80px;}
+.RnDArea .resultArea .patentArea > div b{text-align: center;}
+.RnDArea .resultArea .patentArea > div [class *= 'swiper-button']{color: black;}
+.RnDArea .resultArea .patentArea > div .swiper-button-prev{left: -77px;}
+.RnDArea .resultArea .patentArea > div .swiper-button-next{right: -77px;}
+.RnDArea .resultArea .patentArea > div .swiper-pagination-progressbar{bottom: 0; top: auto; height: 20px; background-color: #e5e5e5;}
+.RnDArea .resultArea .patentArea > div .swiper-pagination-progressbar span{background-color: #b7b7b7;}
+
+.RnDArea .resultArea .boardArea ul li{font-size: 22px; font-weight: 300; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, 0.4);}
+.RnDArea .resultArea .boardArea ul li:first-child{border-top: 2px solid black;}
+.RnDArea .resultArea .boardArea ul li > *{display: flex; justify-content: space-between; align-items: center;}
+.RnDArea .resultArea .boardArea ul li > * > *:nth-child(1){width: 670px; padding: 23px 40px; box-sizing: border-box;}
+.RnDArea .resultArea .boardArea ul li > * > *:nth-child(2){width: 300px;}
+.RnDArea .resultArea .boardArea ul li > * > strong, 
+.RnDArea .resultArea .boardArea ul li > * > p{font-size: 22px; font-weight: 500; line-height: 27px;}
+.RnDArea .resultArea .boardArea ul li > * > p{text-align: left;}
+
 
 /* R&D - 시험분석장비 */
-.equipmentArea{}
-.equipmentArea > ul li:not(:last-child){margin-bottom: 60px;}
-.equipmentArea > ul li figure{display: flex;}
-.equipmentArea > ul li figure > *{flex: 1;}
-.equipmentArea > ul li:nth-child(2n + 1) figure figcaption{padding: 30px 5%;}
-.equipmentArea > ul li:nth-child(2n) figure img{order: 1;}
-.equipmentArea > ul li:nth-child(2n) figure figcaption{padding: 60px 0;}
-.equipmentArea > ul li figure figcaption strong{line-height: 28px; margin-bottom: 25px;}
+.RnDArea .equipmentArea > ul li:not(:last-child){margin-bottom: 60px;}
+.RnDArea .equipmentArea > ul li figure{display: flex;}
+.RnDArea .equipmentArea > ul li figure > *{flex: 1;}
+.RnDArea .equipmentArea > ul li:nth-child(2n + 1) figure figcaption{padding: 30px 5%;}
+.RnDArea .equipmentArea > ul li:nth-child(2n) figure img{order: 1;}
+.RnDArea .equipmentArea > ul li:nth-child(2n) figure figcaption{padding: 60px 0;}
+.RnDArea .equipmentArea > ul li figure figcaption strong{line-height: 28px; margin-bottom: 25px;}
 
-.equipmentArea div div ul{display: flex; flex-wrap: wrap;}
-.equipmentArea div div ul li{width: 50%; display: flex; align-items: center; font-size: 22px; font-weight: 300;}
-.equipmentArea div div ul li::before{content: ''; width: 5px; height: 5px; background-color: black; border-radius: 100%; margin-right: 3.5%;}
-.equipmentArea div div ul li:not(:nth-child(-n + 2)){margin-top: 40px;}
+.RnDArea .equipmentArea div div ul{display: flex; flex-wrap: wrap;}
+.RnDArea .equipmentArea div div ul li{width: 50%; display: flex; align-items: center; font-size: 22px; font-weight: 300;}
+.RnDArea .equipmentArea div div ul li::before{content: ''; width: 5px; height: 5px; background-color: black; border-radius: 100%; margin-right: 3.5%;}
+.RnDArea .equipmentArea div div ul li:not(:nth-child(-n + 2)){margin-top: 40px;}
 
 
 
@@ -262,7 +279,7 @@
 .hireArea .talentArea ol li strong{font-size: 36px; font-weight: 700; padding-top: 35px; margin-bottom: 30px; position: relative;}
 .hireArea .talentArea ol li strong::first-letter{color: #8fcc00;}
 .hireArea .talentArea ol li strong::after{content: '';  width: 21px; height: 3px; background-color: black; position: absolute; top: 0; left: calc(50% - 10.5px);}
-.hireArea .talentArea ol li p{font-size: 22px; font-weight: 300; line-height: 36px; max-width: 210px;}
+.hireArea .talentArea ol li p{line-height: 36px; max-width: 210px;}
 .hireArea .talentArea h4{font-size: 44px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
  
 

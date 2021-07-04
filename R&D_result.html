@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연구성과 - R&D</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/swiper.min.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/import.css">
+    <script>
+        $(document).ready(function(){
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -37,20 +59,115 @@
             <div class="width1200 subTitle">
                 <h3>연구성과</h3>
             </div>
-            <strong>특허</strong>
-            <div class="subContents aurArea">
-                <div>
+            <div class="subContents resultArea">
+                <div class="width1200 patentArea">
                     <h4>특허</h4>
+                    <div>
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
+                                    <b>복합매트 제조장치</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
+                                    <b>복합매트 제조장치</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
+                                    <b>다층구조의 자동차용 천정재</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
+                                    <b>자동차용 천정재</b>
+                                </div>
+                              
+                                
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
+                                    <b>복합매트 제조장치</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
+                                    <b>복합매트 제조장치</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
+                                    <b>다층구조의 자동차용 천정재</b>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
+                                    <b>자동차용 천정재</b>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
-                <div class="">
+                <div class="width1200 boardArea">
                     <h4>정부과제</h4>
                     <ul>
                         <li>
-                            <strong>과제명</strong>
-                            <strong>기관</strong>
+                            <div>
+                                <strong>과제명</strong>
+                                <strong>기관</strong>
+                            </div>
                         </li>
                         <li>
-                            <a href="#"></a>
+                            <a href="#">
+                                <p>
+                                    고강성 및 고흡음성의 천연섬유를 이용한 자동차 언더바디 쉴드용<br/>
+                                    섬유강화복합소재 개발
+                                </p>
+                                <span>한국섬유소재연구원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    자원순환형 소재 기반 경량성 20% 이상을 갖는 전기차용 <br/>
+                                    노출형 도어트림 개발
+                                </p>
+                                <span>중소벤처기업부</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    리사이클 PET 소재를 이용한 30% 이상 경량성을 갖는<br/>
+                                    전기차용 Texturing Door trim 개발 
+                                </p>
+                                <span>자동차융합기술원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    PET섬유를 이용한 흡음/난연 성능을 갖는<br/>
+                                    자동차 엔진커버용 경량 복합보드 개발
+                                </p>
+                                <span>중소벤처기업부</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    천연섬유강화복합소재를 이용한 자동차 외장재용<br/>
+                                    1,100g/m2급 경량 Underbody Sheild 개발
+                                </p>
+                                <span>중소벤처기업부</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    나노/바이오 하이브리드 복합소재를 이용한<br/>
+                                    헤드라이너 & 패키지트레이 개발
+                                </p>
+                                <span>과학기술정보통신부</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
