@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시험분석장비 - R&D</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/import.css">
+    <script>
+        $(document).ready(function(){
+            console.log($('.RnDArea').find('.BGColor').length);
+            if($('.RnDArea').find('.BGColor').length){
+                $('.subPage section').css('padding-bottom','0')
+            }
+        })
+    </script>
 </head>
 <body>
     <header>
