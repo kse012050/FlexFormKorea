@@ -2,6 +2,8 @@ $(document).ready(function(){
     history.scrollRestoration = "manual";
     mainScrollEvnet();
     mainScrollListClick();
+
+    tab();
 });
 
 function mainScrollEvnet(){
@@ -67,4 +69,15 @@ function mainScrollAnimate(offsetTop){
 function mainScrollList(idx){
     $('.mainScrollNavArea ul li').removeClass('active');
     $('.mainScrollNavArea ul li').eq(idx).addClass('active');
+}
+
+
+function tab(){
+    var tabInd;
+    $('.tabArea .tabBtn > li a').click(function(e){
+        e.preventDefault();
+        tabInd = $(this).parent().index();
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('.tabArea .tabContents > *').eq(tabInd).addClass('active').siblings().removeClass('active');
+    })
 }
