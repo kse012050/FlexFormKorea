@@ -205,8 +205,12 @@
 
 .rawArea > .FAQArea ul li{border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
 .rawArea > .FAQArea ul li:first-child{border-top: 1px solid rgba(0, 0, 0, 0.2);}
-.rawArea > .FAQArea ul li button{font-size: 22px; font-weight: 500; text-align: left; width: 100%; padding:24px 60px; box-sizing: border-box; position: relative;}
+.rawArea > .FAQArea ul li button{font-size: 22px; font-weight: 500; text-align: left; width: 100%; padding:24px 60px; box-sizing: border-box; position: relative; cursor: pointer;}
 .rawArea > .FAQArea ul li button::before{content: 'Q'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 10px; top: 24px;}
+.rawArea > .FAQArea ul li > div{display: none; padding: 24px 120px; position: relative;}
+.rawArea > .FAQArea ul li > div::before{content: 'A'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 70px; top: 30px;}
+.rawArea > .FAQArea ul li > div.active{display: block;}
+.rawArea > .FAQArea ul li > div p{ line-height: 34px;}
 
 .rawArea > .IntroduceArea ul{display: flex; justify-content: space-between;}
 .rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); position: relative;}
