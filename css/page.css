@@ -102,6 +102,7 @@
 /* 서브 페이지 - 제품 소개 공통 */
 .productArea .subPageTitle{background-image: url('../images/productBG.png');}
 .productArea .subPageTitle{height: 100vh;}
+.productArea img{width: 100%;}
 
 /* 서브 페이지 - R&D 공통 */
 .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
@@ -123,6 +124,7 @@
 .aboutUsArea .aurArea ul li > p{font-size: 22px; font-weight: 300; line-height: 36px;}
 .aboutUsArea .aurArea ul li:not(:last-child){margin-bottom: 80px;}
 
+
 /* 회사 소개 - 기업현황 */
 .aboutUsArea .statusArea{padding: 180px 0; background: url('../images/aboutUs_statusBG.png') no-repeat center / cover;}
 .aboutUsArea .statusArea ul{display: flex; justify-content: space-between; text-align: center;}
@@ -135,6 +137,7 @@
 .aboutUsArea .statusArea ul li::before{content: ''; display: block; width: 20px; height: 3px; background-color: #8fcc00; margin: 0 auto 30px;} 
 .aboutUsArea .statusArea ul li strong{font-size: 22px; font-weight: 700; display: block; margin-bottom: 12px;}
 .aboutUsArea .statusArea ul li p{font-size: 22px; font-weight: 300; line-height: 36px;}
+
 
 /* 회사 소개 - 사업장 */
 .locationArea figure::after{content: ''; display: block; visibility: hidden; clear: both;}
@@ -154,3 +157,55 @@
 .locationArea figure figcaption ul li dl dt{font-weight: 400; width: 100px; border-right: 1px solid #b7b7b7; margin-right: 20px;}
 .locationArea figure figcaption ul li dl dd{width: calc(100% - 100px);}
 .locationArea figure figcaption ul li dl:not(:last-child) dt{padding-bottom: 10px;}
+
+
+/* 제품 소개 - 응용분야 , raw 공통 레이아웃 */
+.productArea .layoutCase01{padding-top: 65px;}
+.productArea .layoutCase01 li{ position: relative;}
+.productArea .layoutCase01 li:not(:last-child){margin-bottom: 150px;}
+.productArea .layoutCase01 li::before{content: ''; position: absolute; top: -65px; width: calc(50% - 40px); height: 100%;  background-repeat: no-repeat; background-position: center; background-size: cover;}
+.productArea .layoutCase01 li:nth-child(2n + 1):before{left: 0;}
+.productArea .layoutCase01 li:nth-child(2n):before{right: 0;}
+.productArea .layoutCase01 li > div{height: 100%;}
+.productArea .layoutCase01 li > div > div{width: 93%; height: 100%;; background-color: #ededed;}
+.productArea .layoutCase01 li:nth-child(2n + 1) > div > div{margin-left: auto;}
+.productArea .layoutCase01 li > div > div div{width: 54%; padding: 70px 40px; box-sizing: border-box;}
+.productArea .layoutCase01 li:nth-child(2n + 1) > div > div div{margin-left: auto;}
+.productArea .layoutCase01 li > div > div div strong{display: block; font-size: 38px; font-weight: 700; margin-bottom: 35px;}
+.productArea .layoutCase01 li > div > div div p{font-size: 22px; line-height: 34px; margin-bottom: 60px;}
+
+
+/* 제품 소개 - 응용분야 */
+.productArea .applicationsArea .layoutCase01 li{height: 385px}
+.productArea .applicationsArea .layoutCase01 li:nth-child(1):before{background-image: url('../images/product_applicationsImg01.png');}
+.productArea .applicationsArea .layoutCase01 li:nth-child(2):before{background-image: url('../images/product_applicationsImg02.png');}
+.productArea .applicationsArea .layoutCase01 li:nth-child(3):before{background-image: url('../images/product_applicationsImg03.png');}
+.productArea .applicationsArea .layoutCase01 li:nth-child(4):before{background-image: url('../images/product_applicationsImg04.png');}
+.productArea .applicationsArea .layoutCase01 li > div > div div p{font-weight: 300;}
+
+
+/* 제품 소개 - raw */
+.productArea .rawArea > *:not(:last-child){margin-bottom: 110px;}
+.productArea .rawArea .layoutCase01 li{height: 525px;}
+.productArea .rawArea .layoutCase01 li:nth-child(1):before{background-image: url('../images/product_rawImg01.png');}
+.productArea .rawArea .layoutCase01 li:nth-child(2):before{background-image: url('../images/product_rawImg02.png');}
+.productArea .rawArea .layoutCase01 li:nth-child(3):before{background-image: url('../images/product_rawImg03.png');}
+.productArea .rawArea .layoutCase01 li > div > div div::after{content: ''; display: block; clear: both;}
+.productArea .rawArea .layoutCase01 li > div > div div p{font-weight: 500;}
+.productArea .rawArea .layoutCase01 li > div > div div > span{float: left; width: 50%; font-size: 22px; font-weight: 300;}
+.productArea .rawArea .layoutCase01 li > div > div div > span span{display: inline-block; padding-bottom: 10px; border-bottom: 1px solid black;}
+.productArea .rawArea .layoutCase01 li > div > div div > span:not(:nth-of-type(-n + 2)){margin-top: 30px;}
+
+/* 제품 소개 - raw 공통*/
+.rawArea > div h4{font-size: 38px; font-weight: 700; margin-bottom: 50px;}
+
+.rawArea > .FAQArea ul li{border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+.rawArea > .FAQArea ul li:first-child{border-top: 1px solid rgba(0, 0, 0, 0.2);}
+.rawArea > .FAQArea ul li button{font-size: 22px; font-weight: 500; text-align: left; width: 100%; padding:24px 60px; box-sizing: border-box; position: relative;}
+.rawArea > .FAQArea ul li button::before{content: 'Q'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 10px; top: 24px;}
+
+.rawArea > .IntroduceArea{}
+.rawArea > .IntroduceArea ul{display: flex; justify-content: space-between;}
+.rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); position: relative;}
+.rawArea > .IntroduceArea ul li a{font-size: 24px; color: white; font-weight: 500;  position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.rawArea > .IntroduceArea ul li a span{font-family: 'Material Icons'; width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
