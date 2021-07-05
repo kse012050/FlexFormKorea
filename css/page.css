@@ -169,6 +169,7 @@
 .locationArea figure figcaption ul li dl:not(:last-child) dt{padding-bottom: 10px;}
 
 
+
 /* 제품 소개 - 응용분야 , raw 공통 레이아웃 */
 .productArea .layoutCase01{padding-top: 65px;}
 .productArea .layoutCase01 li{ position: relative;}
@@ -184,6 +185,20 @@
 .productArea .layoutCase01 li > div > div div strong{display: block; font-size: 38px; font-weight: 700; margin-bottom: 35px;}
 .productArea .layoutCase01 li > div > div div p{font-size: 22px; line-height: 34px; margin-bottom: 60px;}
 
+
+/* 제품 소개 - 복합소재란? */
+.productArea .compositeArea a{display: block;}
+.productArea .compositeArea a img{width: 100%;}
+
+.productArea .compositeArea .advantageArea{}
+.productArea .compositeArea .advantageArea h4{}
+.productArea .compositeArea .advantageArea ol{/* max-width: 960px; margin: 0 auto;  */display: flex; flex-wrap: wrap;}
+.productArea .compositeArea .advantageArea ol li{width: 50%; counter-increment: advantageCounter; padding: 0 110px; box-sizing: border-box;}
+.productArea .compositeArea .advantageArea ol li:not(:nth-last-child(-n + 2)){margin-bottom: 115px;}
+.productArea .compositeArea .advantageArea ol li strong{display: flex; align-items: center; margin-bottom: 35px;}
+.productArea .compositeArea .advantageArea ol li strong::before{content: '0' counter(advantageCounter) '.'; font-size: 30px; font-weight: 900; color: #8fcc00; font-family: 'NanumSquare', sans-serif; margin-right: 10px;}
+.productArea .compositeArea .advantageArea ol li p{font-size: 22px; line-height: 36px; padding-top: 30px; position: relative;}
+.productArea .compositeArea .advantageArea ol li p::before{content: ''; position: absolute; left: 0; top: 0; width: 21px; height: 3px; background-color: black;}
 
 /* 제품 소개 - 응용분야 */
 .productArea .applicationsArea .layoutCase01 li{height: 385px}
