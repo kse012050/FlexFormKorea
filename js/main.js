@@ -4,6 +4,14 @@ $(document).ready(function(){
     mainScrollListClick();
 
     tab();
+
+    if($(window).width() < 1280){
+        mobileMenu();
+    }
+
+    $(window).resize(function(){
+        
+    })
 });
 
 function mainScrollEvnet(){
@@ -26,7 +34,7 @@ function mainScrollEvnet(){
                 $prevBoolean = $(this).prev().children().attr('data-event') == 'scroll';
                 if($('.scrollArea').scrollTop() == 0 && $prevBoolean){
                     $scrollTop = $('[data-event="scroll"]').last().offset().top;
-                    $('header').addClass('active');
+                    $('header').addClass('scrollMenu');
                     // $('.mainBGArea > div').fadeIn();
                     // $('.scrollIcon').fadeIn();
                     $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeIn();
@@ -46,7 +54,7 @@ function mainScrollEvnet(){
                     $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeOut();
                     // $('.mainBGArea > div').fadeOut();
                     // $('.scrollIcon').fadeOut();
-                    $('header').removeClass('active');
+                    $('header').removeClass('scrollMenu');
                 }else{
                 }
             }
@@ -69,6 +77,17 @@ function mainScrollAnimate(offsetTop){
 function mainScrollList(idx){
     $('.mainScrollNavArea ul li').removeClass('active');
     $('.mainScrollNavArea ul li').eq(idx).addClass('active');
+}
+
+function mobileMenu(){
+    $('.M_menuBtn').click(function(){
+        $('header').toggleClass('active');
+        $('header > div nav').fadeToggle();
+    })
+    $('header > div nav > ul > li > a').click(function(e){
+        e.preventDefault();
+        $(this).next().slideToggle();
+    })
 }
 
 

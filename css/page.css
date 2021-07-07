@@ -190,8 +190,6 @@
 .productArea .compositeArea a{display: block;}
 .productArea .compositeArea a img{width: 100%;}
 
-.productArea .compositeArea .advantageArea{}
-.productArea .compositeArea .advantageArea h4{}
 .productArea .compositeArea .advantageArea ol{/* max-width: 960px; margin: 0 auto;  */display: flex; flex-wrap: wrap;}
 .productArea .compositeArea .advantageArea ol li{width: 50%; counter-increment: advantageCounter; padding: 0 110px; box-sizing: border-box;}
 .productArea .compositeArea .advantageArea ol li:not(:nth-last-child(-n + 2)){margin-bottom: 115px;}
