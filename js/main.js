@@ -5,13 +5,11 @@ $(document).ready(function(){
 
     tab();
 
-    if($(window).width() < 1280){
-        mobileMenu();
-    }
+    
+    mobileMenu();
 
-    $(window).resize(function(){
-        
-    })
+
+    
 });
 
 function mainScrollEvnet(){
@@ -81,12 +79,27 @@ function mainScrollList(idx){
 
 function mobileMenu(){
     $('.M_menuBtn').click(function(){
-        $('header').toggleClass('active');
-        $('header > div nav').fadeToggle();
+        if($(window).width() < 1280){
+            $('header').toggleClass('active');
+            $('header > div nav').fadeToggle();
+        }
     })
     $('header > div nav > ul > li > a').click(function(e){
-        e.preventDefault();
-        $(this).next().slideToggle();
+        if($(window).width() < 1280){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $(this).next().slideToggle();
+        }
+    })
+
+    $(window).resize(function(){
+        if($(window).width() > 1280){
+            $('header > div nav').show();
+            $('header > div nav > ul > li > ul').hide();
+        }else{
+            $('header').removeClass('active');
+            $('header > div nav').hide();
+        }
     })
 }
 
