@@ -133,7 +133,7 @@
     .subPage .subPageTitle{padding: 200px 0; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; background-repeat: no-repeat; background-position: center; background-size: cover; box-sizing: border-box;}
     .subPage .subPageTitle h2{font-size: 50px; font-weight: 700;}
     .subPage .subPageTitle h2 b{display: block; font-size: 28px; margin-bottom: 40px;}
-    .subPage .subPageTitle p{font-size: 24px; font-weight: 300; line-height: 48px; margin-top: 90px;}
+    .subPage .subPageTitle p{font-size: 24px; font-weight: 300; line-height: 48px; max-width: 860px; width: calc(100% - 60px); margin-top: 90px;}
     .subPage .subMenuArea ul{display: flex; justify-content: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
     .subPage .subMenuArea ul li{margin: 0 50px;}
     .subPage .subMenuArea ul li a{display: block; font-size: 30px; font-weight: 700;  opacity: 0.5; padding: 35px 0; position: relative;}
