@@ -8,18 +8,51 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body class="scrollPage">
-    <header class="active">
+    <header class="scrollMenu">
         <div class="width1760">
             <h1><a href="index.html">FlexForm Korea LOGO</a></h1>
+            <div class="M_menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="aboutUs_our.html">회사소개</a></li>
-                    <li class="active"><a href="product_composite.html.html">제품소개</a></li>
-                    <li><a href="R&D_center.html">R&D</a></li>
-                    <li><a href="hire_talent.html">인재채용</a></li>
+                    <li><a href="aboutUs_our.html">회사소개<span class="material-icons">expand_more</span></a>
+                        <ul>
+                            <li><a href="aboutUs_our.html">Our value</a></li>
+                            <li><a href="aboutUs_status.html">기업현황</a></li>
+                            <li><a href="aboutUs_location.html">사업장</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="product_composite.html">제품소개<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="product_composite.html">복합소재란?</a></li>
+                            <li><a href="product_raw.html">Raw material</a></li>
+                            <li class="active"><a href="product_car.html">자동차분야</a></li>
+                            <li><a href="product_architecture.html">건출분야</a></li>
+                            <li><a href="product_applications.html">응용분야</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="R&D_center.html">R&D<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="R&D_center.html">R&D센터</a></li>
+                            <li><a href="R&D_equipment.html">시험분석장비</a></li>
+                            <li><a href="R&D_result.html">연구성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hire_talent.html">인재채용<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="hire_talent.html">인재상</a></li>
+                            <li><a href="hire_duty.html">직무소개</a></li>
+                            <li><a href="hire_info.html">채용정보</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -40,19 +73,71 @@
             <div class="scrollIcon">SCROLL</div>
         </div>
         <div class="scrollArea">
-            <ul class="subMenuArea">
-                <li><a href="product_composite.html">복합소재란?</a></li>
-                <li><a href="product_raw.html">Raw material</a></li>
-                <li class="active"><a href="product_car.html">자동차분야</a></li>
-                <li><a href="product_architecture.html">건축분야</a></li>
-                <li><a href="product_applications.html">응용분야</a></li>
-            </ul>
+            <div class="subMenuArea">
+                <ul>
+                    <li><a href="product_composite.html">복합소재란?</a></li>
+                    <li><a href="product_raw.html">Raw material</a></li>
+                    <li class="active"><a href="product_car.html">자동차분야</a></li>
+                    <li><a href="product_architecture.html">건축분야</a></li>
+                    <li><a href="product_applications.html">응용분야</a></li>
+                </ul>
+            </div>
             <section>
                 <div class="width1200 subTitle">
                     <h3>자동차분야</h3>
                 </div>
-                <div class="width1200 subContents">
-                    <img src="images/product_carImg.png" alt="자동차 분야 이미지">
+                <div class="subContents carArea">
+                    <!-- <img src="images/product_carImg.png" alt="자동차 분야 이미지"> -->
+                    <ol class="width1200">
+                        <li>
+                            <strong>Head liner</strong>
+                            <p>GM Korea, Malibu</p>
+                            <p>SOP : Nov. 2011 / Molding : 세일인텍</p>
+                            <p>GM Chevy Volt / SOP : Nov. 2010</p>
+                            <p>Molding : Magna Howell / GM Cadilla SRX</p>
+                            <p>SOP : Apr. 2009 / Molding : DK in Mexico </p>
+                        </li>
+                        <li>
+                            <strong>Engine Cover</strong>
+                            <p>1000GSM중량 PET Engine cover </p>
+                            <p>흡음재 개발 진행 중</p>
+                        </li>
+                        <li>
+                            <strong>Door Trim</strong>
+                            <p>KIA Motors, All New K7 / </p>
+                            <p>SOP : Jan. 2016 ~ / </p>
+                            <p>Molding : KAISFCA Jeep, Renegade / </p>
+                            <p>SOP : Apr. 2016 ~ / Molding : SA Automotive</p>
+                        </li>
+                        <li>
+                            <strong>Underbody shield</strong>
+                            <p>Toyota 1차 협력사와 PET UBS </p>
+                            <p>개발 진행중</p>
+                            <p>2024년 Toyota 흡음기준 만족 </p>
+                        </li>
+                        <li>
+                            <strong>Package Tray</strong>
+                            <p>Toyota, Corolla / SOP : Sep, 2019 / </p>
+                            <p>Molding : VuteqChevrolet (GM Korea), </p>
+                            <p>Malibu / SOP : Jul. 2011 / </p>
+                            <p>Molding : Seilintech, Korea</p>
+                        </li>
+                        <li>
+                            <strong>Trunk Trim</strong>
+                            <p>Mercedes Benz GLE (SUV) / </p>
+                            <p>SOP : Jan. 2019 / </p>
+                            <p>Molding : Grupo Antolin </p>
+                            <p>Mercedes Benz GLS (SUV) / </p>
+                            <p>SOP : Apr. 2019 / Molding : Grupo Antolin</p>
+                        </li>
+                        <li>
+                            <strong>Luggage Cover</strong>
+                            <p>쌍용 Korando C / SOP : Feb. 2019 / </p>
+                            <p>Molding: Ashimori Korea쌍용 티볼리 / </p>
+                            <p>SOP : Nov. 2020 / </p>
+                            <p>Molding: Ashimori Korea</p>
+                        </li>
+                    </ol>
                 </div>
             </section>
             <footer>

@@ -299,8 +299,11 @@
     .productArea .rawArea > .IntroduceArea ul li a span{width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
 
 
+    /* 제품 소개 - 자동차분야 */
+    .productArea .carArea ol{height: 0; overflow: hidden; padding-top: 725px; background: url('../images/product_carImg.png') no-repeat center / cover;}
+
+
     /* 제품 소개 - 건축분야 */
-    .productArea .architectureArea{}
     .productArea .architectureArea ol{height: 0; overflow: hidden; padding-top: 1055px; background: url('../images/product_architectureImg.png') no-repeat center / cover;}
 
 

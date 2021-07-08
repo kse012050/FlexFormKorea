@@ -143,6 +143,24 @@
     .productArea .rawArea > .IntroduceArea ul li a span{width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
 
 
+    /* 제품 소개 - 자동차분야 */
+    .productArea .carArea{max-width: 768px; margin: 0 auto;}
+    .productArea .carArea ol{ padding-top: 45%; background: url('../images/M/M_product_carImg.png') no-repeat center top/ 100%;}
+    .productArea .carArea ol li{ counter-increment: carCounter; padding: 60px 0; position: relative; }
+    .productArea .carArea ol li::after{content: ''; position: absolute; right: -25px; top: 50px; width: 238px; height: 204px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+    .productArea .carArea ol li:nth-child(1)::after{background-image: url('../images/M/M_product_carImg01.png');}
+    .productArea .carArea ol li:nth-child(2)::after{background-image: url('../images/M/M_product_carImg02.png');}
+    .productArea .carArea ol li:nth-child(3)::after{background-image: url('../images/M/M_product_carImg03.png');}
+    .productArea .carArea ol li:nth-child(4)::after{background-image: url('../images/M/M_product_carImg04.png');}
+    .productArea .carArea ol li:nth-child(5)::after{background-image: url('../images/M/M_product_carImg05.png');}
+    .productArea .carArea ol li:nth-child(6)::after{background-image: url('../images/M/M_product_carImg06.png');}
+    .productArea .carArea ol li:nth-child(7)::after{background-image: url('../images/M/M_product_carImg07.png');}
+    .productArea .carArea ol li:not(:last-child){border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+    .productArea .carArea ol li::before{content:'0' counter(carCounter); display: block; font-size: 25px; font-weight: 700; color: #8fcc00; margin-bottom: 15px; letter-spacing: -2px;}
+    .productArea .carArea ol li strong{font-size: 26px; font-weight: 900; margin-bottom: 15px;}
+    .productArea .carArea ol li P{font-size: 20px; font-weight: 400; line-height: 28px;}
+
+
     /* 제품 소개 - 건축분야 */
     .productArea .architectureArea{max-width: 768px; margin: 0 auto;}
     .productArea .architectureArea ol{ padding-top: 45%; background: url('../images/M/M_product_architectureImg.png') no-repeat center top/ 100%; display: flex; flex-wrap: wrap; justify-content: space-between;}
