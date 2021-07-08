@@ -10,17 +10,13 @@
 .width1200{max-width: 1200px;}
 .scrollPage{overflow: hidden;}
 
-header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
-header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
-header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
-@media screen and (max-width:767px) {
-    /* header{display: none;} */
-}
 
-@media screen and (min-width:768px) and (max-width:1279px) {
+@media screen/*  and (min-width:768px) */ and (max-width:1279px) {
     /* 해더 */
-    header{height: 100px;}
-    header > div h1 a{display: block; height: 100%;}
+    header{height: 100px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
+    header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+    header > div h1 a{display: block; height: 100%; }
     header > div .M_menuBtn{width: 45px; cursor: pointer;}
     header > div .M_menuBtn span{display: block;  height: 3px; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
     header > div .M_menuBtn span:not(:last-child){margin-bottom: 12px;}
@@ -49,14 +45,13 @@ header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-ima
     footer div h2{max-width: 236px; margin-bottom: 100px;}
     footer div h2 img{width: 100%;}
     footer div > ul{position: absolute; right: 0; top: 0; display: flex;}
-    footer div > ul li:not(:last-child){margin-right: 30px;}
-    footer div > ul li a{font-size: 16px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
+    footer div > ul li:not(:last-child){margin-right: 35px;}
+    footer div > ul li a{font-size: 20px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
     footer div address{font-style: normal; margin-bottom: 30px;}
-    footer div address ul{display: flex; flex-wrap: wrap; max-width: 880px;}
-    footer div address ul li{font-size: 17px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
-    footer div address ul li:not(:nth-last-child(-n + 2)){margin-right: 15px;}
-    footer div address ul li:not(:last-child){margin-bottom: 15px;}
-    footer div p{font-style: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.3);}
+    footer div address ul{display: flex; flex-direction: column;}
+    footer div address ul li{font-size: 21px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    footer div address ul li:not(:last-child){margin-bottom: 10px;}
+    footer div p{font-size: 17px; font-weight: 400; color: rgba(255, 255, 255, 0.3);}
 }
 
 
@@ -64,7 +59,8 @@ header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-ima
 @media screen and (min-width:1280px) {
  
     /* 해더 */
-    header{height: 120px;}
+    header{height: 120px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
     header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
     header > div h1 a{display: block; height: 100%;}
     header > div .M_menuBtn{display: none;}
@@ -91,6 +87,6 @@ header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-ima
     footer div address ul li{font-size: 17px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
     footer div address ul li:not(:nth-last-child(-n + 2)){margin-right: 15px;}
     footer div address ul li:not(:last-child){margin-bottom: 15px;}
-    footer div p{font-style: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.3);}
+    footer div p{font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.3);}
 }
 /* PC fin */
