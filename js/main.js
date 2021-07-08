@@ -7,9 +7,6 @@ $(document).ready(function(){
 
     
     mobileMenu();
-
-
-    
 });
 
 function mainScrollEvnet(){
@@ -87,10 +84,14 @@ function mobileMenu(){
     $('header > div nav > ul > li > a').click(function(e){
         if($(window).width() < 1280){
             e.preventDefault();
-            $(this).toggleClass('active');
+            $(this).parent().toggleClass('active');
             $(this).next().slideToggle();
         }
     })
+
+    if($('header > div nav > ul > li').hasClass('active')){
+        $(this).children('ul').slideToggle();
+    }
 
     $(window).resize(function(){
         if($(window).width() > 1280){
