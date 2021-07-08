@@ -2,6 +2,13 @@
     .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
     .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
 
+    /* 스크롤 페이지 */
+    .scrollArea{overflow-y: auto; height: 100vh;}
+    /* 제품 스크롤 */
+    .scrollPage .productArea{padding-top: 0;}
+    .productArea .scrollArea{ padding-top: 100px;}
+
+
     /* 메인 */
     .mainBGArea{color: white;}
     .mainBGArea section{height: 100vh; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center;}
@@ -56,7 +63,7 @@
     .subPage .contactLink::before{margin: 0;}
 
     /* 스크롤 페이지 */
-    /* .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;} */
+    .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
     /* 제품 스크롤 */
     .scrollPage .productArea{padding-top: 0;}
     .productArea .scrollArea{ padding-top: 120px;}
@@ -284,7 +291,10 @@
     .rawArea > .FAQArea ul li > div p{ line-height: 34px;}
 
     .rawArea > .IntroduceArea ul{display: flex; justify-content: space-between;}
-    .rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); position: relative;}
+    .rawArea > .IntroduceArea ul li{width: calc((100% - 2px) / 3); padding-bottom: calc((100% - 2px) / 3); background-repeat: no-repeat; background-size: cover; background-position: center; position: relative;}
+    .rawArea > .IntroduceArea ul li:nth-child(1){background-image: url('../images/product_rawIBG01.png');}
+    .rawArea > .IntroduceArea ul li:nth-child(2){background-image: url('../images/product_rawIBG02.png');}
+    .rawArea > .IntroduceArea ul li:nth-child(3){background-image: url('../images/product_rawIBG03.png');}
     .rawArea > .IntroduceArea ul li a{font-size: 24px; color: white; font-weight: 500;  position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     .rawArea > .IntroduceArea ul li a span{width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
 
