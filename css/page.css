@@ -5,7 +5,7 @@
 .subPage .contactLink::before{margin: 0;}
 
 /* 스크롤 페이지 */
-.scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
+/* .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;} */
 /* 제품 스크롤 */
 .scrollPage .productArea{padding-top: 0;}
 .productArea .scrollArea{ padding-top: 120px;}
@@ -13,7 +13,7 @@
 
 
 /* 메인 */
-.mainBGArea{color: white;}
+/* .mainBGArea{color: white;}
 .mainBGArea section{height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .mainBGArea section:nth-of-type(1){background-image: url('../images/mainBG_01.png');}
 .mainBGArea section:nth-of-type(2){background-image: url('../images/mainBG_02.png');}
@@ -64,7 +64,7 @@
 .mainMenuArea > div ul li:nth-child(5) a{background-image: url('../images/mainMenu_05.png');}
 .mainMenuArea > div ul li a *{display: block;}
 .mainMenuArea > div ul li a strong{ max-width: 215px; font-size: 43px; font-weight: 800; color: white; line-height: 48px;}
-.mainMenuArea > div ul li a strong small{font-size: 23px; font-weight: 300;}
+.mainMenuArea > div ul li a strong small{font-size: 23px; font-weight: 300;} */
 
 
 /* 서브 페이지 */

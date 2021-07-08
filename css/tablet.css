@@ -1,0 +1,23 @@
+@media screen and (max-width:1279px) {
+    .mainBGArea section h2{font-size: 62px; font-weight: 700; line-height: 73px; margin-bottom: 30px; letter-spacing: 10px; }
+    .mainBGArea section p{font-size: 28px; line-height: 30px;}
+    .mainBGArea section:first-of-type p{max-width: 450px;}
+    .mainBGArea section:last-of-type p{max-width: 500px;}
+    .scrollIcon{display: none;}
+
+    .mainBGArea .mainScrollNavArea{width: 350px; left: 0; bottom: 40px }
+    .mainBGArea .mainScrollNavArea ul li{font-size: 22px; display: inline-block;}
+    .mainBGArea .mainScrollNavArea ul li:not(:last-child){margin-bottom: 40px;}
+
+    .mainMenuArea > div{padding:120px 0;}
+    .mainMenuArea > div ul::after{content: ''; display: block; clear: both;}
+    .mainMenuArea > div ul li{float: left;}
+    .mainMenuArea > div ul li:not(:last-child){width: calc((100% - 10px) / 2); margin-bottom: 10px;}
+    .mainMenuArea > div ul li:nth-child(2n + 1){margin-right: 10px;}
+    .mainMenuArea > div ul li:nth-child(-n + 2){height: 550px;}
+    .mainMenuArea > div ul li:nth-child(n + 3):nth-child(-n + 4){height: 430px;}
+    .mainMenuArea > div ul li:last-child{height: 365px; width: 100%;}
+    .mainMenuArea > div ul li a{padding: 35px 30px;}
+    .mainMenuArea > div ul li a strong{ font-size: 45px; line-height: 54px;}
+    .mainMenuArea > div ul li a strong small{font-size: 26px; }
+}
