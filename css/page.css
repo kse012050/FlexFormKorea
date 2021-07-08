@@ -248,7 +248,7 @@
 
 
     /* 제품 소개 - 복합소재란? */
-    .productArea .compositeArea a{display: block;}
+    .productArea .compositeArea a{display: block; height: 588px; background: url('../images/product_compositeImg.png') no-repeat center / cover;}
     .productArea .compositeArea a img{width: 100%;}
 
     .productArea .compositeArea .advantageArea ol{/* max-width: 960px; margin: 0 auto;  */display: flex; flex-wrap: wrap;}
@@ -308,7 +308,8 @@
 
 
     /* R&D - 센터 */
-    .RnDArea .centerArea ul{display: flex; justify-content: space-between; padding-top: 490px; background: url('../images/R&D_centerImg.png') no-repeat top center / 100%;}
+    .RnDArea .centerArea ul{display: flex; justify-content: space-between; padding-top: 490px; position: relative;}
+    .RnDArea .centerArea ul::before{content: ''; display: block; width: 100%; position: absolute; left: 0; top: 0; width: 100%; height: 410px; background: url('../images/R&D_centerImg.png') no-repeat top center / 100%;}
     .RnDArea .centerArea ul li{width: 225px; text-align: center; line-height: 29px;}
     .RnDArea .centerArea ul li::before{content: ''; display: block; width: 100%; height: 225px; border-radius: 100%; background-color: #efefef; background-repeat: no-repeat; background-position: center; margin-bottom: 45px;}
     .RnDArea .centerArea ul li:nth-child(1):before{background-image: url('../images/R&D_centerIcon01.png');}

@@ -20,6 +20,7 @@
     .subPage section .subTitle{text-align: center; margin-bottom: 30px;}
     .subPage section .subTitle h3{font-size: 64px; font-weight: 700; margin-bottom: 80px;}
     .subPage section .subTitle p{font-size: 26px; font-weight: 500; line-height: 36px; margin-bottom: 30px;}
+    .subPage section .subTitle p br{display: none;}
     .subPage section .subTitle::after{content: '';display: block; width: 4px; height: 25px; background-color: black; transform: rotate(30deg); margin: 0 auto;}
     .subPage section > strong{display: block; font-size: 36px; font-weight: 700; text-align: center; margin:80px 0 50px;}
     .subPage.hireArea section > strong,
@@ -174,4 +175,58 @@
     .productArea .architectureArea ol li:nth-child(6)::before{background-image: url('../images/M/M_product_architectureImg06.png');}
     .productArea .architectureArea ol li::after{content:'0' counter(architectureCounter); position: absolute; left: 0; top: 0; font-size: 25px; font-weight: 500; color: rgba(0, 0, 0, 0.5); letter-spacing: -2px;}
     .productArea .architectureArea ol li:not(:nth-child(-n + 2)){margin-top: 80px;}
+
+
+    /* R&D - 센터 */
+    .RnDArea .centerArea ul{display: flex; flex-wrap: wrap; justify-content: space-between; padding-top: 490px; position: relative;}
+    .RnDArea .centerArea ul::before{content: ''; display: block; width: 100%; position: absolute; left: 0; top: 0; width: 100%; height: 410px; background: url('../images/R&D_centerImg.png') no-repeat top center / cover;}
+    .RnDArea .centerArea ul li:not(:nth-child(-n + 2)){margin-top: 80px;}
+    .RnDArea .centerArea ul li{width: calc((100% - 30px) / 2); text-align: center; line-height: 29px;}
+    .RnDArea .centerArea ul li::before{content: ''; display: block; max-width: 225px; height: 225px; border-radius: 100%; background-color: #efefef; background-repeat: no-repeat; background-position: center; margin:0 auto 45px;}
+    .RnDArea .centerArea ul li:nth-child(1):before{background-image: url('../images/R&D_centerIcon01.png');}
+    .RnDArea .centerArea ul li:nth-child(2):before{background-image: url('../images/R&D_centerIcon02.png');}
+    .RnDArea .centerArea ul li:nth-child(3):before{background-image: url('../images/R&D_centerIcon03.png');}
+    .RnDArea .centerArea ul li:nth-child(4):before{background-image: url('../images/R&D_centerIcon04.png');}
+    .RnDArea .centerArea ul li strong{ padding: 0 5%; margin-bottom: 30px;}
+
+    .RnDArea .centerArea div div figure{text-align: center;}
+    .RnDArea .centerArea div div figure:not(:last-of-type){margin-bottom: 135px;}
+    .RnDArea .centerArea div div figure img{width: 328px; margin-bottom: 40px;}
+    .RnDArea .centerArea div div figure figcaption{font-size: 22px;}
+    .RnDArea .centerArea div div figure figcaption b{margin-bottom: 40px;}
+    .RnDArea .centerArea div div figure figcaption p{line-height: 36px;}
+
+
+     /* R&D - 연구성과 */
+     .RnDArea .resultArea .patentArea.width1200{max-width: none; width: auto; background-color: #ededed; padding: 90px 0;}
+     .RnDArea .resultArea .patentArea > div{position: relative;  width: calc(100% - 120px); margin: 0 auto;}
+     .RnDArea .resultArea .patentArea > div img{width: 100%; margin-bottom: 20px;}
+     .RnDArea .resultArea .patentArea > div .swiper-wrapper{padding-bottom: 5px;}
+     .RnDArea .resultArea .patentArea > div b{text-align: center;}
+     .RnDArea .resultArea .patentArea > div [class *= 'swiper-button']{color: black;}
+     .RnDArea .resultArea .patentArea > div .swiper-button-prev{left: -55px;}
+     .RnDArea .resultArea .patentArea > div .swiper-button-next{right: -55px;}
+     .RnDArea .resultArea .patentArea > div .swiper-pagination-progressbar{display: none;}
+     .RnDArea .resultArea .patentArea > div .swiper-pagination-progressbar span{background-color: #b7b7b7;}
+     
+     .RnDArea .resultArea .boardArea.width1200{ width: calc(100% - 60px);}
+     .RnDArea .resultArea .boardArea ul{border-top: 2px solid black;}
+     .RnDArea .resultArea .boardArea ul li{font-size: 22px; font-weight: 300; border-bottom: 1px solid rgba(0, 0, 0, 0.4);}
+     .RnDArea .resultArea .boardArea ul li:first-child{display: none;}
+     .RnDArea .resultArea .boardArea ul li > *{padding: 40px 0; display: block;}
+     .RnDArea .resultArea .boardArea ul li > * > *:nth-child(1){font-size: 24px; font-weight: 700; line-height: 34px;  box-sizing: border-box; margin-bottom: 15px;}
+     .RnDArea .resultArea .boardArea ul li > * > *:nth-child(1) br{display: none;}
+     .RnDArea .resultArea .boardArea ul li > * > *:nth-child(2){font-size: 22px; color: rgba(0, 0, 0, 0.5); font-weight: 500;}
+ 
+
+     /* R&D - 시험분석장비 */
+    .RnDArea .equipmentArea > ul li:not(:last-child){margin-bottom: 60px;}
+    .RnDArea .equipmentArea > ul li figure figcaption{padding: 20px 0;}
+    .RnDArea .equipmentArea > ul li img{width: 100%;}
+    .RnDArea .equipmentArea > ul li figure figcaption strong{line-height: 28px; margin-bottom: 20px;}
+
+    .RnDArea .equipmentArea div div ul{}
+    .RnDArea .equipmentArea div div ul li{display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 300;}
+    /* .RnDArea .equipmentArea div div ul li::before{content: ''; width: 5px; height: 5px; background-color: black; border-radius: 100%; margin-right: 3.5%;} */
+    .RnDArea .equipmentArea div div ul li:not(:last-child){margin-bottom: 20px;}
 }
