@@ -84,6 +84,24 @@
     .aboutUsArea .statusArea ul li p{ font-weight: 300; line-height: 36px;}
 
 
+    /* 회사 소개 - 사업장 */
+    .locationArea figure::after{content: ''; display: block; visibility: hidden; clear: both;}
+    .locationArea figure{max-width: 768px; text-align: center;}
+    .locationArea figure > *{float: left;}
+    .locationArea figure img{width: 100%; margin-bottom: 35px;}
+    .locationArea figure figcaption{padding-left: 3%; max-width: 778px; box-sizing: border-box; text-align: left;}
+    .locationArea figure figcaption ul li{padding-left: 75px; font-size: 22px; line-height: 30px; background-repeat: no-repeat; background-position: left top;}
+    .locationArea figure figcaption ul li:nth-child(1){background-image: url('../images/aboutUs_locationIcon01.png');}
+    .locationArea figure figcaption ul li:nth-child(2){background-image: url('../images/aboutUs_locationIcon02.png');}
+    .locationArea figure figcaption ul li:nth-child(3){background-image: url('../images/aboutUs_locationIcon03.png');}
+    .locationArea figure figcaption ul li:nth-child(4){background-image: url('../images/aboutUs_locationIcon04.png');}
+    .locationArea figure figcaption ul li:nth-child(5){background-image: url('../images/aboutUs_locationIcon05.png');}
+    .locationArea figure figcaption ul li:not(:last-child){margin-bottom: 35px;}
+    .locationArea figure figcaption ul li strong{display: block;  font-weight: 700; line-height: 55px; margin-bottom: 15px;}
+    .locationArea figure figcaption ul li dl{display: flex;}
+    .locationArea figure figcaption ul li dl dt{font-weight: 400; width: 100px; border-right: 1px solid #b7b7b7; margin-right: 20px;}
+    .locationArea figure figcaption ul li dl dd{width: calc(100% - 100px);}
+    .locationArea figure figcaption ul li dl:not(:last-child) dt{padding-bottom: 10px;}
 
 
     /* 제품 소개 - 응용분야 , raw 공통 레이아웃 */
