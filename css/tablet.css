@@ -22,9 +22,10 @@
     .subPage section .subTitle p{font-size: 26px; font-weight: 500; line-height: 36px; margin-bottom: 30px;}
     .subPage section .subTitle p br{display: none;}
     .subPage section .subTitle::after{content: '';display: block; width: 4px; height: 25px; background-color: black; transform: rotate(30deg); margin: 0 auto;}
-    .subPage section > strong{display: block; font-size: 36px; font-weight: 700; text-align: center; margin:80px 0 50px;}
+    .subPage section > strong{display: block; width: calc(100% - 60px); font-size: 36px; font-weight: 700; text-align: center; margin:80px auto 50px;}
+    .subPage section > strong br{display: none;}
     .subPage.hireArea section > strong,
-    .subPage.questionArea section > strong{font-size: 23px; font-weight: 500; line-height: 36px;}
+    .subPage.questionArea section > strong{font-size: 26px; font-weight: 500; line-height: 36px;}
     .subPage section > p{font-size: 22px; font-weight: 300; line-height: 36px; text-align: center;}
     .subPage section > p:not(:last-of-type){margin-bottom: 50px;}
     .subPage .subContents h4{font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 100px; }
@@ -247,6 +248,39 @@
 
     .RnDArea .equipmentArea div div ul{}
     .RnDArea .equipmentArea div div ul li{display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 300;}
-    /* .RnDArea .equipmentArea div div ul li::before{content: ''; width: 5px; height: 5px; background-color: black; border-radius: 100%; margin-right: 3.5%;} */
     .RnDArea .equipmentArea div div ul li:not(:last-child){margin-bottom: 20px;}
+
+
+    /* 인재채용 - 인재상 */
+    .hireArea .talentArea{text-align: center;}
+    .hireArea .talentArea ol{margin-bottom: 85px;}
+    .hireArea .talentArea ol li{width: 378px; height: 378px; margin: 0 auto; background-color: #eff8dc; border: 1px solid #cde9af; border-radius: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; counter-increment: talenCounter; box-shadow: -5px 20px 35px -5px rgba(0, 0, 0, 0.2);}
+    .hireArea .talentArea ol li:not(:last-child){margin-bottom: 80px;}
+    .hireArea .talentArea ol li::before{content:'0'counter(talenCounter); font-size: 32px; font-weight: 700; margin-bottom: 15px;}
+    .hireArea .talentArea ol li::before::after{content: '';}
+    .hireArea .talentArea ol li strong{font-size: 36px; font-weight: 700; padding-top: 35px; margin-bottom: 30px; position: relative;}
+    .hireArea .talentArea ol li strong::first-letter{color: #8fcc00;}
+    .hireArea .talentArea ol li strong::after{content: '';  width: 21px; height: 3px; background-color: black; position: absolute; top: 0; left: calc(50% - 10.5px);}
+    .hireArea .talentArea ol li p{line-height: 36px; max-width: 210px;}
+    .hireArea .talentArea h4{font-size: 48px; font-weight: 700; line-height: 54px; margin-bottom: 55px;}
+    .hireArea .talentArea img{width: calc(100% - 60px); max-width: 627px;}
+
+
+    /* 인재채용 - 채용정보 */
+    .hireArea .infoArea .stepArea div{position: relative; display: flex; flex-wrap: wrap; justify-content: center;}
+    .hireArea .infoArea .stepArea div .formLink{position: absolute; right: 0; top: -40px; font-size: 23px; font-weight: 700; display: flex; align-items: center;}
+    .hireArea .infoArea .stepArea div .formLink::before{content: ''; width: 23px; height: 31px; background: url('../images/formLinkIcon.png'); margin-right: 15px;}
+    .hireArea .infoArea .stepArea div ol{width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-start; margin-bottom: 80px;}
+    .hireArea .infoArea .stepArea div ol li{min-width: 220px; font-size: 22px; font-weight: 500; text-align: center; padding-top: 145px; background-repeat: no-repeat; background-position: center top; position: relative; margin-bottom: 55px;}
+    .hireArea .infoArea .stepArea div ol li:not(:last-child){margin-right: 20px;}
+    .hireArea .infoArea .stepArea div ol li:nth-child(1){background-image: url('../images/hire_infoIcon01.png');}
+    .hireArea .infoArea .stepArea div ol li:nth-child(2){background-image: url('../images/hire_infoIcon02.png');}
+    .hireArea .infoArea .stepArea div ol li:nth-child(3){background-image: url('../images/hire_infoIcon03.png');}
+    .hireArea .infoArea .stepArea div ol li:nth-child(4){background-image: url('../images/hire_infoIcon04.png');}
+    .hireArea .infoArea .stepArea div ol li:not(:last-child)::after{content: ''; position: absolute; right: 0; top: 15px; right: -21px; width: 42px; height: 42px; background: url('../images/hire_infoNext.png') no-repeat center; }
+    .hireArea .infoArea .stepArea div ol ~ a{font-size: 23px; font-weight: 700; color: white; line-height: 30px; width: 245px; height: 245px; border-radius: 100%; background-color: #8fcc00; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+    .hireArea .infoArea .stepArea div ol ~ a:not(:last-of-type){margin-right: 5%;}
+    .hireArea .infoArea .stepArea div ol ~ a span{font-size: 30px; margin-top: 20px;}
+
+    
 }
