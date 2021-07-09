@@ -259,14 +259,6 @@
     .productArea .compositeArea .advantageArea ol li p{font-size: 22px; line-height: 36px; padding-top: 30px; position: relative;}
     .productArea .compositeArea .advantageArea ol li p::before{content: ''; position: absolute; left: 0; top: 0; width: 21px; height: 3px; background-color: black;}
 
-    /* 제품 소개 - 응용분야 */
-    .productArea .applicationsArea .layoutCase01 li{height: 385px}
-    .productArea .applicationsArea .layoutCase01 li:nth-child(1):before{background-image: url('../images/product_applicationsImg01.png');}
-    .productArea .applicationsArea .layoutCase01 li:nth-child(2):before{background-image: url('../images/product_applicationsImg02.png');}
-    .productArea .applicationsArea .layoutCase01 li:nth-child(3):before{background-image: url('../images/product_applicationsImg03.png');}
-    .productArea .applicationsArea .layoutCase01 li:nth-child(4):before{background-image: url('../images/product_applicationsImg04.png');}
-    .productArea .applicationsArea .layoutCase01 li > div > div div p{font-weight: 300;}
-
 
     /* 제품 소개 - raw 공통*/
     .rawArea.subContents > div h4{font-size: 38px; text-align: left; margin-bottom: 50px;}
@@ -297,6 +289,15 @@
     .productArea .rawArea > .IntroduceArea ul li:nth-child(3){background-image: url('../images/product_rawIBG03.png');}
     .productArea .rawArea > .IntroduceArea ul li a{font-size: 24px; color: white; font-weight: 500;  position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     .productArea .rawArea > .IntroduceArea ul li a span{width: 60px; line-height: 60px; text-align: center; border-radius: 100%; background-color: #8fcc00; margin-top: 25px; }
+
+
+    /* 제품 소개 - 응용분야 */
+    .productArea .applicationsArea .layoutCase01 li{height: 385px}
+    .productArea .applicationsArea .layoutCase01 li:nth-child(1):before{background-image: url('../images/product_applicationsImg01.png');}
+    .productArea .applicationsArea .layoutCase01 li:nth-child(2):before{background-image: url('../images/product_applicationsImg02.png');}
+    .productArea .applicationsArea .layoutCase01 li:nth-child(3):before{background-image: url('../images/product_applicationsImg03.png');}
+    .productArea .applicationsArea .layoutCase01 li:nth-child(4):before{background-image: url('../images/product_applicationsImg04.png');}
+    .productArea .applicationsArea .layoutCase01 li > div > div div p{font-weight: 300;}
 
 
     /* 제품 소개 - 자동차분야 */
