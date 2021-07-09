@@ -4,14 +4,63 @@
 
 /* 컨텐츠 크기 */
 .contentsWidth{max-width: 1760px; margin: 0 auto;}
-.width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+/* .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;} */
 .width1760{max-width: 1760px;;}
 .width1556{max-width: 1556px;}
 .width1200{max-width: 1200px;}
 .scrollPage{overflow: hidden;}
 
+@media screen and (max-width:639px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 3.750rem); margin: 0 auto;}
 
-@media screen/*  and (min-width:768px) */ and (max-width:1279px) {
+    /* 해더 */
+    header{height: 6.250rem; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 0.938em -5px rgba(0, 0, 0, 0.2);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
+    header > div h1{text-indent: -9999px; width: 14.750rem; height: 2.688rem; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+    header > div h1 a{display: block; height: 100%; }
+    header > div .M_menuBtn{width: 2.813rem; cursor: pointer;}
+    header > div .M_menuBtn span{display: block;  height: 0.188rem; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
+    header > div .M_menuBtn span:not(:last-child){margin-bottom: 0.750rem;}
+    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 6.250rem; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; }
+    header > div nav > ul{display: flex; flex-direction: column; }
+    header > div nav > ul > li > a{display: block; font-size: 1.750rem; font-weight: 500; color: black; padding: 1.875rem; position: relative;}
+    header > div nav > ul > li > a span.material-icons{position: absolute; right: 1.875rem; top: 1.438rem; font-size: 2.500rem; transition: 0.5s transform;}
+    header div nav ul li a.active span.material-icons{transform: rotate(180deg);}
+    header > div nav > ul > li a:hover ,header div nav ul li.active > a{font-weight: 700; color: #8fcc00;}
+    header > div nav > ul > li ul{display: none; padding: 1.313em 0; border-width: 1px 0; border-style: solid; border-color: #dfdfdf;}
+    header > div nav > ul > li ul li a{display: block; font-size: 1.375rem; font-weight: 500; padding: 1.313em 1.875rem;}
+    header.scrollMenu{background-color: transparent; box-shadow: none;}
+    header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
+    header.scrollMenu div .M_menuBtn span{background-color: white;}
+    header.active.scrollMenu{background-color: white;}
+    header.active.scrollMenu div h1{background-image: url('../images/logo_B.png');}
+    header.active > div .M_menuBtn span{background-color: black;}
+    header.active > div .M_menuBtn span:nth-child(1){transform: translateY(0.938em) rotate(45deg);}
+    header.active > div .M_menuBtn span:nth-child(2){opacity: 0;}
+    header.active > div .M_menuBtn span:nth-child(3){transform: translateY(-0.938em) rotate(-45deg);}
+    header.active > div nav > ul{display: flex;}
+
+    /* 푸터 */
+    footer{background-color: #191919; padding: 5.625em 0;}
+    footer div{position: relative;}
+    footer div h2{max-width: 14.750rem; margin-bottom: 6.250rem;}
+    footer div h2 img{width: 100%;}
+    footer div > ul{position: absolute; right: 0; top: 0; display: flex;}
+    footer div > ul li:not(:last-child){margin-right: 2.188rem;}
+    footer div > ul li a{font-size: 1.250rem; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
+    footer div address{font-style: normal; margin-bottom: 1.875rem;}
+    footer div address ul{display: flex; flex-direction: column;}
+    footer div address ul li{font-size: 1.313rem; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    footer div address ul li:not(:last-child){margin-bottom: 0.625rem;}
+    footer div p{font-size: 1.063rem; font-weight: 400; color: rgba(255, 255, 255, 0.3);}
+}
+
+
+@media screen and (min-width:640px) and (max-width:1279px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+
     /* 해더 */
     header{height: 100px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
     header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
@@ -57,6 +106,8 @@
 
 /* PC */
 @media screen and (min-width:1280px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
  
     /* 해더 */
     header{height: 120px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
