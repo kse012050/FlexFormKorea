@@ -434,18 +434,19 @@
 
     /* 문의 */
     .questionArea fieldset ul{padding: 30px 0; border-width: 2px 0; border-color: black; border-style: solid; margin-bottom: 50px;}
-    .questionArea fieldset ul > li{display: flex; align-items: stretch; padding: 0 30px; font-size: 22px;}
+    .questionArea fieldset ul > li{display: flex; align-items: flex-start; padding: 0 30px; font-size: 22px;}
+    .questionArea fieldset ul > li.requiredList label::after{content: '*'; color: red;}
     .questionArea fieldset ul > li:not(:last-child){margin-bottom: 20px;}
     .questionArea fieldset ul > li > *{flex: 1;}
     .questionArea fieldset ul > li > label{display: flex; align-items: center;}
-    .questionArea fieldset ul > li > label:nth-child(1){max-width: 300px; font-weight: 500;}
+    .questionArea fieldset ul > li > label:nth-child(1){max-width: 300px; font-weight: 500; line-height: 74px;}
     .questionArea fieldset ul > li input,
     .questionArea fieldset ul > li select,
     .questionArea fieldset ul > li textarea,
     .questionArea fieldset ul > li > div ol{padding: 20px 30px; border: 1px solid #a2a2a2; box-sizing: border-box;}
     .questionArea fieldset ul > li textarea{height: 400px; resize: none; }
     .questionArea fieldset ul > li input[type="file"]{display: none;}
-    .questionArea fieldset ul > li input[type="file"] + label{max-width: 220px; justify-content: center; color: white; background-color: #414141; margin-left: 20px;}
+    .questionArea fieldset ul > li input[type="file"] + label{max-width: 220px; height: 74px; justify-content: center; color: white; background-color: #414141; margin-left: 20px;}
     .questionArea fieldset ul > li > div{padding-left: 300px; color: #555555;}
     .questionArea fieldset ul > li > div ol{height: 220px; overflow: auto; margin-bottom: 20px; letter-spacing: -1px;}
     .questionArea fieldset ul > li > div ol li{counter-increment: privacyCounter;}

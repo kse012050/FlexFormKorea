@@ -323,19 +323,20 @@
 
     /* 문의 */
     .questionArea fieldset ul{padding: 30px 0; border-width: 2px 0; border-color: black; border-style: solid; margin-bottom: 50px;}
-    .questionArea fieldset ul > li{display: flex; align-items: stretch; padding: 0 30px; font-size: 22px;}
+    .questionArea fieldset ul > li{display: flex; align-items: flex-start; font-size: 22px;}
+    .questionArea fieldset ul > li.requiredList label::after{content: '*'; color: red;}
     .questionArea fieldset ul > li:not(:last-child){margin-bottom: 20px;}
-    /* .questionArea fieldset ul > li > *{flex: 1;} */
+    .questionArea fieldset ul > li > *{flex: 1;}
     .questionArea fieldset ul > li > label{display: flex; align-items: center;}
-    .questionArea fieldset ul > li > label:nth-child(1){max-width: 300px; font-weight: 500;}
+    .questionArea fieldset ul > li > label:nth-child(1){max-width: 100px; font-weight: 500; line-height: 74px;}
     .questionArea fieldset ul > li input,
     .questionArea fieldset ul > li select,
     .questionArea fieldset ul > li textarea,
     .questionArea fieldset ul > li > div ol{padding: 20px 30px; border: 1px solid #a2a2a2; box-sizing: border-box;}
     .questionArea fieldset ul > li textarea{height: 400px; resize: none; }
     .questionArea fieldset ul > li input[type="file"]{display: none;}
-    .questionArea fieldset ul > li input[type="file"] + label{max-width: 220px; justify-content: center; color: white; background-color: #414141; margin-left: 20px;}
-    .questionArea fieldset ul > li > div{padding-left: 300px; color: #555555;}
+    .questionArea fieldset ul > li input[type="file"] + label{max-width: 220px; height: 74px; justify-content: center; color: white; background-color: #414141; }
+    .questionArea fieldset ul > li > div{padding-left: 100px; color: #555555;}
     .questionArea fieldset ul > li > div ol{height: 220px; overflow: auto; margin-bottom: 20px; letter-spacing: -1px;}
     .questionArea fieldset ul > li > div ol li{counter-increment: privacyCounter;}
     .questionArea fieldset ul > li > div ol li:not(:last-child){margin-bottom: 30px;}
@@ -343,8 +344,8 @@
     .questionArea fieldset ul > li > div label{font-weight: 300;}
 
     .questionArea fieldset > div{display: flex; justify-content: center;}
-    .questionArea fieldset > div input{width: 350px; height: 100px; font-size: 22px; font-weight: 700; color: white; border-radius: 50px;}
+    .questionArea fieldset > div input{max-width: 350px; width: calc((100% - 30px) / 2); height: 100px; font-size: 22px; font-weight: 700; color: white; border-radius: 50px;}
     .questionArea fieldset > div input[type="submit"]{background-color: #8fcc00;}
     .questionArea fieldset > div input[type="reset"]{background-color: #414141;}
-    .questionArea fieldset > div input:not(:last-child){margin-right: 45px;}
+    .questionArea fieldset > div input:not(:last-child){margin-right: 30px;}
 }
