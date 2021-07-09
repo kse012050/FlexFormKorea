@@ -215,7 +215,7 @@
     .RnDArea .centerArea div div figure img{width: 328px; margin-bottom: 40px;}
     .RnDArea .centerArea div div figure figcaption{font-size: 22px;}
     .RnDArea .centerArea div div figure figcaption b{margin-bottom: 40px;}
-    .RnDArea .centerArea div div figure figcaption p{line-height: 36px;}
+    .RnDArea .centerArea div div figure figcaption p{line-height: 36px; letter-spacing: -1px;}
 
 
      /* R&D - 연구성과 */
@@ -283,4 +283,68 @@
     .hireArea .infoArea .stepArea div ol ~ a span{font-size: 30px; margin-top: 20px;}
 
     
+    /* 인재채용 - 직무소개 */
+    .hireArea .dutyArea .tabArea{ border-top: 2px solid black;}
+    .hireArea .dutyArea .tabArea ul.tabBtn{display: flex; justify-content: center; padding: 45px 0;}
+    .hireArea .dutyArea .tabArea ul.tabBtn li{position: relative;}
+    .hireArea .dutyArea .tabArea ul.tabBtn li:not(:last-child)::after{content: ''; position: absolute; top: 8px; right: 0; width: 2px; height: 11px; background-color: black; transform: rotate(30deg);}
+    .hireArea .dutyArea .tabArea ul.tabBtn li a{font-size: 24px; font-weight: 700; display: block; padding: 0 25px;}
+    .hireArea .dutyArea .tabArea ul.tabBtn li.active a,.hireArea .dutyArea ul li:hover a{color: #8fcc00;}
+
+    .hireArea .dutyArea .tabArea .tabContents > ul{display: none;}
+    .hireArea .dutyArea .tabArea .tabContents > ul.active{display: block;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li{height: 375px; padding: 75px 20px 50px 192px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; justify-content: space-between;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li:not(:last-child){margin-bottom: 30px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li strong{position: absolute; left: 30px; top: 35px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li strong::after{content: ''; display: block; width: 115px; height: 115px; background-color: white; background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 100%; margin-top: 25px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li ul{display: flex; flex-direction: column; flex-wrap: wrap; height: 145px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li ul li{font-size: 22px; font-weight: 300; line-height: 36px; letter-spacing: -1px; width: 50%; display: flex;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li ul li::before{content: '-'; margin-right: 5px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li div{position: relative; padding: 50px 10px 0; min-height: 48px;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li div::before{content: ''; position: absolute; left: -20px; top: 0; width: 54px; height: 49px; background:url('../images/TIPIcon.png') no-repeat center / cover ;}
+    .hireArea .dutyArea .tabArea .tabContents > ul > li div p{font-size: 18px; font-weight: 400; line-height: 24px;}
+    /* 인재채용 - 직무소개 - 생산*/
+    .hireArea .dutyArea .tabArea .tabContents > ul.productionArea > li:nth-child(1) strong::after{background-image: url('../images/hire_duty_production01.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.productionArea > li:nth-child(2) strong::after{background-image: url('../images/hire_duty_production02.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.productionArea > li:nth-child(3) strong::after{background-image: url('../images/hire_duty_production03.png');}
+    /* 인재채용 - 직무소개 - 영업*/
+    .hireArea .dutyArea .tabArea .tabContents > ul.salesArea > li:nth-child(1) strong::after{background-image: url('../images/hire_duty_sales01.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.salesArea > li:nth-child(2) strong::after{background-image: url('../images/hire_duty_sales02.png');}
+    /* 인재채용 - 직무소개 - 경영기획*/
+    .hireArea .dutyArea .tabArea .tabContents > ul.planArea > li:nth-child(1) strong::after{background-image:url('../images/hire_duty_plan01.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.planArea > li:nth-child(2) strong::after{background-image:url('../images/hire_duty_plan02.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.planArea > li:nth-child(3) strong::after{background-image:url('../images/hire_duty_plan03.png');}
+    .hireArea .dutyArea .tabArea .tabContents > ul.planArea > li:nth-child(4) strong::after{background-image:url('../images/hire_duty_plan04.png');}
+    /* 인재채용 - 직무소개 - 연구소*/
+    .hireArea .dutyArea .tabArea .tabContents > ul.laboratoryArea > li:nth-child(1) strong::after{background-image:url('../images/hire_duty_laboratory01.png');}
+    /* 인재채용 - 직무소개 - 품질*/
+    .hireArea .dutyArea .tabArea .tabContents > ul.qualityArea > li:nth-child(1) strong::after{background-image:url('../images/hire_duty_quality01.png');}
+
+
+    /* 문의 */
+    .questionArea fieldset ul{padding: 30px 0; border-width: 2px 0; border-color: black; border-style: solid; margin-bottom: 50px;}
+    .questionArea fieldset ul > li{display: flex; align-items: stretch; padding: 0 30px; font-size: 22px;}
+    .questionArea fieldset ul > li:not(:last-child){margin-bottom: 20px;}
+    /* .questionArea fieldset ul > li > *{flex: 1;} */
+    .questionArea fieldset ul > li > label{display: flex; align-items: center;}
+    .questionArea fieldset ul > li > label:nth-child(1){max-width: 300px; font-weight: 500;}
+    .questionArea fieldset ul > li input,
+    .questionArea fieldset ul > li select,
+    .questionArea fieldset ul > li textarea,
+    .questionArea fieldset ul > li > div ol{padding: 20px 30px; border: 1px solid #a2a2a2; box-sizing: border-box;}
+    .questionArea fieldset ul > li textarea{height: 400px; resize: none; }
+    .questionArea fieldset ul > li input[type="file"]{display: none;}
+    .questionArea fieldset ul > li input[type="file"] + label{max-width: 220px; justify-content: center; color: white; background-color: #414141; margin-left: 20px;}
+    .questionArea fieldset ul > li > div{padding-left: 300px; color: #555555;}
+    .questionArea fieldset ul > li > div ol{height: 220px; overflow: auto; margin-bottom: 20px; letter-spacing: -1px;}
+    .questionArea fieldset ul > li > div ol li{counter-increment: privacyCounter;}
+    .questionArea fieldset ul > li > div ol li:not(:last-child){margin-bottom: 30px;}
+    .questionArea fieldset ul > li > div ol li b::before{content:counter(privacyCounter) '.';}
+    .questionArea fieldset ul > li > div label{font-weight: 300;}
+
+    .questionArea fieldset > div{display: flex; justify-content: center;}
+    .questionArea fieldset > div input{width: 350px; height: 100px; font-size: 22px; font-weight: 700; color: white; border-radius: 50px;}
+    .questionArea fieldset > div input[type="submit"]{background-color: #8fcc00;}
+    .questionArea fieldset > div input[type="reset"]{background-color: #414141;}
+    .questionArea fieldset > div input:not(:last-child){margin-right: 45px;}
 }
