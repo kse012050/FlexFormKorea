@@ -217,8 +217,8 @@
     .productArea .rawArea > .FAQArea ul li:first-child{border-top: 1px solid rgba(0, 0, 0, 0.2);}
     .productArea .rawArea > .FAQArea ul li button{font-size: 1.500rem; font-weight: 500; text-align: left; width: 100%; padding:1.500rem 3.750rem 1.500rem; box-sizing: border-box; position: relative; cursor: pointer;}
     .productArea .rawArea > .FAQArea ul li button::before{content: 'Q'; font-size: 1.563rem; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 1.875rem; top: 1.500rem;}
-    .productArea .rawArea > .FAQArea ul li > div{display: none; padding: 1.500rem11.250rem; position: relative;}
-    .productArea .rawArea > .FAQArea ul li > div::before{content: 'A'; font-size: 1.563rem; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 4.375rem; top: 1.875rem;}
+    .productArea .rawArea > .FAQArea ul li > div{display: none; padding: 0 3.750rem 1.500rem; position: relative;}
+    .productArea .rawArea > .FAQArea ul li > div::before{content: 'A'; font-size: 1.563rem; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 3.750rem; top: 0.438rem;}
     .productArea .rawArea > .FAQArea ul li > div.active{display: block;}
     .productArea .rawArea > .FAQArea ul li > div p{ line-height: 2.125rem;}
 
@@ -356,7 +356,7 @@
     .hireArea .infoArea .stepArea div ol li:nth-child(2){background-image: url('../images/hire_infoIcon02.png');}
     .hireArea .infoArea .stepArea div ol li:nth-child(3){background-image: url('../images/hire_infoIcon03.png');}
     .hireArea .infoArea .stepArea div ol li:nth-child(4){background-image: url('../images/hire_infoIcon04.png');}
-    .hireArea .infoArea .stepArea div ol li:not(:last-child)::after{content: ''; position: absolute; top: 0.938rem; right: -1.313rem; width: 2.625rem; height: 2.625rem; background: url('../images/hire_infoNext.png') no-repeat center / cover; }
+    .hireArea .infoArea .stepArea div ol li:not(:last-child)::after{content: ''; position: absolute; top: 0.938rem; right: -1.313rem; width: 2.625rem; height: 2.625rem; background: url('../images/hire_infoNext.png') no-repeat center / 99%; }
     .hireArea .infoArea .stepArea div ol ~ a{font-size: 1.438rem; font-weight: 700; color: white; line-height: 1.875rem; width: 15.313rem; height: 15.313rem; border-radius: 100%; background-color: #8fcc00; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
     .hireArea .infoArea .stepArea div ol ~ a:not(:last-of-type){margin-right: 5%;}
     .hireArea .infoArea .stepArea div ol ~ a span{font-size: 1.875rem; margin-top: 1.250rem;}
@@ -647,8 +647,8 @@
     .productArea .rawArea > .FAQArea ul li:first-child{border-top: 1px solid rgba(0, 0, 0, 0.2);}
     .productArea .rawArea > .FAQArea ul li button{font-size: 24px; font-weight: 500; text-align: left; width: 100%; padding:24px 60px 24px ; box-sizing: border-box; position: relative; cursor: pointer;}
     .productArea .rawArea > .FAQArea ul li button::before{content: 'Q'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 30px; top: 24px;}
-    .productArea .rawArea > .FAQArea ul li > div{display: none; padding: 24px 120px; position: relative;}
-    .productArea .rawArea > .FAQArea ul li > div::before{content: 'A'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 70px; top: 30px;}
+    .productArea .rawArea > .FAQArea ul li > div{display: none; padding: 0 60px 24px; position: relative;}
+    .productArea .rawArea > .FAQArea ul li > div::before{content: 'A'; font-size: 25px; font-weight: 900;  font-family: 'NanumSquare', sans-serif; position: absolute; left: 60px; top: 7px;}
     .productArea .rawArea > .FAQArea ul li > div.active{display: block;}
     .productArea .rawArea > .FAQArea ul li > div p{ line-height: 34px;}
 

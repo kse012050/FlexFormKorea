@@ -46,6 +46,7 @@
     header.active > div .M_menuBtn span:nth-child(2){opacity: 0;}
     header.active > div .M_menuBtn span:nth-child(3){transform: translateY(-0.938em) rotate(-45deg);}
     header.active > div nav > ul{display: flex;}
+    header > div nav .on > a{color: #8fcc00;}
 
     /* 푸터 */
     footer{background-color: #191919; padding: 5.625em 0;}
@@ -99,6 +100,7 @@
     header.active > div .M_menuBtn span:nth-child(2){opacity: 0;}
     header.active > div .M_menuBtn span:nth-child(3){transform: translateY(-15px) rotate(-45deg);}
     header.active > div nav > ul{display: flex;}
+    header > div nav .on > a{color: #8fcc00;}
 
     /* 푸터 */
     footer{background-color: #191919; padding: 90px 0;}
