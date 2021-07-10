@@ -4,7 +4,7 @@ $(document).ready(function(){
     mainScrollListClick();
 
     tab();
-
+    popup();
     mobileMenu();
 });
 
@@ -147,6 +147,27 @@ function mobileMenu(){
     })
 }
 
+
+function popup(){
+    $('[data-event="popup"] + .popupArea').hide();
+    $('[data-event="popup"]').click(function(e){
+        e.preventDefault();
+        $('[data-event="popup"] + .popupArea').fadeIn();
+    });
+    $('[data-event="popup"] + .popupArea').click(function(){
+        console.log($(this).children('div').children('iframe')[0]);
+        $(this).children('div').children('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        $(this).fadeOut();
+    })
+    $('[data-event="popup"] + .popupArea > div').click(function(e){
+        e.stopPropagation();
+    })
+
+    $('[data-event="popup"] + .popupArea > div .closeBtn').click(function(){
+        $(this).next()[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        $(this).parent().parent().fadeOut();
+    })
+}
 
 function tab(){
     var tabInd;

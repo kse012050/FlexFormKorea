@@ -14,6 +14,12 @@
     /* 컨텐츠 크기 */
     .width1760,.width1556, .width1200{width: calc(100% - 3.750rem); margin: 0 auto;}
 
+   /* popup */
+   [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+   [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 500px; background-color: white; padding: 0.625rem; position: relative;}
+   [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -0.625rem; top: -3.125rem; font-size: 3.750rem; color: white;}
+   [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
+
     /* 해더 */
     header{height: 6.250rem; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 0.938em -5px rgba(0, 0, 0, 0.2);}
     header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
@@ -60,6 +66,12 @@
 @media screen and (min-width:640px) and (max-width:1279px) {
     /* 컨텐츠 크기 */
     .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+
+    /* popup */
+    [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+    [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 50%; background-color: white; padding: 10px; position: relative;}
+    [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -10px; top: -40px; font-size: 50px; color: white;}
+    [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
 
     /* 해더 */
     header{height: 100px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
@@ -108,6 +120,12 @@
 @media screen and (min-width:1280px) {
     /* 컨텐츠 크기 */
     .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+
+    /* popup */
+    [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+    [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 500px; background-color: white; padding: 10px; position: relative;}
+    [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -10px; top: -50px; font-size: 60px; color: white;}
+    [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
  
     /* 해더 */
     header{height: 120px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
