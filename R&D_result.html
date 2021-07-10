@@ -15,76 +15,48 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <!-- <script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- <script id="test"></script> -->
     <!-- css -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
-    <script>
-        // $(document).ready(function(){
-            var agent = navigator.userAgent.toLowerCase();
-            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
-                alert('i');
-                $('#test').attr('src','js/swiper.min.js');
-            /*     var swiper = new Swiper(".mySwiper", {
-                    pagination: {
-                        el: ".swiper-pagination",
-                        type: "progressbar",
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                }); */
-            }else{
-                $('#test').attr('src','https://unpkg.com/swiper/swiper-bundle.min.js');
-                alert('X');
-        /*         var swiper = new Swiper(".mySwiper", {
-                    pagination: {
-                        el: ".swiper-pagination",
-                        type: "progressbar",
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                }); */
-            }
-        // })
-    </script>
-    <script id="test"></script>
+    
     <script>
         $(document).ready(function(){
-            var swiper = new Swiper(".mySwiper", {
-                // slidesPerView: 4,
-                // spaceBetween: 10,
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "progressbar",
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-        /*         breakpoints: {
-                    // when window width is >= 320px
-                    // 320: {
-                    // slidesPerView: 2,
-                    // spaceBetween: 20
-                    // },
-                    // when window width is >= 480px
-                    0: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
-                    },
-                    // when window width is >= 640px
-                    1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                    }
-                } */
-            });
+            var $PCApi = {   
+                minSlides : 4,
+                maxSlides : 4,
+                moveSlides: 1,
+                slideWidth:290,
+                slideMargin:10
+            }
+            var $MobileApi = {
+                minSlides : 2,
+                maxSlides : 2,
+                moveSlides: 1,
+                slideWidth:600,
+                slideMargin:10
+            }
+            $resultSlider = $('.slider');
+            if($(window).width() > 1280){
+                $resultSlider.bxSlider($PCApi)
+            }else{
+                $resultSlider.bxSlider($MobileApi)
+            }
+            $(window).resize(function(){
+                if($(window).width() > 1280){
+                    $resultSlider.reloadSlider($PCApi)
+                }else{
+                    $resultSlider.reloadSlider($MobileApi)
+                }
+            })
         });
     </script>
 </head>
@@ -155,47 +127,24 @@
                 <div class="width1200 patentArea">
                     <h4>특허</h4>
                     <div>
-                        <div class="swiper-container mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
-                                    <b>복합매트 제조장치</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
-                                    <b>복합매트 제조장치</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
-                                    <b>다층구조의 자동차용 천정재</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
-                                    <b>자동차용 천정재</b>
-                                </div>
-                              
-                                
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
-                                    <b>복합매트 제조장치</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
-                                    <b>복합매트 제조장치</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
-                                    <b>다층구조의 자동차용 천정재</b>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
-                                    <b>자동차용 천정재</b>
-                                </div>
+                        <div class="slider">
+                            <div>
+                                <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>복합매트 제조장치</b>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div>
+                                <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>복합매트 제조장치</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
+                                <b>다층구조의 자동차용 천정재</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
+                                <b>자동차용 천정재</b>
+                            </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
                 <div class="width1200 boardArea">
