@@ -9,48 +9,82 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <!-- swiper -->
-    <!-- <link rel="stylesheet" href="css/swiper.min.css" />
-    <script src="js/swiper.min.js"></script> -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <script src="js/swiper.min.js"></script> -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <!-- <script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script id="test"></script> -->
     <!-- css -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
     <script>
+        // $(document).ready(function(){
+            var agent = navigator.userAgent.toLowerCase();
+            if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+                alert('i');
+                $('#test').attr('src','js/swiper.min.js');
+            /*     var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                }); */
+            }else{
+                $('#test').attr('src','https://unpkg.com/swiper/swiper-bundle.min.js');
+                alert('X');
+        /*         var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                }); */
+            }
+        // })
+    </script>
+    <script id="test"></script>
+    <script>
         $(document).ready(function(){
             var swiper = new Swiper(".mySwiper", {
-            // slidesPerView: 4,
-            // spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                // when window width is >= 320px
-                // 320: {
-                // slidesPerView: 2,
-                // spaceBetween: 20
-                // },
-                // when window width is >= 480px
-                0: {
-                slidesPerView: 2,
-                spaceBetween: 30
+                // slidesPerView: 4,
+                // spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
                 },
-                // when window width is >= 640px
-                1280: {
-                slidesPerView: 4,
-                spaceBetween: 40
-                }
-            }
-        });
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+        /*         breakpoints: {
+                    // when window width is >= 320px
+                    // 320: {
+                    // slidesPerView: 2,
+                    // spaceBetween: 20
+                    // },
+                    // when window width is >= 480px
+                    0: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                    }
+                } */
+            });
         });
     </script>
 </head>

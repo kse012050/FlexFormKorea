@@ -1,8 +1,11 @@
 @media screen and (max-width:639px) {
     html{font-size: 2.5vw;}
 
-    .contactLink{position: fixed; right: 0.625rem; bottom: 0; width: 160px; height: 7.500rem; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
-    .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
+
+    .contactLink{position: fixed; right: 0px; bottom: 0; width:4.813rem; height: 7.500rem; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
+    .contactLink::before{content: ''; width: 1.313rem; height: 1.438rem; background: url('../images/contactIcon.png') no-repeat center / cover; }
+    .scrollPage .subPage .contactLink{bottom: 0; top: auto;}
+    .subPage .contactLink{ font-size: 0; top: 40.625rem; bottom: auto; right: 0; width: 4.813rem;}
 
     /* 스크롤 페이지 */
     .scrollArea{overflow-y: auto; height: 100vh;}
@@ -419,6 +422,7 @@
      .questionArea fieldset ul > li > div ol li{counter-increment: privacyCounter;}
      .questionArea fieldset ul > li > div ol li:not(:last-child){margin-bottom: 1.875rem;}
      .questionArea fieldset ul > li > div ol li b::before{content:counter(privacyCounter) '.';}
+     .questionArea fieldset ul > li > div ol li *{margin: 0 !important;}
      .questionArea fieldset ul > li > div label{font-weight: 300;}
  
      .questionArea fieldset > div{display: flex; justify-content: center;}
@@ -430,8 +434,10 @@
 
 
 @media screen and (min-width:640px)  and (max-width:1279px) {
-    .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
-    .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
+    .contactLink{position: fixed;  right: 0px; bottom: 0; width:77px; height: 120px; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
+    .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; }
+    .scrollPage .subPage .contactLink{bottom: 0; top: auto;}
+    .subPage .contactLink{ font-size: 0; top: 650px; bottom: auto; right: 0; width: 77px;}
 
     /* 스크롤 페이지 */
     .scrollArea{overflow-y: auto; height: 100vh;}
@@ -864,6 +870,7 @@
     .questionArea fieldset ul > li > div ol li{counter-increment: privacyCounter;}
     .questionArea fieldset ul > li > div ol li:not(:last-child){margin-bottom: 30px;}
     .questionArea fieldset ul > li > div ol li b::before{content:counter(privacyCounter) '.';}
+    .questionArea fieldset ul > li > div ol li *{margin: 0 !important;}
     .questionArea fieldset ul > li > div label{font-weight: 300;}
 
     .questionArea fieldset > div{display: flex; justify-content: center;}

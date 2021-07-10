@@ -5,7 +5,6 @@ $(document).ready(function(){
 
     tab();
 
-    
     mobileMenu();
 });
 
@@ -16,6 +15,11 @@ function mainScrollEvnet(){
     var $scrollIdx;
     var $prevBoolean;
     var $nextBoolean;
+    
+    var $touchEventX = 0;
+    var $touchEventY = 0;
+    var $touchCompareX = 0;
+    var $touchCompareY = 0;
     $.each($scrollArray,function(){
         $(this).on('mousewheel DOMMouseScroll',function(e){
             $delta = e.originalEvent.wheelDelta;
@@ -30,8 +34,6 @@ function mainScrollEvnet(){
                 if($('.scrollArea').scrollTop() == 0 && $prevBoolean){
                     $scrollTop = $('[data-event="scroll"]').last().offset().top;
                     $('header').addClass('scrollMenu');
-                    // $('.mainBGArea > div').fadeIn();
-                    // $('.scrollIcon').fadeIn();
                     $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeIn();
                 }else if(!($(this).prev().offset() == undefined) && !$prevBoolean){
                     $scrollTop = $(this).prev().offset().top;
@@ -47,13 +49,54 @@ function mainScrollEvnet(){
                 }else if($nextBoolean){
                     $scrollTop = $('.scrollArea').offset().top;
                     $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeOut();
-                    // $('.mainBGArea > div').fadeOut();
-                    // $('.scrollIcon').fadeOut();
                     $('header').removeClass('scrollMenu');
                 }else{
                 }
             }
 
+            mainScrollAnimate($scrollTop);
+            mainScrollList($scrollIdx);
+        })
+        
+        $(this).on('touchstart',function(e){
+            $touchEventX = e.changedTouches[0].clientX;
+            $touchEventY = e.changedTouches[0].clientY;
+        })
+
+        $(this).on('touchend',function(e){
+            $touchCompareX = Math.abs($touchEventX - e.changedTouches[0].clientX);
+            $touchCompareY = Math.abs($touchEventY - e.changedTouches[0].clientY);
+
+            if($touchCompareX < $touchCompareY){
+                if($touchEventY < e.changedTouches[0].clientY){
+                    console.log(1);
+                    // 터치을 위로
+                    $scrollBoolean = true;
+                    $prevBoolean = $(this).prev().children().attr('data-event') == 'scroll';
+                    if($('.scrollArea').scrollTop() == 0 && $prevBoolean){
+                        $scrollTop = $('[data-event="scroll"]').last().offset().top;
+                        $('header').addClass('scrollMenu');
+                        $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeIn();
+                    }else if(!($(this).prev().offset() == undefined) && !$prevBoolean){
+                        $scrollTop = $(this).prev().offset().top;
+                        $scrollIdx = $(this).index() - 1;
+                    }
+                }else{
+                    console.log(2);
+                    // 터치을 아래로
+                    $scrollBoolean = true;
+                    $nextBoolean = $(this).next().hasClass('scrollIcon');
+                    if(!($(this).next().offset() == undefined) && !$nextBoolean){
+                        $scrollTop = $(this).next().offset().top;
+                        $scrollIdx = $(this).index() + 1;
+                    }else if($nextBoolean){
+                        $scrollTop = $('.scrollArea').offset().top;
+                        $('[data-event="scroll"]').parent().children().not('[data-event="scroll"]').fadeOut();
+                        $('header').removeClass('scrollMenu');
+                    }else{
+                    }
+                }
+            }
             mainScrollAnimate($scrollTop);
             mainScrollList($scrollIdx);
         })
