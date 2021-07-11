@@ -437,6 +437,18 @@
      .questionArea fieldset > div input[type="submit"]{background-color: #8fcc00;}
      .questionArea fieldset > div input[type="reset"]{background-color: #414141;}
      .questionArea fieldset > div input:not(:last-child){margin-right: 1.875rem;}
+
+
+     /* 개인정보처리방침 */
+    .privacyPolicyArea{padding: 3.125rem 0;}
+    .privacyPolicyArea b{display: block; font-size: 1.500rem; font-weight: 400; margin-bottom: 1.250rem;}
+    .privacyPolicyArea p{font-size: 1.375rem; font-weight: 300; line-height: 2.250rem;}
+    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
+    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea strong{display: block; font-size: 1.500rem; font-weight: 400; margin-bottom: 1.250rem;}
+    .privacyPolicyArea dl{display: flex; font-size: 1.375rem; font-weight: 300; line-height: 2.250rem;}
+    .privacyPolicyArea > *:not(:last-child){margin-bottom: 6.250rem;}
+    .privacyPolicyArea > ol > *:not(:last-child){margin-bottom: 3.125rem;}
 }
 
 
@@ -889,6 +901,18 @@
     .questionArea fieldset > div input[type="submit"]{background-color: #8fcc00;}
     .questionArea fieldset > div input[type="reset"]{background-color: #414141;}
     .questionArea fieldset > div input:not(:last-child){margin-right: 30px;}
+
+
+    /* 개인정보처리방침 */
+    .privacyPolicyArea{padding: 50px 0;}
+    .privacyPolicyArea b{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
+    .privacyPolicyArea p{font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
+    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea strong{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
+    .privacyPolicyArea dl{display: flex; font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea > *:not(:last-child){margin-bottom: 100px;}
+    .privacyPolicyArea > ol > *:not(:last-child){margin-bottom: 50px;}
    
 }
 
@@ -1304,4 +1328,16 @@
     .questionArea fieldset > div input[type="submit"]{background-color: #8fcc00;}
     .questionArea fieldset > div input[type="reset"]{background-color: #414141;}
     .questionArea fieldset > div input:not(:last-child){margin-right: 45px;}
+
+
+    /* 개인정보처리방침 */
+    .privacyPolicyArea{padding: 100px 0;}
+    .privacyPolicyArea b{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
+    .privacyPolicyArea p{font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
+    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea strong{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
+    .privacyPolicyArea dl{display: flex; font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea > *:not(:last-child){margin-bottom: 100px;}
+    .privacyPolicyArea > ol > *:not(:last-child){margin-bottom: 50px;}
 }
