@@ -125,7 +125,7 @@ function mobileMenu(){
         }
     })
     $('header > div nav > ul > li > a').click(function(e){
-        if($(window).width() < 1280){
+        if($(window).width() < 1260){
             e.preventDefault();
             $(this).parent().toggleClass('active');
             $(this).next().slideToggle();
