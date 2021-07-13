@@ -6,10 +6,7 @@ $(document).ready(function(){
     tab();
     popup();
     mobileMenu();
-    var productID = /test/gi; 
-    if($(location).attr('href').match(productID)[0] == 'test'){
-        $('header').removeClass('scrollMenu');
-    }   
+    productMenu();
 });
 
 function mainScrollEvnet(){
@@ -151,6 +148,12 @@ function mobileMenu(){
     })
 }
 
+function productMenu(){
+    var productID = /test/gi; 
+    if($(location).attr('href').match(productID)[0] == 'test'){
+        $('header').removeClass('scrollMenu');
+    }   
+}
 
 function popup(){
     $('[data-event="popup"] + .popupArea').hide();
