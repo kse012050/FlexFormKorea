@@ -1177,6 +1177,7 @@
     .productArea .compositeArea .advantageArea ol li strong::before{content: '0' counter(advantageCounter) '.'; font-size: 30px; font-weight: 900; color: #8fcc00; font-family: 'NanumSquare', sans-serif; margin-right: 10px;}
     .productArea .compositeArea .advantageArea ol li p{font-size: 22px; line-height: 36px; padding-top: 30px; position: relative;}
     .productArea .compositeArea .advantageArea ol li p::before{content: ''; position: absolute; left: 0; top: 0; width: 21px; height: 3px; background-color: black;}
+    
 
 
     /* 제품 소개 - raw 공통*/
