@@ -6,9 +6,10 @@ $(document).ready(function(){
     tab();
     popup();
     mobileMenu();
-    // console.log($(window).scrollTop());
-    // console.log($(window)[0].location.href);
-    console.log($(location).attr('href'));
+    var productID = /test/gi; 
+    if($(location).attr('href').match(productID)[0] == 'test'){
+        $('header').removeClass('scrollMenu');
+    }   
 });
 
 function mainScrollEvnet(){
@@ -107,9 +108,9 @@ function mainScrollEvnet(){
 
 };
 function mainScrollListClick(){
-    $('.mainScrollNavArea ul li').click(function(){
-        mainScrollAnimate($('[data-event="scroll"]').eq($(this).index()).offset().top);
-        mainScrollList($(this).index());
+    $('.mainScrollNavArea ul li a').click(function(){
+        // mainScrollAnimate($('[data-event="scroll"]').eq($(this).index()).offset().top);
+        mainScrollList($(this).parent().index());
     });
 }
 function mainScrollAnimate(offsetTop){

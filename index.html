@@ -7,10 +7,24 @@
     <title>FlexFormKorea</title>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+  
     <script src="js/main.js"></script>
     <!-- css -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pagerCustom: '.customPager',
+                controls:false,
+                startSlide:2
+            });
+        })
+    </script>
 </head>
 <body class="scrollPage">
     <header class="scrollMenu">
@@ -59,7 +73,7 @@
     </header>
 
     <div class="mainBGArea">
-        <section data-event="scroll">
+        <!-- <section data-event="scroll">
             <h2>The solution <mark>for you</mark></h2>
             <p>파트너십을 통한 세계적 수준의 솔루션을 제공합니다.</p>
         </section>
@@ -70,13 +84,29 @@
         <section data-event="scroll">
             <h2>Light up <mark>the future</mark></h2>
             <p>더 나은 미래를 향한 끊임없는 연구개발로 복합소재의 혁신을 선도합니다.</p>
+        </section> -->
+        <section data-event="scroll">
+            <div class="slider">
+                <div class="mainSlider01">
+                    <h2>The solution <mark>for you</mark></h2>
+                    <p>파트너십을 통한 세계적 수준의 솔루션을 제공합니다.</p>
+                </div>
+                <div class="mainSlider02">
+                    <h2>Go closer to <mark>your life</mark></h2>
+                    <p>사람과 자연을 감동시키는 소재를 만들어갑니다.</p>
+                </div>
+                <div class="mainSlider03">
+                    <h2>Light up <mark>the future</mark></h2>
+                    <p>더 나은 미래를 향한 끊임없는 연구개발로 복합소재의 혁신을 선도합니다.</p>
+                </div>
+            </div>
         </section>
         <div class="scrollIcon">SCROLL</div>
         <div class="mainScrollNavArea">
-            <ul class="width1760">
-                <li class="active">The solution for you</li>
-                <li>Go closer to your life</li>
-                <li>Light up the future</li>
+            <ul class="customPager width1760">
+                <li class="active"><a data-slide-index="0">The solution for you</a></li>
+                <li><a data-slide-index="1">Go closer to your life</a></li>
+                <li><a data-slide-index="2">Light up the future</a></li>
             </ul>
         </div>
     </div>
