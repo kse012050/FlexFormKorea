@@ -1220,7 +1220,22 @@
 
 
     /* 제품 소개 - 자동차분야 */
-    .productArea .carArea ol{height: 0; overflow: hidden; padding-top: 725px; background: url('../images/product_carImg.png') no-repeat center / cover;}
+    .productArea .carArea ol{height: 0; overflow: hidden; padding-top: 725px; background-image: url('../images/product_carImg.png'); background-repeat: no-repeat ; background-position: center; background-size: cover; position: relative;}
+    .productArea .carArea ol li{position: absolute;  width: 16px; height: 16px; background-color: #8fcc00; text-indent: -9999px; border: 3px solid white; border-radius: 100%; cursor: pointer; overflow: hidden;}
+    .productArea .carArea ol li:nth-child(1){bottom: 230px; left: 640px;}
+    .productArea .carArea ol li:nth-child(2){bottom: 133px; left: 367px;}
+    .productArea .carArea ol li:nth-child(3){bottom: 105px; left: 520px;}
+    .productArea .carArea ol li:nth-child(4){bottom: 25px; left: 590px;}
+    .productArea .carArea ol li:nth-child(5){bottom: 141px; left: 849px;}
+    .productArea .carArea ol li:nth-child(6){bottom: 133px; left: 925px;}
+    .productArea .carArea ol li:nth-child(7){bottom: 103px; left: 920px;}
+    .productArea .carArea ol.carImg01{background-image: url('../images/product_carImg01.png');}
+    .productArea .carArea ol.carImg02{background-image: url('../images/product_carImg02.png');}
+    .productArea .carArea ol.carImg03{background-image: url('../images/product_carImg03.png');}
+    .productArea .carArea ol.carImg04{background-image: url('../images/product_carImg04.png');}
+    .productArea .carArea ol.carImg05{background-image: url('../images/product_carImg05.png');}
+    .productArea .carArea ol.carImg06{background-image: url('../images/product_carImg06.png');}
+    .productArea .carArea ol.carImg07{background-image: url('../images/product_carImg07.png');}
 
 
     /* 제품 소개 - 건축분야 */

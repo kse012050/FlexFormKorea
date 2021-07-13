@@ -7,6 +7,18 @@ $(document).ready(function(){
     popup();
     mobileMenu();
     productMenu();
+    var carImgIdx;
+    $('.productArea .carArea ol li').click(function(){
+        $(this).parent().removeClass('carImg0' + carImgIdx);
+        if(carImgIdx != $(this).index() + 1){
+            carImgIdx = $(this).index() + 1;
+            $(this).parent().addClass(function(){
+                return 'carImg0' + carImgIdx
+            })
+        }else{
+            carImgIdx = null;
+        }
+    })
 });
 
 function mainScrollEvnet(){
@@ -152,6 +164,7 @@ function productMenu(){
     var productID = /test/gi; 
     if($(location).attr('href').match(productID)[0] == 'test'){
         $('header').removeClass('scrollMenu');
+        $('.scrollIcon').hide();
     }   
 }
 
