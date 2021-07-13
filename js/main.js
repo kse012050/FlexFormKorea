@@ -6,6 +6,9 @@ $(document).ready(function(){
     tab();
     popup();
     mobileMenu();
+    // console.log($(window).scrollTop());
+    // console.log($(window)[0].location.href);
+    console.log($(location).attr('href'));
 });
 
 function mainScrollEvnet(){
