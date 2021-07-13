@@ -162,7 +162,7 @@ function mobileMenu(){
 
 function productMenu(){
     var productID = /test/gi; 
-    if($(location).attr('href').match(productID)[0] == 'test'){
+    if($(location).attr('href').match(productID) == 'test'){
         $('header').removeClass('scrollMenu');
         $('.scrollIcon').hide();
     }   

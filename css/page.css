@@ -123,7 +123,7 @@
     /* 서브 페이지 - 제품 소개 공통 */
     .productArea .subPageTitle{background-image: url('../images/productBG.png');}
     .productArea .subPageTitle{height: 100vh;}
-    .productArea img{width: 100%;}
+    /* .productArea img{width: 100%;} */
 
     /* 서브 페이지 - R&D 공통 */
     .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
@@ -592,7 +592,7 @@
     /* 서브 페이지 - 제품 소개 공통 */
     .productArea .subPageTitle{background-image: url('../images/productBG.png');}
     .productArea .subPageTitle{height: 100vh;}
-    .productArea img{width: 100%;}
+    /* .productArea img{width: 100%;} */
 
     /* 서브 페이지 - R&D 공통 */
     .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
@@ -1084,7 +1084,7 @@
     /* 서브 페이지 - 제품 소개 공통 */
     .productArea .subPageTitle{background-image: url('../images/productBG.png');}
     .productArea .subPageTitle{height: 100vh;}
-    .productArea img{width: 100%;}
+    /* .productArea img{width: 100%;} */
 
     /* 서브 페이지 - R&D 공통 */
     .RnDArea .subPageTitle{background-image: url('../images/R&DBG.png');}
