@@ -150,8 +150,8 @@ function mobileMenu(){
 }
 
 function productMenu(){
-    var productID = /test/gi; 
-    if($(location).attr('href').match(productID) == 'test'){
+    var productID = /productSubMenu/gi; 
+    if($(location).attr('href').match(productID) == 'productSubMenu'){
         $('header').removeClass('scrollMenu');
         $('.scrollIcon').hide();
     }   
