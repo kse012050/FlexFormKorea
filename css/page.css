@@ -276,7 +276,9 @@
     .productArea .carArea ol li:nth-child(6)::after{background-image: url('../images/M/M_product_carImg06.png');}
     .productArea .carArea ol li:nth-child(7)::after{background-image: url('../images/M/M_product_carImg07.png');}
     .productArea .carArea ol li:not(:last-child){border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
-    .productArea .carArea ol li::before{content:'0' counter(carCounter); display: block; width: calc(100% - 3.750rem); margin: 0 auto; font-size: 1.563rem; font-weight: 700; color: #8fcc00; margin-bottom: 0.938rem; letter-spacing: -2px;}
+    .productArea .carArea ol li::before{content:'0' counter(carCounter); display: block; width: /* calc(100% - 3.750rem) */100%; margin: 0 auto; font-size: 1.563rem; font-weight: 700; color: #8fcc00; margin-bottom: 0.938rem; letter-spacing: -2px;}
+    .productArea .carArea ol li button{display: none;}
+    .productArea .carArea ol li *{width: 100%;}
     .productArea .carArea ol li strong{font-size: 1.625rem; font-weight: 900; margin-bottom: 0.938rem;}
     .productArea .carArea ol li P{font-size: 1.250rem; font-weight: 400; line-height: 1.750rem;}
 
@@ -745,7 +747,9 @@
     .productArea .carArea ol li:nth-child(6)::after{background-image: url('../images/M/M_product_carImg06.png');}
     .productArea .carArea ol li:nth-child(7)::after{background-image: url('../images/M/M_product_carImg07.png');}
     .productArea .carArea ol li:not(:last-child){border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
-    .productArea .carArea ol li::before{content:'0' counter(carCounter); display: block; width: calc(100% - 60px); margin: 0 auto; font-size: 25px; font-weight: 700; color: #8fcc00; margin-bottom: 15px; letter-spacing: -2px;}
+    .productArea .carArea ol li::before{content:'0' counter(carCounter); display: block; width: /* calc(100% - 60px) */ 100%; margin: 0 auto; font-size: 25px; font-weight: 700; color: #8fcc00; margin-bottom: 15px; letter-spacing: -2px;}
+    .productArea .carArea ol li button{display: none;}
+    .productArea .carArea ol li *{width: 100%;}
     .productArea .carArea ol li strong{font-size: 26px; font-weight: 900; margin-bottom: 15px;}
     .productArea .carArea ol li P{font-size: 20px; font-weight: 400; line-height: 28px;}
 
@@ -1221,22 +1225,81 @@
 
 
     /* 제품 소개 - 자동차분야 */
-    .productArea .carArea ol{height: 0; overflow: hidden; padding-top: 725px; background-image: url('../images/product_carImg.png'); background-repeat: no-repeat ; background-position: center; background-size: cover; position: relative;}
-    .productArea .carArea ol li{position: absolute;  width: 16px; height: 16px; background-color: #8fcc00; text-indent: -9999px; border: 3px solid white; border-radius: 100%; cursor: pointer; overflow: hidden;}
-    .productArea .carArea ol li:nth-child(1){bottom: 230px; left: 640px;}
-    .productArea .carArea ol li:nth-child(2){bottom: 133px; left: 367px;}
-    .productArea .carArea ol li:nth-child(3){bottom: 105px; left: 520px;}
-    .productArea .carArea ol li:nth-child(4){bottom: 25px; left: 590px;}
-    .productArea .carArea ol li:nth-child(5){bottom: 141px; left: 849px;}
-    .productArea .carArea ol li:nth-child(6){bottom: 133px; left: 925px;}
-    .productArea .carArea ol li:nth-child(7){bottom: 103px; left: 920px;}
-    .productArea .carArea ol.carImg01{background-image: url('../images/product_carImg01.png');}
+    .productArea .carArea ol{height: 0; padding-top: 725px; background-image: url('../images/product_carImg.png'); background-repeat: no-repeat ; background-position: center; background-size: cover; position: relative;}
+    .productArea .carArea ol li button{position: absolute; font-size: 0;  width: 20px; height: 20px; text-indent: -9999px;  cursor: pointer; z-index: 5;}
+    .productArea .carArea ol li button::before{content: ''; display: block; width: 100%; height: 100%; background-color: #8fcc00;border: 3px solid white; border-radius: 100%; box-sizing: border-box; position: relative; z-index: 1; }
+    .productArea .carArea ol li:nth-child(1) button{left: 640px; bottom: 230px;}
+    .productArea .carArea ol li:nth-child(2) button{left: 367px; bottom: 133px;}
+    .productArea .carArea ol li:nth-child(3) button{left: 521px; bottom: 105px;}
+    .productArea .carArea ol li:nth-child(4) button{left: 590px; bottom: 25px;}
+    .productArea .carArea ol li:nth-child(5) button{left: 849px; bottom: 141px;}
+    .productArea .carArea ol li:nth-child(6) button{left: 925px; bottom: 133px;}
+    .productArea .carArea ol li:nth-child(7) button{left: 920px; bottom: 103px;}
+    .productArea .carArea ol li button span{ height: 1px; position: absolute; left: 10px; top: 10px; transform-origin: left;}
+    .productArea .carArea ol li:nth-child(1) button span{width: 267px; transform: rotate(-98deg);}
+    .productArea .carArea ol li:nth-child(2) button span{width: 168px; transform: rotate(-146deg);}
+    .productArea .carArea ol li:nth-child(3) button span{width: 455px; transform: rotate(-115.5deg);}
+    .productArea .carArea ol li:nth-child(4) button span{width: 275px; transform: rotate(-114deg);}
+    .productArea .carArea ol li:nth-child(5) button span{width: 180px; transform: rotate(-109deg);}
+    .productArea .carArea ol li:nth-child(6) button span{width: 400px; transform: rotate(-84.5deg);}
+    .productArea .carArea ol li:nth-child(7) button span{width: 205px; transform: rotate(-49deg);}
+    .productArea .carArea ol li button span::after,.productArea .carArea ol li button span::before{content: ''; position: absolute; left: 0; bottom: 0;  height: 100%; background-color: rgba(0, 0, 0, 0.32); }
+    .productArea .carArea ol li button span::before{width: 100%;}
+    .productArea .carArea ol li button span::after{width: 0;}
+    .productArea .carArea ol li > div{position: absolute;}
+    .productArea .carArea ol li:nth-child(1) > div{left: 483px; top: -2px;}
+    .productArea .carArea ol li:nth-child(2) > div{left: 61px; top: 278px;}
+    .productArea .carArea ol li:nth-child(3) > div{left: 150px; top: 10px;}
+    .productArea .carArea ol li:nth-child(4) > div{left: 328px; top: 253px;}
+    .productArea .carArea ol li:nth-child(5) > div{left: 652px; top: 255px;}
+    .productArea .carArea ol li:nth-child(6) > div{left: 852px; top: 13px;}
+    .productArea .carArea ol li:nth-child(7) > div{left: 933px; top: 316px;}
+    .productArea .carArea ol li > div strong{width: 245px; padding-bottom: 280px; text-align: center; background-repeat: no-repeat; background-position: center bottom; position: relative; z-index: 3;}
+    .productArea .carArea ol li:nth-child(1) > div strong{ background-image: url('../images/product_carImg01.png');}
+    .productArea .carArea ol li:nth-child(2) > div strong{ background-image: url('../images/product_carImg02.png');}
+    .productArea .carArea ol li:nth-child(3) > div strong{ background-image: url('../images/product_carImg03.png');}
+    .productArea .carArea ol li:nth-child(4) > div strong{ background-image: url('../images/product_carImg04.png');}
+    .productArea .carArea ol li:nth-child(5) > div strong{ background-image: url('../images/product_carImg05.png');}
+    .productArea .carArea ol li:nth-child(6) > div strong{ background-image: url('../images/product_carImg06.png');}
+    .productArea .carArea ol li:nth-child(7) > div strong{ background-image: url('../images/product_carImg07.png');}
+    .productArea .carArea ol li > div > div{width: 380px; position: absolute; height: 0; left: -70px;  display: flex; flex-direction: column; justify-content: flex-end; align-items: center; color: white; background-color: rgba(0, 0, 0, 0.7); border-radius: 15px; overflow: hidden; z-index: 2;}
+    .productArea .carArea ol li:nth-child(1) > div > div{top: 115px;}
+    .productArea .carArea ol li:nth-child(2) > div > div{top: 135px;}
+    .productArea .carArea ol li:nth-child(3) > div > div{top: 100px;}
+    .productArea .carArea ol li:nth-child(4) > div > div{top: 120px;}
+    .productArea .carArea ol li:nth-child(5) > div > div{top: 90px;}
+    .productArea .carArea ol li:nth-child(6) > div > div{top: 95px;}
+    .productArea .carArea ol li:nth-child(7) > div > div{top: 100px;}
+    .productArea .carArea ol li > div > div p{font-size: 16px; font-weight: 400; line-height: 28px; }
+    .productArea .carArea ol li > div > div p:last-child{padding-bottom: 25px; box-sizing: border-box;}
+
+    .productArea .carArea ol.active li button{z-index: 0;}
+    .productArea .carArea ol.active li button span::before{width: 0;}
+    .productArea .carArea ol.active li.active button span::after{transition: 1.5s width;}
+    .productArea .carArea ol.active li:nth-child(1).active button span::after{width: 400px;}
+    .productArea .carArea ol.active li:nth-child(2).active button span::after{width: 280px;}
+    .productArea .carArea ol.active li:nth-child(3).active button span::after{width: 475px;}
+    .productArea .carArea ol.active li:nth-child(4).active button span::after{width: 365px;}
+    .productArea .carArea ol.active li:nth-child(5).active button span::after{width: 250px;}
+    .productArea .carArea ol.active li:nth-child(6).active button span::after{width: 400px;}
+    .productArea .carArea ol.active li:nth-child(7).active button span::after{width: 230px;}
+    .productArea .carArea ol.active li strong{display: none;}
+    .productArea .carArea ol.active li.active strong{display: block;}
+    .productArea .carArea ol.active li.active > div > div{transition: 1s 1s height;}
+    .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 290px;}
+    .productArea .carArea ol.active li:nth-child(2).active > div > div{height: 190px;}
+    .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 260px;}
+    .productArea .carArea ol.active li:nth-child(4).active > div > div{height: 190px;}
+    .productArea .carArea ol.active li:nth-child(5).active > div > div{height: 205px;}
+    .productArea .carArea ol.active li:nth-child(6).active > div > div{height: 250px;}
+    .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 190px;}
+    /* .productArea .carArea ol.carImg01{background-image: url('../images/product_carImg01.png');}
     .productArea .carArea ol.carImg02{background-image: url('../images/product_carImg02.png');}
     .productArea .carArea ol.carImg03{background-image: url('../images/product_carImg03.png');}
     .productArea .carArea ol.carImg04{background-image: url('../images/product_carImg04.png');}
     .productArea .carArea ol.carImg05{background-image: url('../images/product_carImg05.png');}
     .productArea .carArea ol.carImg06{background-image: url('../images/product_carImg06.png');}
-    .productArea .carArea ol.carImg07{background-image: url('../images/product_carImg07.png');}
+    .productArea .carArea ol.carImg07{background-image: url('../images/product_carImg07.png');} */
 
 
     /* 제품 소개 - 건축분야 */

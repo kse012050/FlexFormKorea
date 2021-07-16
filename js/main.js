@@ -7,18 +7,7 @@ $(document).ready(function(){
     popup();
     mobileMenu();
     productMenu();
-    var carImgIdx;
-    $('.productArea .carArea ol li').click(function(){
-        $(this).parent().removeClass('carImg0' + carImgIdx);
-        if(carImgIdx != $(this).index() + 1){
-            carImgIdx = $(this).index() + 1;
-            $(this).parent().addClass(function(){
-                return 'carImg0' + carImgIdx
-            })
-        }else{
-            carImgIdx = null;
-        }
-    })
+    carAnimation();
 });
 
 function mainScrollEvnet(){
@@ -197,4 +186,27 @@ function tab(){
         $(this).parent().addClass('active').siblings().removeClass('active');
         $('.tabArea .tabContents > *').eq(tabInd).addClass('active').siblings().removeClass('active');
     })
+}
+
+function carAnimation(){
+    var carImgIdx;
+
+    $('.productArea .carArea ol li button').click(function(){
+        if($(this).parent().hasClass('active')){
+            $('.productArea .carArea ol').removeClass('active');
+            $('.productArea .carArea ol li').removeClass('active');
+        }else{
+            $('.productArea .carArea ol').addClass('active');
+            $('.productArea .carArea ol li').removeClass('active');
+            $(this).parent().addClass('active');
+        }
+    })
+
+    /* $('.productArea .carArea ol li button').hover(function(){
+        $('.productArea .carArea ol').addClass('active');
+        $(this).parent().addClass('active');
+    },function(){
+        $('.productArea .carArea ol').removeClass('active');
+        $('.productArea .carArea ol li').removeClass('active');
+    }) */
 }
