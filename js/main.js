@@ -14,11 +14,15 @@ $(document).ready(function(){
     })
 
     $('header > div nav > ul').hover(function(){
-        $('header').addClass('active');
-        $('header > div nav > ul li ul').fadeIn();
+        if($(window).width() >= 1280){
+            $('header').addClass('active');
+            $('header > div nav > ul li ul').fadeIn();
+        }
     },function(){
-        $('header').removeClass('active');
-        $('header > div nav > ul li ul').hide();
+        if($(window).width() >= 1280){
+            $('header').removeClass('active');
+            $('header > div nav > ul li ul').hide();
+        }
     })
 });
 
@@ -151,7 +155,8 @@ function mobileMenu(){
 
     $(window).resize(function(){
         if($(window).width() > 1280){
-            $('header > div nav').show();
+            // $('header > div nav').show();
+            $('header > div nav').removeAttr('style');
             $('header > div nav > ul > li > ul').hide();
         }else{
             $('header').removeClass('active');
