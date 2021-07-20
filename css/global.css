@@ -29,14 +29,23 @@
     header > div .M_menuBtn{width: 2.813rem; cursor: pointer;}
     header > div .M_menuBtn span{display: block;  height: 0.188rem; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
     header > div .M_menuBtn span:not(:last-child){margin-bottom: 0.750rem;}
-    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 6.250rem; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; }
-    header > div nav > ul{display: flex; flex-direction: column; }
+    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 6.250rem; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; padding-bottom: 1.875rem;}
+    header > div nav > ul{display: flex; flex-direction: column; margin-bottom: 1.875rem;}
     header > div nav > ul > li > a{display: block; font-size: 1.750rem; font-weight: 500; color: black; padding: 1.875rem; position: relative;}
     header > div nav > ul > li > a span.material-icons{position: absolute; right: 1.875rem; top: 1.438rem; font-size: 2.500rem; transition: 0.5s transform;}
     header div nav ul li a.active span.material-icons{transform: rotate(180deg);}
     header > div nav > ul > li a:hover ,header div nav ul li.active > a{font-weight: 700; color: #8fcc00;}
     header > div nav > ul > li ul{display: none; padding: 1.313em 0; border-width: 1px 0; border-style: solid; border-color: #dfdfdf;}
     header > div nav > ul > li ul li a{display: block; font-size: 1.375rem; font-weight: 500; padding: 1.313em 1.875rem;}
+    header > div nav .countryArea{border-radius: 0.938rem; background-color: rgba(0, 0, 0, 0.8);}
+    header > div nav .countryArea *{font-size: 1.250rem; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; display: flex; width: 100%; padding: 0.625rem 1.875rem; justify-content: space-between; align-items: center; border-radius: 1.250rem; cursor: pointer;}
+    header > div nav .countryArea > div{padding:0.625rem 0 0.938rem; box-sizing: border-box; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 1.875rem; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 1.250rem;}
+    header > div nav .countryArea.active button{ border-radius:1.250rem 1.250rem 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
+    header > div nav .countryArea.active > div{display: block;}
     header.scrollMenu{background-color: transparent; box-shadow: none;}
     header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
     header.scrollMenu div .M_menuBtn span{background-color: white;}
@@ -85,14 +94,23 @@
     header > div .M_menuBtn{width: 45px; cursor: pointer;}
     header > div .M_menuBtn span{display: block;  height: 3px; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
     header > div .M_menuBtn span:not(:last-child){margin-bottom: 12px;}
-    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 100px; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; }
-    header > div nav > ul{display: flex; flex-direction: column; }
+    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 100px; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; padding-bottom: 30px;}
+    header > div nav > ul{display: flex; flex-direction: column; margin-bottom: 30px;}
     header > div nav > ul > li > a{display: block; font-size: 28px; font-weight: 500; color: black; padding: 30px; position: relative;}
     header > div nav > ul > li > a span.material-icons{position: absolute; right: 30px; top: 23px; font-size: 40px; transition: 0.5s transform;}
     header div nav ul li a.active span.material-icons{transform: rotate(180deg);}
     header > div nav > ul > li a:hover ,header div nav ul li.active > a{font-weight: 700; color: #8fcc00;}
     header > div nav > ul > li ul{display: none; padding: 21px 0; border-width: 1px 0; border-style: solid; border-color: #dfdfdf;}
     header > div nav > ul > li ul li a{display: block; font-size: 22px; font-weight: 500; padding: 21px 30px;}
+    header > div nav .countryArea{border-radius: 15px; background-color: rgba(0, 0, 0, 0.8);}
+    header > div nav .countryArea *{font-size: 20px; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; display: flex; width: 100%; padding: 10px 30px; justify-content: space-between; align-items: center; border-radius: 20px; cursor: pointer;}
+    header > div nav .countryArea > div{padding:10px 0 15px; box-sizing: border-box; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 30px; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 20px;}
+    header > div nav .countryArea.active button{ border-radius:20px 20px 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
+    header > div nav .countryArea.active > div{display: block;}
     header.scrollMenu{background-color: transparent; box-shadow: none;}
     header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
     header.scrollMenu div .M_menuBtn span{background-color: white;}
@@ -151,11 +169,12 @@
     header > div nav > ul > li ul li a{color: #5e5e5e; display: inline-block; padding: 15px 0; white-space: nowrap;}
     header > div nav .countryArea{align-self: center; position: relative; }
     header > div nav .countryArea *{font-size: 15px; color: white; }
-    header > div nav .countryArea button{display: block; font-weight: 300; width: 95px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 20px; background-color: black; }
+    header > div nav .countryArea button{display: block; font-weight: 300; width: 95px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 20px; background-color: black; cursor: pointer;}
     header > div nav .countryArea > div{position: absolute; top: 100%; left: 0; width: 100%; padding:5px 0 15px; box-sizing: border-box; border-radius: 0 0 20px 20px; background-color: black; display: none;}
     header > div nav .countryArea > div a{display: block; padding: 0 20px; font-weight: 900;}
     header > div nav .countryArea > div a:not(:last-child){margin-bottom: 20px;}
     header > div nav .countryArea.active button{ border-radius:20px 20px 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
     header > div nav .countryArea.active > div{display: block;}
     header.scrollMenu{background-color: transparent; box-shadow: none;}
     header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
