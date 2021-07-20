@@ -136,19 +136,36 @@
  
     /* 해더 */
     header{height: 120px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
+    header::after{content: ''; position: absolute; left: 0; top: calc(100% + 1px); width: 100%; height:0; background-color: transparent; transition-duration: 0.5s; transition-property: height , background-color; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
     header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
     header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
     header > div h1 a{display: block; height: 100%;}
     header > div .M_menuBtn{display: none;}
-    header > div nav{/* width: 765px; */ width: 43.5%;}
-    header > div nav > ul{display: flex; width: 100%; justify-content: space-between;}
-    header > div nav > ul > li a{font-size: 22px; font-weight: 500; color: black; }
+    header > div nav{/* width: 765px; */ width: 43.5%; width: 58.5%; height: 100%; display: flex; justify-content: space-between;}
+    header > div nav > ul{display: flex; width: 100%; width: 74.5%; height: 100%; /* justify-content: space-between; */ align-items: center;}
+    header > div nav > ul > li{height: 100%; /* flex: 1; */ position: relative; padding-right: 18%;}
+    header > div nav > ul > li a{font-size: 22px; font-weight: 500; color: black; height: 100%;/*  width: 100%;  */display: flex; /* justify-content: center; */ align-items: center;}
     header > div nav > ul > li > a span.material-icons{display: none;}
     header > div nav > ul > li a:hover ,header div nav ul li.active a{color: #8fcc00;}
-    header > div nav > ul > li ul{display: none;}
+    header > div nav > ul > li ul{position: absolute; left: 0; top: 100%; width: 100%; padding: 15px 0; display: none;}
+    header > div nav > ul > li ul li a{color: #5e5e5e; display: inline-block; padding: 15px 0; white-space: nowrap;}
+    header > div nav .countryArea{align-self: center; position: relative; }
+    header > div nav .countryArea *{font-size: 15px; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; width: 95px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 20px; background-color: black; }
+    header > div nav .countryArea > div{position: absolute; top: 100%; left: 0; width: 100%; padding:5px 0 15px; box-sizing: border-box; border-radius: 0 0 20px 20px; background-color: black; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 20px; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 20px;}
+    header > div nav .countryArea.active button{ border-radius:20px 20px 0 0;}
+    header > div nav .countryArea.active > div{display: block;}
     header.scrollMenu{background-color: transparent; box-shadow: none;}
     header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
-    header.scrollMenu nav ul li a{color: white;}
+    header.scrollMenu nav > ul >  li > a{color: white;}
+    header.active{background-color: white; border-bottom: 1px solid rgba(0, 0, 0, 0.22); box-sizing: border-box;}
+    header.active::after{background-color: white; height: 300px; z-index: -1;}
+    header.active div h1{background-image: url('../images/logo_B.png');}
+    header.active div nav > ul > li > a{color: black;}
+    header.active div nav > ul > li:hover > a{color: #8fcc00;}
+
 
     /* 푸터 */
     footer{background-color: #191919; padding: 90px 0;}

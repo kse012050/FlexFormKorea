@@ -8,6 +8,18 @@ $(document).ready(function(){
     mobileMenu();
     productMenu();
     carAnimation();
+
+    $('.countryArea button').click(function(){
+        $('.countryArea').toggleClass('active');
+    })
+
+    $('header > div nav > ul').hover(function(){
+        $('header').addClass('active');
+        $('header > div nav > ul li ul').fadeIn();
+    },function(){
+        $('header').removeClass('active');
+        $('header > div nav > ul li ul').hide();
+    })
 });
 
 function mainScrollEvnet(){
