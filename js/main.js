@@ -107,7 +107,6 @@ function mainScrollEvnet(){
 };
 function mainScrollListClick(){
     $('.mainScrollNavArea ul li a').click(function(){
-        // mainScrollAnimate($('[data-event="scroll"]').eq($(this).index()).offset().top);
         mainScrollList($(this).parent().index());
     });
 }
@@ -201,12 +200,4 @@ function carAnimation(){
             $(this).parent().addClass('active');
         }
     })
-
-    /* $('.productArea .carArea ol li button').hover(function(){
-        $('.productArea .carArea ol').addClass('active');
-        $(this).parent().addClass('active');
-    },function(){
-        $('.productArea .carArea ol').removeClass('active');
-        $('.productArea .carArea ol li').removeClass('active');
-    }) */
 }

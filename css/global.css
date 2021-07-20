@@ -4,7 +4,6 @@
 
 /* 컨텐츠 크기 */
 .contentsWidth{max-width: 1760px; margin: 0 auto;}
-/* .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;} */
 .width1760{max-width: 1760px;;}
 .width1556{max-width: 1556px;}
 .width1200{max-width: 1200px;}
