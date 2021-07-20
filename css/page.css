@@ -2,10 +2,16 @@
     html{font-size: 2.5vw;}
 
 
-    .contactLink{position: fixed; right: 0px; bottom: 0; width:4.813rem; height: 7.500rem; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
+    /* .contactLink{position: fixed; right: 0px; bottom: 0; width:4.813rem; height: 7.500rem; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
     .contactLink::before{content: ''; width: 1.313rem; height: 1.438rem; background: url('../images/contactIcon.png') no-repeat center / cover; }
     .scrollPage .subPage .contactLink{bottom: 0; top: auto;}
-    .subPage .contactLink{ font-size: 0; top: 40.625rem; bottom: auto; right: 0; width: 4.813rem;}
+    .subPage .contactLink{ font-size: 0; top: 40.625rem; bottom: auto; right: 0; width: 4.813rem;} */
+
+    .floatingArea{position: fixed; right: 0; bottom: 0;}
+    .floatingArea a{display: block; width: 7.875rem; height: 5.313rem; text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+    .floatingArea a:not(:last-of-type){margin-bottom: 0.625rem;}
+    .floatingArea a.blogLink{background-color: #e2e2e2; background-image: url('../images/M/M_blogIcon.png');}
+    .floatingArea a.contactLink{background-color: #8fcc00; background-image: url('../images/M/M_contactIcon.png');}
 
     /* 스크롤 페이지 */
     .scrollArea{overflow-y: auto; height: 100vh;}
@@ -450,10 +456,17 @@
 
 
 @media screen and (min-width:640px)  and (max-width:1279px) {
-    .contactLink{position: fixed;  right: 0px; bottom: 0; width:77px; height: 120px; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
+    /* .contactLink{position: fixed;  right: 0px; bottom: 0; width:77px; height: 120px; font-size: 0; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
     .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; }
     .scrollPage .subPage .contactLink{bottom: 0; top: auto;}
-    .subPage .contactLink{ font-size: 0; top: 650px; bottom: auto; right: 0; width: 77px;}
+    .subPage .contactLink{ font-size: 0; top: 650px; bottom: auto; right: 0; width: 77px;} */
+
+    .floatingArea{position: fixed; right: 0; bottom: 0;}
+    .floatingArea a{display: block; width: 126px; height: 85px; text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+    .floatingArea a:not(:last-of-type){margin-bottom: 10px;}
+    .floatingArea a.blogLink{background-color: #e2e2e2; background-image: url('../images/M/M_blogIcon.png');}
+    .floatingArea a.contactLink{background-color: #8fcc00; background-image: url('../images/M/M_contactIcon.png');}
+
 
     /* 스크롤 페이지 */
     .scrollArea{overflow-y: auto; height: 100vh;}
@@ -912,10 +925,19 @@
 }
 
 @media screen and (min-width:1280px) {
-    .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
+    /* .contactLink{position: fixed; right: 10px; bottom: 0; width: 160px; height: 120px; font-size: 15px; font-weight: 400; color: white; display: flex; justify-content: center; align-items: center; background-color: #8fcc00; z-index: 10;}
     .contactLink::before{content: ''; width: 21px; height: 23px; background: url('../images/contactIcon.png') no-repeat center / cover; margin-right: 12px;}
     .subPage .contactLink{ font-size: 0; top: 670px; right: 0; width: 77px;}
-    .subPage .contactLink::before{margin: 0;}
+    .subPage .contactLink::before{margin: 0;} */
+
+    .floatingArea{position: fixed; right: 0; bottom: 0;}
+    .floatingArea a{display: flex; width: 163px; height: 63px; align-items: center; font-size: 15px; font-weight: 700; padding: 0 30px; box-sizing: border-box;}
+    .floatingArea a:not(:last-of-type){margin-bottom: 20px;}
+    .floatingArea a::before{content: ''; width: 33px; height: 30px; margin-right: 10px;}
+    .floatingArea a.blogLink{background-color: #e2e2e2;}
+    .floatingArea a.contactLink{background-color: #8fcc00; color: white;}
+    .floatingArea a.blogLink::before{background-image: url('../images/blogIcon.png'); margin-top: 10px;}
+    .floatingArea a.contactLink::before{background-image: url('../images/contactIcon.png');}
 
     /* 스크롤 페이지 */
     .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
