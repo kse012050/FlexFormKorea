@@ -17,7 +17,7 @@
     .scrollArea{overflow-y: auto; height: 100vh;}
     /* 제품 스크롤 */
     .scrollPage .productArea{padding-top: 0;}
-    .productArea .scrollArea{ padding-top: 6.250rem;}
+    .productArea .scrollArea{ padding-top: 6.250rem; box-sizing: border-box;}
 
 
     /* 메인 */
@@ -472,7 +472,7 @@
     .scrollArea{overflow-y: auto; height: 100vh;}
     /* 제품 스크롤 */
     .scrollPage .productArea{padding-top: 0;}
-    .productArea .scrollArea{ padding-top: 100px;}
+    .productArea .scrollArea{ padding-top: 100px; box-sizing: border-box;}
 
 
     /* 메인 */
@@ -943,7 +943,7 @@
     .scrollArea{overflow-y: auto; width: calc(100% + 10px); height: 100vh;}
     /* 제품 스크롤 */
     .scrollPage .productArea{padding-top: 0;}
-    .productArea .scrollArea{ padding-top: 120px;}
+    .productArea .scrollArea{ padding-top: 120px; box-sizing: border-box;}
 
 
 
