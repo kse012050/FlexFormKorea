@@ -1185,7 +1185,26 @@
     /* 제품 소개 - 자동차분야 */
     .productArea .carArea ol{height: 0; padding-top: 725px; background-image: url('../images/product_carImg.png'); background-repeat: no-repeat ; background-position: center; background-size: cover; position: relative;}
     .productArea .carArea ol li button{position: absolute; font-size: 0;  width: 20px; height: 20px; text-indent: -9999px;  cursor: pointer; z-index: 5;}
-    .productArea .carArea ol li button::before{content: ''; display: block; width: 100%; height: 100%; background-color: #8fcc00;border: 3px solid white; border-radius: 100%; box-sizing: border-box; position: relative; z-index: 1; }
+    .productArea .carArea ol li button::before{content: ''; display: block; width: 100%; height: 100%; background-color: #8fcc00;border: 3px solid white; border-radius: 100%; box-sizing: border-box; position: relative; z-index: 1; 
+        animation-name: carEffect; animation-duration:1s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: linear;
+    }
+    @keyframes carEffect {
+        0%{background-color: #8fcc00;}
+        100%{background-color: white;}
+    }
+    .productArea .carArea ol li.active button::after{ animation:ripple 1s 0.5s ease-out infinite; border:solid 2px #8fcc00; border-radius:1em; bottom:0; box-sizing:border-box; content:""; left:0; position:absolute; right:0; top:0; border-radius: 100%;}
+    @keyframes ripple {
+        0% {
+            opacity:1;
+        }
+        70%{
+            opacity:0.3;
+        }
+        100% {
+            opacity:0;
+            transform:scale(2.5);
+        }
+    }
     .productArea .carArea ol li:nth-child(1) button{left: 640px; bottom: 230px;}
     .productArea .carArea ol li:nth-child(2) button{left: 367px; bottom: 133px;}
     .productArea .carArea ol li:nth-child(3) button{left: 521px; bottom: 105px;}
@@ -1220,7 +1239,7 @@
     .productArea .carArea ol li:nth-child(5) > div strong{ background-image: url('../images/product_carImg05.png');}
     .productArea .carArea ol li:nth-child(6) > div strong{ background-image: url('../images/product_carImg06.png');}
     .productArea .carArea ol li:nth-child(7) > div strong{ background-image: url('../images/product_carImg07.png');}
-    .productArea .carArea ol li > div > div{width: 380px; position: absolute; height: 0; left: -70px;  display: flex; flex-direction: column; justify-content: flex-end; align-items: center; color: white; background-color: rgba(0, 0, 0, 0.7); border-radius: 15px; overflow: hidden; z-index: 2;}
+    .productArea .carArea ol li > div > div{width: 380px; position: absolute; height: 0; left: -70px;  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; color: white; background-color: rgba(0, 0, 0, 0.7); border-radius: 15px; overflow: hidden; z-index: 2; padding: 0 15px; box-sizing: border-box;}
     .productArea .carArea ol li:nth-child(1) > div > div{top: 115px;}
     .productArea .carArea ol li:nth-child(2) > div > div{top: 135px;}
     .productArea .carArea ol li:nth-child(3) > div > div{top: 100px;}
@@ -1243,14 +1262,14 @@
     .productArea .carArea ol.active li:nth-child(7).active button span::after{width: 230px;}
     .productArea .carArea ol.active li strong{display: none;}
     .productArea .carArea ol.active li.active strong{display: block;}
-    .productArea .carArea ol.active li.active > div > div{transition: 1s 1s height;}
-    .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 290px;}
+    .productArea .carArea ol.active li.active > div > div{transition: 1s 1s height; text-align: left;}
+    .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 315px;}
     .productArea .carArea ol.active li:nth-child(2).active > div > div{height: 190px;}
-    .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 260px;}
+    .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 295px;}
     .productArea .carArea ol.active li:nth-child(4).active > div > div{height: 190px;}
     .productArea .carArea ol.active li:nth-child(5).active > div > div{height: 205px;}
     .productArea .carArea ol.active li:nth-child(6).active > div > div{height: 250px;}
-    .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 190px;}
+    .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 195px;}
 
 
     /* 제품 소개 - 건축분야 */
