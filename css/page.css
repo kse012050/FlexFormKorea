@@ -1034,7 +1034,7 @@
     .subPage .subContents h4{font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 100px; }
     .subPage .subContents strong{display: block; font-size: 24px; font-weight: 700;}
     .subPage .subContents p{font-size: 22px; font-weight: 300;}
-    .subPage .subContents b{font-size: 22px; display: block;  font-weight: 500;}
+    .subPage .subContents b{font-size: 22px; display: block;  font-weight: 500; word-break: normal;}
 
     /* 서브 페이지 컨텐츠 공통 */
     .subContents{margin-top: 100px;}
@@ -1249,6 +1249,7 @@
     .productArea .carArea ol li:nth-child(7) > div > div{top: 100px;}
     .productArea .carArea ol li > div > div p{font-size: 16px; font-weight: 400; line-height: 28px; }
     .productArea .carArea ol li > div > div p:last-child{padding-bottom: 25px; box-sizing: border-box;}
+    .productArea .carArea ol li > div > div p:nth-of-type(2n):not(:last-of-type){margin-bottom: 10px;}
 
     .productArea .carArea ol.active li button{z-index: 0;}
     .productArea .carArea ol.active li button span::before{width: 0;}
@@ -1263,13 +1264,13 @@
     .productArea .carArea ol.active li strong{display: none;}
     .productArea .carArea ol.active li.active strong{display: block;}
     .productArea .carArea ol.active li.active > div > div{transition: 1s 1s height; text-align: left;}
-    .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 315px;}
+    .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 335px;}
     .productArea .carArea ol.active li:nth-child(2).active > div > div{height: 190px;}
-    .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 295px;}
+    .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 315px;}
     .productArea .carArea ol.active li:nth-child(4).active > div > div{height: 190px;}
-    .productArea .carArea ol.active li:nth-child(5).active > div > div{height: 205px;}
+    .productArea .carArea ol.active li:nth-child(5).active > div > div{height: 215px;}
     .productArea .carArea ol.active li:nth-child(6).active > div > div{height: 250px;}
-    .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 195px;}
+    .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 205px;}
 
 
     /* 제품 소개 - 건축분야 */
