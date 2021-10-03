@@ -550,7 +550,7 @@
     .subPage section > strong br{display: none;}
     .subPage.hireArea section > strong,
     .subPage.questionArea section > strong{font-size: 26px; font-weight: 500; line-height: 36px;}
-    .subPage section > p{font-size: 22px; font-weight: 300; line-height: 36px; text-align: center;}
+    .subPage section > p{font-size: 22px; font-weight: 300; line-height: 36px; text-align: center; max-width: 1200px; margin: 0 auto;}
     .subPage section > p:not(:last-of-type){margin-bottom: 50px;}
     .subPage .subContents h4{font-size: 36px; font-weight: 700; text-align: center; width: calc(100% - 60px); margin: 0 auto 100px; }
     .subPage .subContents strong{display: block; font-size: 24px; font-weight: 700; width: calc(100% - 60px); margin: 0 auto;}
