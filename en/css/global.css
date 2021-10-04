@@ -63,13 +63,13 @@
     footer div{position: relative;}
     footer div h2{max-width: 14.750rem; margin-bottom: 6.250rem;}
     footer div h2 img{width: 100%;}
-    footer div > ul{position: absolute; right: 0; top: 0; display: flex;}
-    footer div > ul li:not(:last-child){margin-right: 2.188rem;}
+    footer div > ul{position: absolute; right: 0; top: 0; text-align: right;}
+    footer div > ul li:not(:last-child){margin-bottom: 0.625rem;}
     footer div > ul li a{font-size: 1.250rem; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
     footer div address{font-style: normal; margin-bottom: 0.938rem;}
     footer div address ul{display: flex; flex-direction: column;}
-    footer div address ul li{font-size: 1.313rem; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
-    footer div address ul li:not(:last-child){margin-bottom: 0.625rem;}
+    footer div address ul li{font-size: 1.313rem; line-height: 1.938rem; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    /* footer div address ul li:not(:last-child){margin-bottom: 0.625rem;} */
     footer div p{font-size: 1.063rem; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 1.875rem;}
     footer div p ~ a:not(:last-of-type){margin-right: 0.938rem;}
     footer .link{display: inline-block; width: 3.125rem; height: 3.125rem; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
@@ -132,13 +132,13 @@
     footer div{position: relative;}
     footer div h2{max-width: 236px; margin-bottom: 100px;}
     footer div h2 img{width: 100%;}
-    footer div > ul{position: absolute; right: 0; top: 0; display: flex;}
-    footer div > ul li:not(:last-child){margin-right: 35px;}
+    footer div > ul{position: absolute; right: 0; top: 0; text-align: right;}
+    footer div > ul li:not(:last-child){margin-bottom: 10px;}
     footer div > ul li a{font-size: 20px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
     footer div address{font-style: normal; margin-bottom: 15px;}
     footer div address ul{display: flex; flex-direction: column;}
-    footer div address ul li{font-size: 21px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
-    footer div address ul li:not(:last-child){margin-bottom: 10px;}
+    footer div address ul li{font-size: 21px; line-height: 31px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    /* footer div address ul li:not(:last-child){margin-bottom: 10px;} */
     footer div p{font-size: 17px; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;}
     footer div p ~ a:not(:last-of-type){margin-right: 15px;}
     footer .link{display: inline-block; width: 50px; height: 50px; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
@@ -167,10 +167,10 @@
     header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
     header > div h1 a{display: block; height: 100%;}
     header > div .M_menuBtn{display: none;}
-    header > div nav{/* width: 765px; */ width: 43.5%; width: 58.5%; height: 100%; display: flex; justify-content: space-between;}
-    header > div nav > ul{display: flex; width: 100%; width: 74.5%; height: 100%; /* justify-content: space-between; */ align-items: center;}
-    header > div nav > ul > li{height: 100%; /* flex: 1; */ position: relative; padding-right: 18%;}
-    header > div nav > ul > li a{font-size: 22px; font-weight: 500; color: black; height: 100%;/*  width: 100%;  */display: flex; /* justify-content: center; */ align-items: center;}
+    header > div nav{ width: 43.5%; width: 1000px; height: 100%; display: flex; justify-content: space-between;}
+    header > div nav > ul{display: flex; width: 100%; height: 100%;  align-items: center;}
+    header > div nav > ul > li{height: 100%;  position: relative; padding-right: 15%;}
+    header > div nav > ul > li a{font-size: 22px; font-weight: 500; color: black; height: 100%; display: flex; align-items: center;}
     header > div nav > ul > li > a span.material-icons{display: none;}
     header > div nav > ul > li a:hover ,header div nav ul li.active a{color: #8fcc00;}
     header > div nav > ul > li ul{position: absolute; left: 0; top: 100%; width: 100%; padding: 15px 0; display: none;}
@@ -204,9 +204,8 @@
     footer div > ul li a{font-size: 16px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
     footer div address{font-style: normal; margin-bottom: 15px;}
     footer div address ul{display: flex; flex-wrap: wrap; max-width: 880px;}
-    footer div address ul li{font-size: 17px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    footer div address ul li{font-size: 17px; line-height: 32px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
     footer div address ul li:not(:nth-last-child(-n + 2)){margin-right: 15px;}
-    footer div address ul li:not(:last-child){margin-bottom: 15px;}
     footer div p{font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;}
     footer div p ~ a:not(:last-of-type){margin-right: 15px;}
     footer .link{display: inline-block; width: 50px; height: 50px; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
