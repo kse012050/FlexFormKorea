@@ -255,7 +255,7 @@
     .productArea .carArea ol li:nth-child(1)::after{background-image: url('../images/M/M_product_carImg01.png');}
     .productArea .carArea ol li:nth-child(2)::after{background-image: url('../images/M/M_product_carImg02.png');}
     .productArea .carArea ol li:nth-child(3)::after{background-image: url('../images/M/M_product_carImg03.png');}
-    .productArea .carArea ol li:nth-child(4)::after{background-image: url('../images/M/M_product_carImg04.png');}
+    .productArea .carArea ol li:nth-child(4)::after{background-image: url('../images/M/M_product_carImg04.png'); top: 0;}
     .productArea .carArea ol li:nth-child(5)::after{background-image: url('../images/M/M_product_carImg05.png');}
     .productArea .carArea ol li:nth-child(6)::after{background-image: url('../images/M/M_product_carImg06.png');}
     .productArea .carArea ol li:nth-child(7)::after{background-image: url('../images/M/M_product_carImg07.png');}
@@ -445,9 +445,10 @@
      /* 개인정보처리방침 */
     .privacyPolicyArea{padding: 3.125rem 0;}
     .privacyPolicyArea b{display: block; font-size: 1.500rem; font-weight: 400; margin-bottom: 1.250rem;}
-    .privacyPolicyArea p{font-size: 1.375rem; font-weight: 300; line-height: 2.250rem;}
-    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
-    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea p{}
+    .privacyPolicyArea > ol > li:not(:first-child){counter-increment: privacyPolicyCounter; font-size: 1.375rem; font-weight: 300; line-height: 2.250rem;}
+    .privacyPolicyArea > ol > li b::before{content:'Article ' counter(privacyPolicyCounter) ' - ';}
+    .privacyPolicyArea > ol > li.listNone b::before{display: none;}
     .privacyPolicyArea strong{display: block; font-size: 1.500rem; font-weight: 400; margin-bottom: 1.250rem;}
     .privacyPolicyArea dl{display: flex; font-size: 1.375rem; font-weight: 300; line-height: 2.250rem;}
     .privacyPolicyArea > *:not(:last-child){margin-bottom: 6.250rem;}
@@ -710,7 +711,7 @@
     .productArea .carArea ol li:nth-child(1)::after{background-image: url('../images/M/M_product_carImg01.png');}
     .productArea .carArea ol li:nth-child(2)::after{background-image: url('../images/M/M_product_carImg02.png');}
     .productArea .carArea ol li:nth-child(3)::after{background-image: url('../images/M/M_product_carImg03.png');}
-    .productArea .carArea ol li:nth-child(4)::after{background-image: url('../images/M/M_product_carImg04.png');}
+    .productArea .carArea ol li:nth-child(4)::after{background-image: url('../images/M/M_product_carImg04.png'); top: 0;}
     .productArea .carArea ol li:nth-child(5)::after{background-image: url('../images/M/M_product_carImg05.png');}
     .productArea .carArea ol li:nth-child(6)::after{background-image: url('../images/M/M_product_carImg06.png');}
     .productArea .carArea ol li:nth-child(7)::after{background-image: url('../images/M/M_product_carImg07.png');}
@@ -918,9 +919,12 @@
     /* 개인정보처리방침 */
     .privacyPolicyArea{padding: 50px 0;}
     .privacyPolicyArea b{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
-    .privacyPolicyArea p{font-size: 22px; font-weight: 300; line-height: 36px;}
-    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
-    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea p{}
+    .privacyPolicyArea > ol > li:not(:first-child){counter-increment: privacyPolicyCounter; font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea > ol > li b::before{content:'Article ' counter(privacyPolicyCounter) ' - ';}
+    .privacyPolicyArea > ol > li.listNone b::before{display: none;}
+    /* .privacyPolicyArea > ol > li ol li{counter-increment: privacyPolicyCounter2; } */
+    /* .privacyPolicyArea > ol > li ol li::before{content: counter(privacyPolicyCounter2); border: 1px solid black; border-radius: 100%;} */
     .privacyPolicyArea strong{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
     .privacyPolicyArea dl{display: flex; font-size: 22px; font-weight: 300; line-height: 36px;}
     .privacyPolicyArea > *:not(:last-child){margin-bottom: 100px;}
@@ -1271,7 +1275,7 @@
     .productArea .carArea ol.active li:nth-child(1).active > div > div{height: 335px;}
     .productArea .carArea ol.active li:nth-child(2).active > div > div{height: 190px;}
     .productArea .carArea ol.active li:nth-child(3).active > div > div{height: 315px;}
-    .productArea .carArea ol.active li:nth-child(4).active > div > div{height: 190px;}
+    .productArea .carArea ol.active li:nth-child(4).active > div > div{height: 220px;}
     .productArea .carArea ol.active li:nth-child(5).active > div > div{height: 215px;}
     .productArea .carArea ol.active li:nth-child(6).active > div > div{height: 250px;}
     .productArea .carArea ol.active li:nth-child(7).active > div > div{height: 205px;}
@@ -1441,9 +1445,10 @@
     /* 개인정보처리방침 */
     .privacyPolicyArea{padding: 100px 0;}
     .privacyPolicyArea b{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
-    .privacyPolicyArea p{font-size: 22px; font-weight: 300; line-height: 36px;}
-    .privacyPolicyArea ol li:not(:first-child){counter-increment: privacyPolicyCounter;}
-    .privacyPolicyArea ol li b::before{content: counter(privacyPolicyCounter) '.';}
+    .privacyPolicyArea p{}
+    .privacyPolicyArea > ol > li:not(:first-child){counter-increment: privacyPolicyCounter; font-size: 22px; font-weight: 300; line-height: 36px;}
+    .privacyPolicyArea > ol > li b::before{content:'Article ' counter(privacyPolicyCounter) ' - ';}
+    .privacyPolicyArea > ol > li.listNone b::before{display: none;}
     .privacyPolicyArea strong{display: block; font-size: 24px; font-weight: 400; margin-bottom: 20px;}
     .privacyPolicyArea dl{display: flex; font-size: 22px; font-weight: 300; line-height: 36px;}
     .privacyPolicyArea > *:not(:last-child){margin-bottom: 100px;}
