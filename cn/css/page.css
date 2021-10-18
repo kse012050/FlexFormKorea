@@ -88,7 +88,7 @@
     /* 서브 페이지 서브 타이틀 공통 */
     .subPage section .subTitle{text-align: center; margin-bottom: 1.875rem;}
     .subPage section .subTitle h3{font-size: 4.000rem; font-weight: 700; margin-bottom: 5.000rem;}
-    .subPage section .subTitle p{font-size: 1.625rem; font-weight: 500; line-height: 2.250rem; margin-bottom: 1.875rem;}
+    .subPage section .subTitle p{/* font-size: 1.625rem; */ font-size: 1.500rem; font-weight: 500; line-height: 2.250rem; margin-bottom: 1.875rem;}
     .subPage section .subTitle p br{display: none;}
     .subPage section .subTitle::after{content: '';display: block; width: 0.250rem; height: 1.563rem; background-color: black; transform: rotate(30deg); margin: 0 auto;}
     .subPage section > strong{display: block; width: calc(100% - 3.750rem); font-size: 2.250rem; font-weight: 700; text-align: center; margin:5.000rem auto 3.125rem;}
@@ -99,7 +99,7 @@
     .subPage section > p:not(:last-of-type){margin-bottom: 3.125rem;}
     .subPage .subContents h4{font-size: 2.250rem; font-weight: 700; text-align: center; width: calc(100% - 3.750rem); margin: 0 auto 6.250rem;}
     .subPage .subContents strong{display: block; font-size: 1.500rem; font-weight: 700; width: calc(100% - 3.750rem); margin: 0 auto;}
-    .subPage .subContents p{font-size: 1.375rem; font-weight: 300; width: calc(100% - 3.750rem); margin: 0 auto;}
+    .subPage .subContents p{font-size: 1.375rem; font-weight: 300; /* width: calc(100% - 3.750rem); */ margin: 0 auto;}
     .subPage .subContents b{font-size: 1.375rem; display: block;  font-weight: 500; width: calc(100% - 3.750rem); margin: 0 auto;}
 
     /* 서브 페이지 컨텐츠 공통 */
@@ -132,7 +132,7 @@
     .aboutUsArea .aurArea ul li > *{margin: 0 1.875rem;}
     .aboutUsArea .aurArea ul li > strong{font-size: 2.500rem; font-weight: 700; margin-bottom: 1.250rem;}
     .aboutUsArea .aurArea ul li > b{font-size: 1.625rem; font-weight: 500; line-height: 2.500rem; margin-bottom: 3.125rem;}
-    .aboutUsArea .aurArea ul li > p{font-size: 1.625rem; font-weight: 300; line-height: 2.500rem;}
+    .aboutUsArea .aurArea ul li > p{/* font-size: 1.625rem; */ font-size: 1.250rem; font-weight: 300; line-height: 2.500rem;}
     .aboutUsArea .aurArea ul li:not(:last-child){margin-bottom: 5.000rem;}
 
 
@@ -157,7 +157,7 @@
     .locationArea figure > *{float: left;}
     .locationArea figure img{width: 100%; margin-bottom: 2.188rem;}
     .locationArea figure figcaption{padding-left: 3%; max-width: 768px; box-sizing: border-box; text-align: left;}
-    .locationArea figure figcaption ul li{padding-left: 4.688rem; font-size: 1.375em; line-height: 1.875rem; background-repeat: no-repeat; background-position: left top; background-size: 3.438rem 3.438rem;}
+    .locationArea figure figcaption ul li{padding-left: 4.688rem; /* font-size: 1.375em; */ font-size: 1.125rem; line-height: 1.875rem; background-repeat: no-repeat; background-position: left top; background-size: 3.438rem 3.438rem;}
     .locationArea figure figcaption ul li:nth-child(1){background-image: url('../images/aboutUs_locationIcon01.png');}
     .locationArea figure figcaption ul li:nth-child(2){background-image: url('../images/aboutUs_locationIcon02.png');}
     .locationArea figure figcaption ul li:nth-child(3){background-image: url('../images/aboutUs_locationIcon03.png');}
@@ -166,8 +166,8 @@
     .locationArea figure figcaption ul li:not(:last-child){margin-bottom: 2.188rem;}
     .locationArea figure figcaption ul li strong{display: block;  font-weight: 700; line-height: 3.438rem; margin-bottom: 0.938rem;}
     .locationArea figure figcaption ul li dl{display: flex;}
-    .locationArea figure figcaption ul li dl dt{font-weight: 400; width: 6.250rem; border-right: 1px solid #b7b7b7; margin-right: 1.250rem;}
-    .locationArea figure figcaption ul li dl dd{width: calc(100% - 6.250em);}
+    .locationArea figure figcaption ul li dl dt{font-weight: 400; width: 4.25rem; border-right: 1px solid #b7b7b7; margin-right: 1.250rem;}
+    .locationArea figure figcaption ul li dl dd{width: calc(100% - 4.25rem);}
     .locationArea figure figcaption ul li dl:not(:last-child) dd{padding-bottom: 0.625rem;}
 
 
@@ -544,7 +544,7 @@
     /* 서브 페이지 서브 타이틀 공통 */
     .subPage section .subTitle{text-align: center; margin-bottom: 30px;}
     .subPage section .subTitle h3{font-size: 64px; font-weight: 700; margin-bottom: 80px;}
-    .subPage section .subTitle p{font-size: 26px; font-weight: 500; line-height: 36px; margin-bottom: 30px;}
+    .subPage section .subTitle p{/* font-size: 26px; */ font-size: 24px; font-weight: 500; line-height: 36px; margin-bottom: 30px;}
     .subPage section .subTitle p br{display: none;}
     .subPage section .subTitle::after{content: '';display: block; width: 4px; height: 25px; background-color: black; transform: rotate(30deg); margin: 0 auto;}
     .subPage section > strong{display: block; width: calc(100% - 60px); font-size: 36px; font-weight: 700; text-align: center; margin:80px auto 50px;}
@@ -555,7 +555,7 @@
     .subPage section > p:not(:last-of-type){margin-bottom: 50px;}
     .subPage .subContents h4{font-size: 36px; font-weight: 700; text-align: center; width: calc(100% - 60px); margin: 0 auto 100px; }
     .subPage .subContents strong{display: block; font-size: 24px; font-weight: 700; width: calc(100% - 60px); margin: 0 auto;}
-    .subPage .subContents p{font-size: 22px; font-weight: 300; width: calc(100% - 60px); margin: 0 auto;}
+    .subPage .subContents p{font-size: 22px; font-weight: 300; /* width: calc(100% - 60px); */ margin: 0 auto;}
     .subPage .subContents b{font-size: 22px; display: block;  font-weight: 500; width: calc(100% - 60px);  margin: 0 auto;}
 
     /* 서브 페이지 컨텐츠 공통 */
@@ -588,7 +588,7 @@
     .aboutUsArea .aurArea ul li > *{margin: 0 30px;}
     .aboutUsArea .aurArea ul li > strong{font-size: 40px; font-weight: 700; margin-bottom: 20px;}
     .aboutUsArea .aurArea ul li > b{font-size: 26px; font-weight: 500; line-height: 40px; margin-bottom: 50px;}
-    .aboutUsArea .aurArea ul li > p{font-size: 26px; font-weight: 300; line-height: 40px;}
+    .aboutUsArea .aurArea ul li > p{/* font-size: 26px; */ font-size: 20px; font-weight: 300; line-height: 40px;}
     .aboutUsArea .aurArea ul li:not(:last-child){margin-bottom: 80px;}
 
 
@@ -613,7 +613,7 @@
     .locationArea figure > *{float: left;}
     .locationArea figure img{width: 100%; margin-bottom: 35px;}
     .locationArea figure figcaption{padding-left: 3%; max-width: 768px; box-sizing: border-box; text-align: left;}
-    .locationArea figure figcaption ul li{padding-left: 75px; font-size: 22px; line-height: 30px; background-repeat: no-repeat; background-position: left top;}
+    .locationArea figure figcaption ul li{padding-left: 75px; /* font-size: 22px; */ font-size: 18px; line-height: 30px; background-repeat: no-repeat; background-position: left top;}
     .locationArea figure figcaption ul li:nth-child(1){background-image: url('../images/aboutUs_locationIcon01.png');}
     .locationArea figure figcaption ul li:nth-child(2){background-image: url('../images/aboutUs_locationIcon02.png');}
     .locationArea figure figcaption ul li:nth-child(3){background-image: url('../images/aboutUs_locationIcon03.png');}
@@ -1078,7 +1078,7 @@
     .aboutUsArea .aurArea ul li:nth-child(1)::before{background-image: url('../images/aboutUs_our01.png');}
     .aboutUsArea .aurArea ul li:nth-child(2)::before{background-image: url('../images/aboutUs_our02.png');}
     .aboutUsArea .aurArea ul li:nth-child(3)::before{background-image: url('../images/aboutUs_our03.png');}
-    .aboutUsArea .aurArea ul li > * {max-width: 465px;  display: flex; flex-direction: column;}
+    .aboutUsArea .aurArea ul li > * {max-width: 575px;  display: flex; flex-direction: column;}
     .aboutUsArea .aurArea ul li:nth-child(2n) > *{margin-left: auto;}
     .aboutUsArea .aurArea ul li > strong{font-size: 38px; font-weight: 700; margin-bottom: 25px;}
     .aboutUsArea .aurArea ul li > b{font-size: 22px; font-weight: 700; line-height: 34px; margin-bottom: 55px;}
