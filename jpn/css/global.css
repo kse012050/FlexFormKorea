@@ -1,0 +1,215 @@
+[lang="en"]{ font-family: 'NanumSquare', sans-serif !important;}
+
+[class*="material-icons"]{font-family: 'Material Icons'; }
+
+/* 컨텐츠 크기 */
+.contentsWidth{max-width: 1760px; margin: 0 auto;}
+.width1760{max-width: 1760px;;}
+.width1556{max-width: 1556px;}
+.width1200{max-width: 1200px;}
+.scrollPage{overflow: hidden;}
+
+@media screen and (max-width:639px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 3.750rem); margin: 0 auto;}
+
+    sup{font-size: 0.875rem; vertical-align: super;}
+
+   /* popup */
+   [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+   [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 500px; background-color: white; padding: 0.625rem; position: relative;}
+   [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -0.625rem; top: -3.125rem; font-size: 3.750rem; color: white;}
+   [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
+
+    /* 해더 */
+    header{height: 6.250rem; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 0.938em -5px rgba(0, 0, 0, 0.2);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
+    header > div h1{text-indent: -9999px; width: 14.750rem; height: 2.688rem; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+    header > div h1 a{display: block; height: 100%; }
+    header > div .M_menuBtn{width: 2.813rem; cursor: pointer;}
+    header > div .M_menuBtn span{display: block;  height: 0.188rem; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
+    header > div .M_menuBtn span:not(:last-child){margin-bottom: 0.750rem;}
+    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 6.250rem; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; padding-bottom: 1.875rem;}
+    header > div nav > ul{display: flex; flex-direction: column; margin-bottom: 1.875rem;}
+    header > div nav > ul > li > a{display: block; font-size: 1.750rem; font-weight: 500; color: black; padding: 1.875rem; position: relative;}
+    header > div nav > ul > li > a span.material-icons{position: absolute; right: 1.875rem; top: 1.438rem; font-size: 2.500rem; transition: 0.5s transform;}
+    header div nav ul li a.active span.material-icons{transform: rotate(180deg);}
+    header > div nav > ul > li a:hover ,header div nav ul li.active > a{font-weight: 700; color: #8fcc00;}
+    header > div nav > ul > li ul{display: none; padding: 1.313em 0; border-width: 1px 0; border-style: solid; border-color: #dfdfdf;}
+    header > div nav > ul > li ul li a{display: block; font-size: 1.375rem; font-weight: 500; padding: 1.313em 1.875rem;}
+    header > div nav .countryArea{border-radius: 0.938rem; background-color: rgba(0, 0, 0, 0.8);}
+    header > div nav .countryArea *{font-size: 1.250rem; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; display: flex; width: 100%; padding: 0.625rem 1.875rem; justify-content: space-between; align-items: center; border-radius: 1.250rem; cursor: pointer;}
+    header > div nav .countryArea > div{padding:0.625rem 0 0.938rem; box-sizing: border-box; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 1.875rem; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 1.250rem;}
+    header > div nav .countryArea.active button{ border-radius:1.250rem 1.250rem 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
+    header > div nav .countryArea.active > div{display: block;}
+    header.scrollMenu{background-color: transparent; box-shadow: none;}
+    header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
+    header.scrollMenu div .M_menuBtn span{background-color: white;}
+    header.active.scrollMenu{background-color: white;}
+    header.active.scrollMenu div h1{background-image: url('../images/logo_B.png');}
+    header.active > div .M_menuBtn span{background-color: black;}
+    header.active > div .M_menuBtn span:nth-child(1){transform: translateY(0.938em) rotate(45deg);}
+    header.active > div .M_menuBtn span:nth-child(2){opacity: 0;}
+    header.active > div .M_menuBtn span:nth-child(3){transform: translateY(-0.938em) rotate(-45deg);}
+    header.active > div nav > ul{display: flex;}
+    header > div nav .on > a{color: #8fcc00;}
+
+    /* 푸터 */
+    footer{background-color: #191919; padding: 5.625em 0;}
+    footer div{position: relative;}
+    footer div h2{max-width: 14.750rem; margin-bottom: 6.250rem;}
+    footer div h2 img{width: 100%;}
+    footer div > ul{position: absolute; right: 0; top: 0; text-align: right;}
+    footer div > ul li:not(:last-child){margin-bottom: 0.625rem;}
+    footer div > ul li a{font-size: 1.250rem; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
+    footer div address{font-style: normal; margin-bottom: 0.938rem;}
+    footer div address ul{display: flex; flex-direction: column;}
+    footer div address ul li{font-size: 1.313rem; line-height: 1.938rem; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    /* footer div address ul li:not(:last-child){margin-bottom: 0.625rem;} */
+    footer div p{font-size: 1.063rem; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 1.875rem;}
+    footer div p ~ a:not(:last-of-type){margin-right: 0.938rem;}
+    footer .link{display: inline-block; width: 3.125rem; height: 3.125rem; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
+    footer .link.youtube{ background-image: url('../images/FF_youtube.png');}
+    footer .link.blog{ background-image: url('../images/FFK_blog.png');}
+}
+
+
+@media screen and (min-width:640px) and (max-width:1279px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+
+    /* popup */
+    [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+    [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 50%; background-color: white; padding: 10px; position: relative;}
+    [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -10px; top: -40px; font-size: 50px; color: white;}
+    [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
+
+    sup{font-size: 14px; vertical-align: super;}
+
+    /* 해더 */
+    header{height: 100px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center; }
+    header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+    header > div h1 a{display: block; height: 100%; }
+    header > div .M_menuBtn{width: 45px; cursor: pointer;}
+    header > div .M_menuBtn span{display: block;  height: 3px; background-color: black; transition-duration: 0.5s; transition-property: background-color, transform;}
+    header > div .M_menuBtn span:not(:last-child){margin-bottom: 12px;}
+    header > div nav{display: none; width: 100%; position: fixed; left: 0; top: 100px; bottom: 0; border-top: 1px solid black; background-color: white; overflow: auto; padding-bottom: 30px;}
+    header > div nav > ul{display: flex; flex-direction: column; margin-bottom: 30px;}
+    header > div nav > ul > li > a{display: block; font-size: 28px; font-weight: 500; color: black; padding: 30px; position: relative;}
+    header > div nav > ul > li > a span.material-icons{position: absolute; right: 30px; top: 23px; font-size: 40px; transition: 0.5s transform;}
+    header div nav ul li a.active span.material-icons{transform: rotate(180deg);}
+    header > div nav > ul > li a:hover ,header div nav ul li.active > a{font-weight: 700; color: #8fcc00;}
+    header > div nav > ul > li ul{display: none; padding: 21px 0; border-width: 1px 0; border-style: solid; border-color: #dfdfdf;}
+    header > div nav > ul > li ul li a{display: block; font-size: 22px; font-weight: 500; padding: 21px 30px;}
+    header > div nav .countryArea{border-radius: 15px; background-color: rgba(0, 0, 0, 0.8);}
+    header > div nav .countryArea *{font-size: 20px; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; display: flex; width: 100%; padding: 10px 30px; justify-content: space-between; align-items: center; border-radius: 20px; cursor: pointer;}
+    header > div nav .countryArea > div{padding:10px 0 15px; box-sizing: border-box; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 30px; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 20px;}
+    header > div nav .countryArea.active button{ border-radius:20px 20px 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
+    header > div nav .countryArea.active > div{display: block;}
+    header.scrollMenu{background-color: transparent; box-shadow: none;}
+    header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
+    header.scrollMenu div .M_menuBtn span{background-color: white;}
+    header.active.scrollMenu{background-color: white;}
+    header.active.scrollMenu div h1{background-image: url('../images/logo_B.png');}
+    header.active > div .M_menuBtn span{background-color: black;}
+    header.active > div .M_menuBtn span:nth-child(1){transform: translateY(15px) rotate(45deg);}
+    header.active > div .M_menuBtn span:nth-child(2){opacity: 0;}
+    header.active > div .M_menuBtn span:nth-child(3){transform: translateY(-15px) rotate(-45deg);}
+    header.active > div nav > ul{display: flex;}
+    header > div nav .on > a{color: #8fcc00;}
+
+    /* 푸터 */
+    footer{background-color: #191919; padding: 90px 0;}
+    footer div{position: relative;}
+    footer div h2{max-width: 236px; margin-bottom: 100px;}
+    footer div h2 img{width: 100%;}
+    footer div > ul{position: absolute; right: 0; top: 0; text-align: right;}
+    footer div > ul li:not(:last-child){margin-bottom: 10px;}
+    footer div > ul li a{font-size: 20px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
+    footer div address{font-style: normal; margin-bottom: 15px;}
+    footer div address ul{display: flex; flex-direction: column;}
+    footer div address ul li{font-size: 21px; line-height: 31px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    /* footer div address ul li:not(:last-child){margin-bottom: 10px;} */
+    footer div p{font-size: 17px; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;}
+    footer div p ~ a:not(:last-of-type){margin-right: 15px;}
+    footer .link{display: inline-block; width: 50px; height: 50px; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
+    footer .link.youtube{ background-image: url('../images/FF_youtube.png');}
+    footer .link.blog{ background-image: url('../images/FFK_blog.png');}
+}
+
+
+/* PC */
+@media screen and (min-width:1280px) {
+    /* 컨텐츠 크기 */
+    .width1760,.width1556, .width1200{width: calc(100% - 60px); margin: 0 auto;}
+
+    /* popup */
+    [data-event='popup'] + .popupArea{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 100;}
+    [data-event='popup'] + .popupArea > div{width: 90%; max-width: 1000px; height: 500px; background-color: white; padding: 10px; position: relative;}
+    [data-event='popup'] + .popupArea > div .closeBtn{position: absolute; right: -10px; top: -50px; font-size: 60px; color: white;}
+    [data-event='popup'] + .popupArea > div iframe{width: 100%; height: 100%;}
+
+    sup{font-size: 14px; vertical-align: super;}
+ 
+    /* 해더 */
+    header{height: 120px; position: fixed; left: 0; top: 0; width: 100%; background-color: white; transition-duration: 0.5s; transition-property: background-color; z-index: 100; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);}
+    header::after{content: ''; position: absolute; left: 0; top: calc(100% + 1px); width: 100%; height:0; background-color: transparent; transition-duration: 0.5s; transition-property: height , background-color; box-shadow: 0px 10px 13px -15px rgb(0 0 0 / 20%);}
+    header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+    header > div h1{text-indent: -9999px; width: 236px; height: 43px; background-image: url('../images/logo_B.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+    header > div h1 a{display: block; height: 100%;}
+    header > div .M_menuBtn{display: none;}
+    header > div nav{ width: 43.5%; width: 1000px; height: 100%; display: flex; justify-content: space-between;}
+    header > div nav > ul{display: flex; width: 100%; height: 100%;  align-items: center;}
+    header > div nav > ul > li{height: 100%;  position: relative; padding-right: 15%;}
+    header > div nav > ul > li a{font-size: 22px; font-weight: 500; color: black; height: 100%; display: flex; align-items: center;}
+    header > div nav > ul > li > a span.material-icons{display: none;}
+    header > div nav > ul > li a:hover ,header div nav ul li.active a{color: #8fcc00;}
+    header > div nav > ul > li ul{position: absolute; left: 0; top: 100%; width: 100%; padding: 15px 0; display: none;}
+    header > div nav > ul > li ul li a{color: #5e5e5e; display: inline-block; padding: 15px 0; white-space: nowrap;}
+    header > div nav .countryArea{align-self: center; position: relative; }
+    header > div nav .countryArea *{font-size: 15px; color: white; }
+    header > div nav .countryArea button{display: block; font-weight: 300; width: 95px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 20px; background-color: black; cursor: pointer;}
+    header > div nav .countryArea > div{position: absolute; top: 100%; left: 0; width: 100%; padding:5px 0 15px; box-sizing: border-box; border-radius: 0 0 20px 20px; background-color: black; display: none;}
+    header > div nav .countryArea > div a{display: block; padding: 0 20px; font-weight: 900;}
+    header > div nav .countryArea > div a:not(:last-child){margin-bottom: 20px;}
+    header > div nav .countryArea.active button{ border-radius:20px 20px 0 0;}
+    header > div nav .countryArea.active button span.material-icons{transform: rotate(180deg);}
+    header > div nav .countryArea.active > div{display: block;}
+    header.scrollMenu{background-color: transparent; box-shadow: none;}
+    header.scrollMenu div h1{background-image: url('../images/logo_W.png');}
+    header.scrollMenu nav > ul >  li > a{color: white;}
+    header.active{background-color: white; border-bottom: 1px solid rgba(0, 0, 0, 0.22); box-sizing: border-box;}
+    header.active::after{background-color: white; height: 300px; z-index: -1;}
+    header.active div h1{background-image: url('../images/logo_B.png');}
+    header.active div nav > ul > li > a{color: black;}
+    header.active div nav > ul > li:hover > a{color: #8fcc00;}
+
+
+    /* 푸터 */
+    footer{background-color: #191919; padding: 90px 0;}
+    footer div{position: relative;}
+    footer div h2{max-width: 236px; margin-bottom: 100px;}
+    footer div h2 img{width: 100%;}
+    footer div > ul{position: absolute; right: 0; top: 0; display: flex;}
+    footer div > ul li:not(:last-child){margin-right: 30px;}
+    footer div > ul li a{font-size: 16px; font-weight: 900; color: rgba(255, 255, 255, 0.6);}
+    footer div address{font-style: normal; margin-bottom: 15px;}
+    footer div address ul{display: flex; flex-wrap: wrap; max-width: 880px;}
+    footer div address ul li{font-size: 17px; line-height: 32px; font-weight: 300; color: rgba(255, 255, 255, 0.7);}
+    footer div address ul li:not(:nth-last-child(-n + 2)){margin-right: 15px;}
+    footer div p{font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;}
+    footer div p ~ a:not(:last-of-type){margin-right: 15px;}
+    footer .link{display: inline-block; width: 50px; height: 50px; text-indent: -9999px; background-repeat: no-repeat; background-position:  center; background-size: cover; }
+    footer .link.youtube{ background-image: url('../images/FF_youtube.png');}
+    footer .link.blog{ background-image: url('../images/FFK_blog.png');}
+}
+/* PC fin */

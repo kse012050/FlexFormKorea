@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - R&D</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <script src="js/swiper.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <!-- <script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script id="test"></script> -->
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/import.css">
+    
+    <script>
+        $(document).ready(function(){
+            var $PCApi = {   
+                minSlides : 4,
+                maxSlides : 4,
+                moveSlides: 1,
+                slideWidth:290,
+                slideMargin:10
+            }
+            var $MobileApi = {
+                minSlides : 2,
+                maxSlides : 2,
+                moveSlides: 1,
+                slideWidth:600,
+                slideMargin:10
+            }
+            $resultSlider = $('.slider');
+            if($(window).width() > 1280){
+                $resultSlider.bxSlider($PCApi)
+            }else{
+                $resultSlider.bxSlider($MobileApi)
+            }
+            $(window).resize(function(){
+                if($(window).width() > 1280){
+                    $resultSlider.reloadSlider($PCApi)
+                }else{
+                    $resultSlider.reloadSlider($MobileApi)
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="width1760">
+            <h1><a href="index.html">FlexForm Korea LOGO</a></h1>
+            <div class="M_menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="on"><a href="aboutUs_our.html">AboutUs<span class="material-icons">expand_more</span></a>
+                        <ul>
+                            <li class="on"><a href="aboutUs_our.html">Our value</a></li>
+                            <li><a href="aboutUs_status.html">Company Overview</a></li>
+                            <li><a href="aboutUs_location.html">Location</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product_composite.html">Our Products<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="product_composite.html">Our products</a></li>
+                            <li><a href="product_raw.html">Raw material</a></li>
+                            <li><a href="product_car.html">Automobile</a></li>
+                            <li><a href="product_architecture.html">Construction</a></li>
+                            <li><a href="product_applications.html">Applications</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="R&D_center.html">R&D<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="R&D_center.html">R&D Center</a></li>
+                            <li><a href="R&D_equipment.html">Test Equipment</a></li>
+                            <li class="on"><a href="R&D_result.html">Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hire_talent.html">Career<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="hire_talent.html">Our Talents</a></li>
+                            <li><a href="hire_duty.html">Our Businesses</a></li>
+                            <li><a href="hire_info.html">Recruitment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="countryArea">
+                    <button>
+                        ENG
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </button>
+                    <div>
+                        <a href="../index.html">KOR</a>
+                        <a href="index.html">ENG</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="subPage RnDArea">
+        <div class="subPageTitle">
+            <h2>
+                R&D
+            </h2>
+        </div>
+        <div class="subMenuArea">
+            <ul>
+                <li><a href="R&D_center.html">R&D Center</a></li>
+                <li><a href="R&D_equipment.html">Testing Equipment</a></li>
+                <li class="active"><a href="R&D_result.html">R&D Achievements</a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="width1200 subTitle">
+                <h3>R&D Achievements</h3>
+            </div>
+            <div class="subContents resultArea">
+                <div class="width1200 patentArea">
+                    <h4>Patent</h4>
+                    <div>
+                        <div class="slider">
+                            <div>
+                                <img src="images/R&D_result_patent01.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>Composite mat manufacturing equipment</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent02.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>Composite mat manufacturing equipment</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent03.png" alt="다층구조의 자동차용 천정재 특허 이미지">
+                                <b>Multi-layer automobile Headliner material</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent04.png" alt="자동차용 천정재 특허 이미지">
+                                <b>Automobile Headliner material</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent05.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>Light-weight composite automobile interior material </b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent06.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>Multi-layer automobile Headliner material</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent07.png" alt="">
+                                <b>The thermoplastic organic fabric and its manufacturing method </b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent08.png" alt="">
+                                <b>Thermoplastic material with high heat resistance and adhesion performance</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent09.png" alt="">
+                                <b>Multi-layered thermo-plastic composite fiber material</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent10.png" alt="">
+                                <b>A light-weight fiber reinforcement board and its manufacturing method</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent11.png" alt="">
+                                <b>A composite board for engine covers and its manufacturing method</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent12.png" alt="">
+                                <b>The manufacturing method for composite materials with carding.</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent13.png" alt="">
+                                <b>The manufacturing method of composite fiber mats and automobile parts</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent14.png" alt="">
+                                <b>3D-Shaped sound-absorption board</b>
+                            </div>
+                           <div>
+                                <img src="images/R&D_result_patent15.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>使用纤维垫加工纤维强化复合材料..</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent16.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>具有多层结构的机动车内饰产品用..</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent17.png" alt="다층구조의 자동차용 천정재 특허 이미지">
+                                <b>多层结构的机动车车顶内衬用部件</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent18.png" alt="자동차용 천정재 특허 이미지">
+                                <b>THE MEMBER FOR INTERIOR ..</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent19.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>THE MEMBER FOR HEADLINER ..</b>
+                            </div>
+                         <!--    <div>
+                                <img src="images/R&D_result_patent20.png" alt="복합매트 제조장치 특허 이미지">
+                                <b>THE MEMBER FOR INTERIOR ..</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent21.png" alt="">
+                                <b>THE MEMBER FOR HEADLINER .. </b>
+                            </div> -->
+                            <div>
+                                <img src="images/R&D_result_patent22.png" alt="">
+                                <b>自動車内側部品用軽量複合板材</b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent23.png" alt="">
+                                <b>多層構造の自動車用天井材 </b>
+                            </div>
+                            <div>
+                                <img src="images/R&D_result_patent24.png" alt="">
+                                <b>多層構造の自動車用天井材 </b>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="width1200 boardArea">
+                    <h4>Government-funded projects</h4>
+                    <ul>
+                        <li>
+                            <div>
+                                <strong>Project name</strong>
+                                <strong>Organization</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of reinforced composite materials to be used in underbody shields based on high-strength and high-sound absorption natural fiber
+                                </p>
+                                <span>KOTERI</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of the exposed Door trim for electric vehicles with more than 20% lightweight based on recycled materials
+                                </p>
+                                <span>Ministry of SME and Startups</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of the texturing door trims for electric vehicles with more than 30% lightweight based on recycled PET materials
+                                </p>
+                                <span>Jeonbuk Institute of Automotive Convergence Technology</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of light-weight composite board for automobile engine covers with flame-retardant and sound-absorption features based on PET fiber
+                                </p>
+                                <span>Ministry of SME and Startups</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of the 1,100g/m<sup>2</sup> light-weight underbody shield for automobile exterior based on natural reinforced composite material.
+                                </p>
+                                <span>Ministry of SME and Startups</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                    The development of the headliner and package trays based on nano-bio-hybrid composite materials
+                                </p>
+                                <span>Ministry of Science and ICT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="floatingArea">
+            <a href="https://blog.naver.com/flexformkorea" class="blogLink">blog</a>
+            <a href="question.php" class="contactLink">contact</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="width1760">
+            <h2><img src="images/footer_logo.png" alt="LOGO"></h2>
+            <ul>
+                <li><a href="aboutUs_our.html">Company Overview</a></li>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+            <address>
+                <ul>
+                    <li>CEO : Chanhwan Park</li>
+                    <li>Business Registration Number : 312-86-69681</li>
+                    <li>Tel : 041-588-5788</li>
+                    <li>Fax : 041-587-5788</li>
+                    <li>Plant 1 : 5 Songgi-gil, Jiksan-eup, Seobuk-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea / </li>
+                    <li>Plant 2 and R&D Center : 275, Bongju-ro, Seonggeo-eup, Seobuk-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea</li>
+                </ul>
+            </address>
+            <p>Copyright © FlexFormKorea. All rights reserved.</p>
+            <a href="https://www.youtube.com/channel/UCTMeV3kCTI1n-aeuPG6aGFg" class="link youtube">FFK 유튜브 링크</a>
+            <a href="https://blog.naver.com/flexformkorea" class="link blog">FFK 블로그 링크</a>
+        </div>
+    </footer>
+</body>
+</html>

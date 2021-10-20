@@ -4,9 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlexFormKorea</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+    <script src="js/main.js"></script>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pagerCustom: '.customPager',
+                controls:false,
+                auto:true
+            });
+        })
+    </script>
 </head>
-<body>
-    jpn
+<body class="scrollPage">
+    <header class="scrollMenu">
+        <div class="width1760">
+            <h1><a href="index.html">FlexForm Korea LOGO</a></h1>
+            <div class="M_menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutUs_our.html">AboutUs<span class="material-icons">expand_more</span></a>
+                        <ul>
+                            <li><a href="aboutUs_our.html">Our value</a></li>
+                            <li><a href="aboutUs_status.html">Company Overview</a></li>
+                            <li><a href="aboutUs_location.html">Location</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product_composite.html">Our Products<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="product_composite.html">Our products</a></li>
+                            <li><a href="product_raw.html">Raw material</a></li>
+                            <li><a href="product_car.html">Automobile</a></li>
+                            <li><a href="product_architecture.html">Construction</a></li>
+                            <li><a href="product_applications.html">Applications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="R&D_center.html">R&D<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="R&D_center.html">R&D Center</a></li>
+                            <li><a href="R&D_equipment.html">Test Equipment</a></li>
+                            <li><a href="R&D_result.html">Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hire_talent.html">Career<span class="material-icons">expand_more</span></a></a>
+                        <ul>
+                            <li><a href="hire_talent.html">Our Talents</a></li>
+                            <li><a href="hire_duty.html">Our Businesses</a></li>
+                            <li><a href="hire_info.html">Recruitment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="countryArea">
+                    <button>
+                        ENG
+                        <span class="material-icons">
+                            arrow_drop_down
+                        </span>
+                    </button>
+                    <div>
+                        <a href="../index.html">KOR</a>
+                        <a href="index.html">ENG</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mainBGArea">
+        <section data-event="scroll">
+            <div class="slider">
+                <div class="mainSlider03">
+                    <h2>Light up <mark>the future</mark></h2>
+                    <p>We lead the way to the innovative, composite materials of the future through our continued R&D efforts.</p>
+                </div>
+                <div class="mainSlider01">
+                    <h2>The solution <mark>for you</mark></h2>
+                    <p>We provide a world-class solution through our partnership.</p>
+                </div>
+                <div class="mainSlider02">
+                    <h2>Go closer to <mark>your life</mark></h2>
+                    <p>We create materials that satisfy human and nature.</p>
+                </div>
+            </div>
+        </section>
+        <div class="scrollIcon">SCROLL</div>
+        <div class="mainScrollNavArea">
+            <ul class="customPager width1760">
+                <li class="active"><a data-slide-index="0">Light up the future</a></li>
+                <li><a data-slide-index="1">The solution for you</a></li>
+                <li><a data-slide-index="2">Go closer to your life</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="scrollArea mainMenuArea">
+        <div>
+            <ul class="width1760">
+                <li>
+                    <a href="aboutUs_our.html">
+                        <strong>
+                            Flex Form Korea
+                            <small>About Us</small>
+                        </strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="product_composite.html">
+                        <strong>
+                            Product
+                            <small>Products</small>
+                        </strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="R&D_center.html">
+                        <strong>
+                            R&D
+                            <small>R&D</small>
+                        </strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="hire_talent.html">
+                        <strong>
+                            Recruit
+                            <small>Career</small>
+                        </strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-event="popup">
+                        <strong>
+                            Media
+                            <small>Videos</small>
+                        </strong>
+                    </a>
+                    <div class="popupArea">
+                        <div>
+                            <span class="material-icons closeBtn">close</span>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wE3tyEkX2fs?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="floatingArea">
+                <a href="https://blog.naver.com/flexformkorea" class="blogLink">blog</a>
+                <a href="question.php" class="contactLink">contact</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="width1760">
+                <h2><img src="images/footer_logo.png" alt="LOGO"></h2>
+                <ul>
+                    <li><a href="aboutUs_our.html">Company Overview</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li>CEO : Chanhwan Park</li>
+                        <li>Business Registration Number : 312-86-69681</li>
+                        <li>Tel : 041-588-5788</li>
+                        <li>Fax : 041-587-5788</li>
+                        <li>Plant 1 : 5 Songgi-gil, Jiksan-eup, Seobuk-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea / </li>
+                        <li>Plant 2 and R&D Center : 275, Bongju-ro, Seonggeo-eup, Seobuk-gu, Cheonan-si, Chungcheongnam-do, Republic of Korea</li>
+                    </ul>
+                </address>
+                <p>Copyright © FlexFormKorea. All rights reserved.</p>
+                <a href="https://www.youtube.com/channel/UCTMeV3kCTI1n-aeuPG6aGFg" class="link youtube">FFK 유튜브 링크</a>
+                <a href="https://blog.naver.com/flexformkorea" class="link blog">FFK 블로그 링크</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
