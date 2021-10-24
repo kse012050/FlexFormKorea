@@ -939,7 +939,7 @@
     .subPage .contactLink::before{margin: 0;} */
 
     .floatingArea{position: fixed; right: 0; bottom: 0;}
-    .floatingArea a{display: flex; width: 163px; height: 63px; align-items: center; font-size: 15px; font-weight: 700; padding: 0 30px; box-sizing: border-box;}
+    .floatingArea a{display: flex; width: 170px; height: 63px; align-items: center; font-size: 15px; font-weight: 700; padding: 0 30px; box-sizing: border-box;}
     .floatingArea a:not(:last-of-type){margin-bottom: 20px;}
     .floatingArea a::before{content: ''; width: 33px; height: 30px; margin-right: 10px;}
     .floatingArea a.blogLink{background-color: #e2e2e2;}

@@ -1015,11 +1015,11 @@
     .subPage .subPageTitle h2{font-size: 50px; font-weight: 700;}
     .subPage .subPageTitle h2 b{display: block; font-size: 28px; margin-bottom: 40px;}
     .subPage .subPageTitle p{font-size: 24px; font-weight: 300; line-height: 48px; max-width: 860px; width: calc(100% - 60px); margin-top: 90px;}
-    .subPage .subMenuArea ul{display: flex; justify-content: center; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+    .subPage .subMenuArea ul{display: flex; justify-content: center; overflow-x: auto; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
     .subPage .subMenuArea ul li{margin: 0 50px;}
-    .subPage .subMenuArea ul li a{display: block; font-size: 30px; font-weight: 700;  opacity: 0.5; padding: 35px 0; position: relative;}
+    .subPage .subMenuArea ul li a{display: block; font-size: 30px; font-weight: 700;  opacity: 0.5; padding: 35px 0; position: relative; white-space: nowrap;}
     .subPage .subMenuArea ul li.active a{opacity: 1;}
-    .subPage .subMenuArea ul li.active a::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 4px; background-color: #8fcc00;}
+    .subPage .subMenuArea ul li.active a::after{content: ''; position: absolute; left: 0; bottom: 0px; width: 100%; height: 2px; background-color: #8fcc00;}
     .subPage section{padding: 110px 0 140px;}
     /* 서브 페이지 서브 타이틀 공통 */
     .subPage section .subTitle{text-align: center; margin-bottom: 30px;}
