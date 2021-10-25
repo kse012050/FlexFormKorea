@@ -21,8 +21,7 @@ button ,input ,select,textarea{
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	/* font-family:'NanumSquare', sans-serif ; */
-	font-family:'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	vertical-align: baseline;
 	/* word-break: keep-all; */
 }
