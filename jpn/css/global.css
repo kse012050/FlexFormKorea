@@ -9,6 +9,8 @@
 .width1200{max-width: 1200px;}
 .scrollPage{overflow: hidden;}
 
+.floatingArea{display: none;}
+
 @media screen and (max-width:639px) {
     /* 컨텐츠 크기 */
     .width1760,.width1556, .width1200{width: calc(100% - 3.750rem); margin: 0 auto;}
